@@ -15,13 +15,11 @@ Some materials for the lunchtime (?) *data club*, an informal weekly meeting at 
 
 ## Aim
 
->Bring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for 
+>Bring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data
 
 - organising
-- analysing 
-- visualising 
-
-data.
+- analysing
+- visualising
 
 ## Ideas for meetings / wishlist?
 

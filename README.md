@@ -1,10 +1,17 @@
 # ng-data-club
 
-![a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic](images/dall-e-image.png)
-
 Nottingham Psychology data club resources
 
 Some materials for the lunchtime (?) *data club*, an informal weekly meeting at the [University of Nottingham](https://www.nottingham.ac.uk/psychology/).
+
+<figure>
+
+<img src="images/dall-e-image.png" width="75%"/>
+<br>
+<caption>How DALL-E sees our data club</caption>
+</figure>
+
+
 
 ## Aim
 
@@ -34,6 +41,10 @@ In no particular order (for now)
 - basic ideas behind solving inverse problems
 - how do people organise data, meta-data
 - "Tidy Data" / tidyverse and related ideas (in `r`), Pandas (`python`), Tables (`matlab`). Long and wide data? `select`, `filter`, `mutate`, `summarise` (`dplyr`/`sql` syntax) 
+- logistic regression
+- intro to bayesian stats/estimation?
+- more machine learning stuff (`svm`, intro to deep learning models)
+- RL?
 
 ## Links to tools
 

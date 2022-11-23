@@ -6,7 +6,7 @@ Some materials for the lunchtime (?) *data club*, an informal weekly meeting at 
 
 <figure>
 
-<img src="images/dall-e-image.png" width="75%"/>
+<img src="images/dall-e-image.png" width="50%"/>
 <br>
 <caption>How DALL-E sees our data club</caption>
 </figure>

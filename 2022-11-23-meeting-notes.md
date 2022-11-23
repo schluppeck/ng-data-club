@@ -22,7 +22,7 @@
 
 ## Initial Schedule
 
-1. 2022-11-30: Thomas: `julia` and code sharing
+1. 2022-11-30: Tomas: `julia` and code sharing
 
 2. 2022-12-07: Helen, Bring your own problem, BYOP (data visualisation)
 

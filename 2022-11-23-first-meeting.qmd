@@ -1,0 +1,56 @@
+---
+title: "NG data club"
+author: "Schluppeck / van Rossum"
+date: "2022-11-23"
+format:
+  revealjs:
+    embed-resources: true
+    chalkboard: false
+    code-line-numbers: false
+self-contained: true
+---
+## Where, when?
+
+Meeting time + place
+
+- Wednesday, 12:00-12:45, weekly
+- a seminar room like this here? (or somewhere else?)
+
+## What
+
+Could structure things according to
+
+1. *I want to answer the following question with my data... How do I do that?* 
+
+2. *I know the following technique, which could help you with [bla]...*
+
+3. Other format?
+
+## What 2
+
+- Want to share knowledge of *principles* / intuition / maths background
+- ... but also practical advice:
+  + tools 
+  + code snippets (multi-lingual?)
+
+## Padlet link + Team + resources
+
+- https://padlet.com/denisschluppeck/ng_data_club
+- MS Team (for chat / ad-hoc questions)
+- github repo, gists (for sharing code )
+
+ 
+## Lots of potential topics {.scrollable}
+
+- PCA, ICA, related methods
+- linear regression, basics of linear algebra?
+- "dimensionality reduction"
+- t-SNE
+- basic ideas behind solving inverse problems
+- how do people organise data, meta-data
+- "Tidy Data" / tidyverse and related ideas (in `r`), Pandas (`python`), Tables (`matlab`). Long and wide data? `select`, `filter`, `mutate`, `summarise` (`dplyr`/`sql` syntax) 
+- logistic regression
+- intro to bayesian stats/estimation?
+- more machine learning stuff (`svm`, intro to deep learning models)
+- RL?
+

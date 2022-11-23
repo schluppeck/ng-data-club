@@ -11,8 +11,6 @@ Some materials for the lunchtime (?) *data club*, an informal weekly meeting at 
 <caption>How DALL-E sees our data club</caption>
 </figure>
 
-
-
 ## Aim
 
 >Bring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data
@@ -30,25 +28,11 @@ Could structure things according to
 1. *I want answer the following question with my data... How do I do that?* and/or
 2. *I know the following technique, which could help you with bla...*
 
-In no particular order (for now)
+## 2022-11-23 - first meeting
 
-- PCA, ICA, related methods
-- linear regression, basics of linear algebra?
-- "dimensionality reduction"
-- t-SNE
-- basic ideas behind solving inverse problems
-- how do people organise data, meta-data
-- "Tidy Data" / tidyverse and related ideas (in `r`), Pandas (`python`), Tables (`matlab`). Long and wide data? `select`, `filter`, `mutate`, `summarise` (`dplyr`/`sql` syntax) 
-- logistic regression
-- intro to bayesian stats/estimation?
-- more machine learning stuff (`svm`, intro to deep learning models)
-- RL?
+- [the slides](./2022-11-23-first-meeting.html) from the first meeting
+- [the meeting notes](./2022-11-23-meeting-notes.md) 
 
-## Links to tools
-
-## Notes / slides
-
-- could have 1 markdown/readme file per session with code snippets, links (3brown1blue, MIT OCW, Khan Academy, ...), papers, 
 
 ## Colophon
 

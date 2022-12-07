@@ -1,1 +1,1 @@
-File name format: ISO 8601 - name - slug
+File name format: ISO 8601 + slug

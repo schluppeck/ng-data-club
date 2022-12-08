@@ -39,9 +39,11 @@ Structure will be around:
 | date            | Presenter   | Topic                                                                              |
 | --------------- | ----------- | ---------------------------------------------------------------------------------- |
 | Wed 23 Nov 2022 | DS/MvR      | Overview, discussion, ideas [[slides](./2022-11-23-first-meeting.html)]             |
-| Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides](presentations/2022-12-07-Julia-for-research.pdf)] |
+| Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides][julia-slides]]                                  |
 | Wed 14 Dec 2022 | MvR         | Linear regression                                                                  |
 | 2023            | DS/JD       | Markdown, `quarto`, mixing text  + computations                                    |
+
+[julia-slides]: https://raw.githubusercontent.com/schluppeck/ng-data-club/main/presentations/2022-12-07-Julia-for-research.pdf
 
 
 ## Ideas for future meetings

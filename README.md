@@ -33,7 +33,21 @@ Structure will be around:
 - [the slides](./2022-11-23-first-meeting.html) from the first meeting
 - [the meeting notes](./2022-11-23-meeting-notes.md) 
 
+
+## Schedule
+
+| date            | Presenter   | Topic                                                                              |
+| --------------- | ----------- | ---------------------------------------------------------------------------------- |
+| Wed 23 Nov 2022 | DS/MvR      | Overview, discussion, ideas [[slides](./2022-11-23-first-meeting.html)]             |
+| Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides](presentations/2022-12-07-Julia-for-research.pdf)] |
+| Wed 14 Dec 2022 | MvR         | Linear regression                                                                  |
+| 2023            | DS/JD       | Markdown, `quarto`, mixing text  + computations                                    |
+
+
+## Ideas for future meetings
+
 - [some potential, additional ideas](./wishlist.md)
+- see also [the meeting notes](./2022-11-23-meeting-notes.md) 
 
 ## Colophon
 

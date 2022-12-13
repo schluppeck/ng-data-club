@@ -1,0 +1,98 @@
+---
+title: "Mixing writing and `python`"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+## Background
+
+Here is an example of a document that produces a plot from some data that's stored separately.
+
+The data in @fig-timeseries shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?
+
+## an actual computed figure
+
+```{python}
+#| label: fig-timeseries
+#| fig-cap: "A line plot of some mystery data"
+
+#! /usr/bin/env python3
+#
+# schluppeck, 2022-12-10
+
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import pandas as pd
+from IPython.display import display, Markdown
+
+# in terminal (but not here), we need
+# mpl.use('tkagg')
+
+file_name = "2017-mysteryTimeseries.csv"
+rawdata = pd.read_csv(file_name)
+
+data = rawdata.rename(
+    columns={
+        "theTime_day" : "date",  
+        "n" : "interactions",
+    }
+)
+
+# can inspect first few rows like this:
+# data.head() 
+
+data.plot() # pd dataframe has plot() method
+plt.legend("")
+plt.xlabel('Days on course')
+plt.ylabel('Moodle interactions')
+plt.show()
+```
+
+## or a table
+
+A badly formatted table... `rstats` with various packages handles tabular data much more nicely!
+
+```{python}
+data.head()\
+  .style
+```
+
+## or some "maths"
+
+If you want to compute things for including **in your text**, so-called inline code, then you can make your code spit out markdown that's been patched up. If you turn `#| echo: true` to `false`, then the code is hidden!
+
+```
+`python data.shape[0]`
+```
+
+```{python}
+#| echo: true
+
+nrows =  data.shape[0]
+ncols = data.shape[1]
+
+nInteractions = data.max()[1]
+dInteractions = data.max()[0]
+
+display(
+    Markdown(
+    """
+### Patched up markdown
+
+The dataframe had {nrows} rows and {ncols} columns.
+
+The largest number of interactions was {n} on {d}
+
+""".format(nrows = nrows, ncols = ncols, n = nInteractions, d=dInteractions)))
+```
+
+
+
+## Notes 
+
+- For me, to get the `quarto preview` to run correctly, I also had to install `pip3 install matplotlib-inline`
+
+- Check out how conveniently the output format can be swapped out with `quarto render 01-doc-with-python

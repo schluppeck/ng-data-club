@@ -1,0 +1,90 @@
+---
+title: "Mixing writing and `julia`"
+format:
+  html:
+    code-fold: true
+    self-contained: true
+  pdf:
+    mainfont: Helvetica
+    sansfont: Helvetica
+    pdf-engine: xelatex
+    monofont: Menlo
+    papersize: a4
+jupyter: julia-1.8
+---
+
+## Background
+
+Here is an example of a document that produces a plot from some data that's stored separately.
+
+The data in @fig-timeseries shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?
+
+## an actual computed figure
+
+```{julia}
+#| label: fig-timeseries
+#| fig-cap: "A line plot of some mystery data"
+
+# julia script
+#
+# schluppeck, 2022-12-12
+
+using CSV
+using Dates
+using DataFrames
+using Plots
+using FindPeaks1D
+
+gr()
+
+df = DataFrame(CSV.File("2017-mysteryTimeseries.csv"))
+
+the_plot = plot(df.theTime_day, df.n;
+         lw = 2, 
+         xlims = Date.(("2016-09-01", "2016-12-31")),
+         legend = false
+)
+ylabel!("# of moodle interactions")
+xlabel!("day")
+
+```
+
+## or a table
+
+A badly formatted table... `rstats` with various packages handles tabular data much more nicely!
+
+```{julia}
+# get head()... first 10 rows
+head(d) = first(d, 10)
+head(df)
+```
+
+## or some further analysis
+
+If you want to compute things for including **in your text**, so-called inline code, then you can make your code spit out markdown that's been patched up. If you turn `#| echo: true` to `false`, then the code is hidden!
+
+We can also elaborate on previous plots, bu adding additional analysis. @fig-timeseries-with-peaks shows the days, where $n>100$.
+
+```{julia}
+#| echo: false
+#| label: fig-timeseries-with-peaks
+#| fig-cap: "Events with > 100 interactions labelled"
+
+# use findpeaks to find days where 
+# interactions topped 100
+p = findpeaks1d(df.n, height = 100)
+
+# and superimpose on previous plot
+plot(the_plot, size = (600,300), widen = 1.1)
+scatter!(df[p[1],:theTime_day], p[2]["peak_heights"]) #, color=:red, ms=12)
+```
+
+
+## Notes 
+
+- to find out which kernels you can use with `jupyter`, you can check in terminal with
+```bash
+jupyter kernelspec list
+```
+
+- Check out how conveniently the output format can be swapped out with `quarto render 01-doc-with-julia.qmd --to pdf` etc

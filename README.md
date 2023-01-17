@@ -36,14 +36,16 @@ Structure will be around:
 
 ## Schedule
 
-| date            | Presenter   | Topic                                                                              |
-| --------------- | ----------- | ---------------------------------------------------------------------------------- |
-| Wed 23 Nov 2022 | DS/MvR      | Overview, discussion, ideas [[slides](./2022-11-23-first-meeting.html)]             |
-| Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides][julia-slides]]                                  |
-| Wed 14 Dec 2022 | MvR         | Linear regression                                                                  |
-| 2023            | DS/JD       | Markdown, `quarto`, mixing text  + computations                                    |
+| date            | Presenter   | Topic                                                     |
+| --------------- | ----------- | --------------------------------------------------------- |
+| Wed 23 Nov 2022 | DS/MvR      | Overview, discussion, ideas [[slides][first-slides]]      |
+| Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides][julia-slides]]         |
+| Wed 14 Dec 2022 | MvR         | Linear regression  [[slides][julia-slides]]               |
+| Wed 18 Jan 2023 | DS          | Markdown, `quarto`, mixing text  + computations  [slides] |
 
+[first-slides]: ./2022-11-23-first-meeting.html
 [julia-slides]: https://raw.githubusercontent.com/schluppeck/ng-data-club/main/presentations/2022-12-07-Julia-for-research.pdf
+[regression-slides]: ./presentations/2022-12-14-linear-regression.html
 
 
 ## Ideas for future meetings

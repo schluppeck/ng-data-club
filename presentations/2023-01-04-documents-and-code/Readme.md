@@ -1,7 +1,7 @@
 # Mixing text and computations
 
 - the rendered `revealjs` slides I used are in [[at this link][md-slides]]
-- the raw `qmd` file for the presentation is [[00-presentation.qmd](./00-presentation.qmd)
+- the raw `qmd` file for the presentation is [00-presentation.qmd](./00-presentation.qmd)
 
 The derived files are in docx, html and pdf document...
 
@@ -18,4 +18,4 @@ Check out the [[github repo][ghrepo]) for code examples n `julia`, `python` and 
 - [01-doc-with-r.qmd](./01-doc-with-r.qmd)
 
 [md-slides]: ./00-presentation.html
-[ghrepo]: https://schluppeck.github.io/ng-data-club/
+[ghrepo]: https://github.com/ng-data-club/

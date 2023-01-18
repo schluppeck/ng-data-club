@@ -46,7 +46,7 @@ format:
 - if you want some *light markup* 
 - go **beyond simple text** 
 - a couple of ~~key things~~ like 
-- [easy to write links](www.google.com)
+- [easy to write links](https://www.google.com)
 
 ## ... images
 
@@ -136,11 +136,14 @@ quarto render test.qmd --to pdf
 
 
 
-## Links
+## Links {.smaller}
 
-- https://quarto.org/
-- https://rstudio.org/ - now pos.it: https://posit.co/
-- the original proposal for markdown: https://daringfireball.net/projects/markdown/
+- <https://quarto.org/>
+- <https://rstudio.org/> - now pos.it: <https://posit.co/>
+- the original proposal for markdown: <https://daringfireball.net/projects/markdown/>
+- <https://code.visualstudio.com/> - visual studio code (free download)
+
+### related ideas
 
 - literate programming
 - Matlab / `publish()` 

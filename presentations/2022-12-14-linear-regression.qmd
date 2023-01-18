@@ -1,0 +1,78 @@
+---
+title: "Linear regression [session notes]"
+author: "Denis Schluppeck"
+format:
+  html: default
+  pdf: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+jupyter: julia-1.8
+---
+
+## Introduction
+
+Some details about fitting line through data points as a canonical example, but also relationship to other more complex examples that can be cast as linear regression problems. MvR referred to *Numerical Recipes* for really good theoretical background, but also practical advice @PresTeukVettFlan92. You can [try here](https://www.aquila.infn.it/pierleoni/LFC/ROUTINES/Chap15.pdf) or google for a PDF copy of the relevant chapter 15.0 on *Modelling data*) 
+:
+
+- fitting polynomials is also linear problem
+- reality check: any function that's linear in parameters is also ok, eg. $y(t; a, b, c) = a\cdot e^{-t} + b\cdot x + c$
+
+
+
+## Basic ideas
+
+- Derivation from a Bayesian point of view, assuming a flat prior to yield the maximum likelihood solution.
+
+
+*Bayes* formulation with data $\mathcal{D}$ and parameters $w$ :
+
+$$p(w | \mathcal{D}) = \frac{p(\mathcal{D} | w )p(w)}{p(\mathcal{D})} $$
+
+but in the case of a flat prior on the parameters, $p(w)$, and given that $p(\mathcal{D})$ is just a normalising constant, we can find the maximum of $p(w | \mathcal{D})$, by maximising $p(\mathcal{D} | w )$, also known as the likelihood.
+
+For *iid* Gaussian noise, the likelihood becomes
+
+$$\mathcal{L} = \prod_i \Big\{ \exp{\Big[-\frac{1}{2}\Big(\frac{y_i -y(x_i)}{\sigma} \Big)^2} \Big] \Delta y\Big\}$$
+
+and maximising the likelihood is equivalent to minimising the negative log of the likelihood (numerically better behaved)
+$$-\log \mathcal{L} = \sum_i \frac{\Big(y_i -y(x_i)\Big)^2}{2\sigma^2}  -N \log \Delta y$$
+
+Pulling out all the terms that are constant (don't change with the parameters), this is equivalent to minimising the sum of squared errors between data and the fit.
+
+## Relationship to $\chi^2$ fitting
+
+If the errors vary with each measurement point (rather than being of a fixed, single $\sigma$), then these errors can be included in the quantity to be minimised and leads to the $\chi^2$ statistic
+
+$$\chi^2 = \sum_i \Big( \frac{y_i-y(x_i; a_1\dots, a_M )}{\sigma_i} \Big)^2 $$
+
+where $(x_i, y_i)$ are data points with an associated error $(\sigma_i)$. For the Gaussian case, s $\chi^2$ value of a moderately good fit is on the order of the degrees of freedom $\nu = N-M$ (number of measurement points minus number of parameters).
+
+## Linear algebra picture
+
+![drawing of the linear algebra picture of regression](./linear-algebra-picture.png)
+
+## Ideas
+
+Consider the data $\mathbf{y}$ as a vector in some space and $\mathbf{X}$, the design matrix with an associated column space.
+
+$\mathbf{y}$ is usually not in the column space of $\mathbf{X}$ (eg. a set of many $y_i$ values measured at $x_i$ are unlikely to fall onto a line, which is parameterised by two values).
+
+But we can find an $\mathbf{X}\mathbf{\hat{\beta}}$, such that the distance to the data $\mathbf{y}$ is smallest. This error $\mathbf{e}$ is orthogonal to the space defined by $\mathbf{X}$, so the dot products of $\mathbf{e}$ which each columns in $\mathbf{X}$ must be $0$.
+
+This leads to: 
+$$
+\begin{eqnarray}
+\mathbf{e}^T\mathbf{X} &=& 0 \\
+(\mathbf{y} - \mathbf{X}\mathbf{\hat{\beta}})^T\mathbf{X} &=& 0 \\
+\mathbf{X}^T(\mathbf{y} - \mathbf{X}\mathbf{\hat{\beta}}) &=& 0 \\
+\mathbf{X}^T\mathbf{X}\mathbf{\hat{\beta}} &=& \mathbf{X}^T\mathbf{y} \\
+\mathbf{\hat{\beta}} &=& (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}  \\
+\end{eqnarray}
+$$
+
+
+See also @godatadriven_2020 and @vanDeGeer_2019

@@ -4,7 +4,7 @@ format:
   html:
     code-fold: true
     self-contained: true
-    mainfont: Helvetica
+    mainfont: Zapfino
     sansfont: Helvetica
   pdf:
     mainfont: Helvetica
@@ -37,7 +37,7 @@ df <- read_csv("2017-mysteryTimeseries.csv")
 
 df %>%
     ggplot(aes(x = theTime_day, y = n)) +
-        geom_line(size=1) +
+        geom_line(linewidth=1) +
         scale_x_date(
             limits = as.Date(
                 c('2016-09-01', '2017-01-01'))) +
@@ -56,9 +56,20 @@ head(df)
 
 ## or some further analysis
 
-If you want to compute things for including **in your text**, so-called inline code, then you can make your code spit out markdown that's been patched up. If you turn `#| echo: true` to `false`, then the code is hidden!
+If you want to compute things for including **in your text**, so-called inline code, then you can make your code spit out markdown that's been patched up. 
 
-We can also elaborate on previous plots, bu adding additional analysis. @fig-hist shows the days, where `n>100`.
+E.g. figure out the total # of interactions:
+
+```{r eval=FALSE}
+#| code-fold: false
+`r sum(df$n)`
+```
+
+Or in text: the total number of interactions were `r  sum(df$n)`, but mean and median were   `r  round(mean(df$n),3)`, and  `r  round(median(df$n),3)` respecively.
+
+For code cells, if you turn `#| echo: true` to `false`, then the code is hidden!
+
+We can also elaborate on previous plots, by adding additional analysis. @fig-hist shows the days, where `n>100`.
 
 ```{r}
 #| echo: false
@@ -69,7 +80,7 @@ df %>%
     ggplot(aes(x = n)) +
         geom_histogram(bins = 30, fill=2) +
         scale_fill_brewer(type='qual',1 ) +
-        geom_hline(yintercept = median(.x)) +
+        geom_vline(xintercept = 100) +
         labs(x = "# interactions", y = "count") +
         theme_minimal()
 ```

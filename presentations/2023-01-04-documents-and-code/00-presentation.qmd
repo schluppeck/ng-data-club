@@ -1,0 +1,147 @@
+---
+title: "Mixing text + computations"
+subtitle: "Markdown, quarto, webpages, pandoc"
+author: Denis Schluppeck
+date: 2023-01-18
+format:
+  docx: default
+  revealjs: 
+    code-fold: true
+    self-contained: true
+    mainfont: Helvetica
+    sansfont: Helvetica
+  html:
+    code-fold: true
+    self-contained: true
+    mainfont: Helvetica
+    sansfont: Helvetica
+  pdf:
+    mainfont: Helvetica
+    sansfont: Helvetica
+    pdf-engine: xelatex
+    monofont: Menlo
+    papersize: a4
+---
+
+## Motivation
+
+::: {.incremental}
+- often useful to produce short documents that mix code snippets, plots, text, images
+
+- could use PPT, Keynote, Word (but don't play nicely with version control)
+
+- use a simple text based version
+:::
+
+## Where would you use this?
+
+::: {.incremental}
+- teaching (content changes slightly/a lot) each year
+- research: publishing data + code is now a *must* for many journals
+- after this walk-through, it would be great to discuss if people find this useful?! What for?
+:::
+
+## `markdown` is widely used 
+
+- if you want some *light markup* 
+- go **beyond simple text** 
+- a couple of ~~key things~~ like 
+- [easy to write links](www.google.com)
+
+## ... images
+
+![some bread in a dutch oven](./51740729910_f48d2536b1_z.png)
+
+## Maths, equations are easy
+
+$$\chi^2 = \sum_i \Big( \frac{y_i-y(x_i; a_1\dots, a_M )}{\sigma_i} \Big)^2 $$
+
+
+::: footer
+an online editor at [stackedit](https://stackedit.io/), to just have a play
+:::
+
+## Challenges
+
+- placing images where you want them (arbitrarily on page) requires some work
+
+- you need to render / transform it (only seconds, but not instantaneous)
+
+- if you make mistakes you  (it's a very light version of coding)
+
+- if you link to local files (images, etc), you have to remember to move them along (not a problem if everything is online)
+
+
+## Advantages
+
+- markdown (itself) structures your documents
+
+- can easily be **tranformed** into `pdf`, `pptx`, `docx`, `revealjs`, etc.
+
+- gets rendered nicely on `github.com`, by defauilt
+
+- easy to edit, rules are simple to learn
+
+::: {.fragment}
+- you can add in `computations` code in `r`, `python`, `julia` et al and make them part of your documents $\rightarrow$ `quarto`
+:::
+
+## quick demo
+
+- `VSCode` with markdown plugin (linting, preview)
+- (! the `github.com` repo which gets rendered using a tool called `jekyll` under the hood)
+
+
+## `quarto`
+
+- a command line tool that renders a flavour of markdown called `qmd` (quarto-markdow)
+
+- a superset of markdown, so any previous work should be ok
+
+- by adding some additional info at top of document, you can opt into lots of good stuff
+
+## info at top: `YAML`
+
+A text block delimited by `---`, key/value
+
+```yaml
+---
+title: "Mixing text + computations"
+subtitle: "Markdown, quarto, webpages, pandoc"
+author: Denis Schluppeck
+date: 2023-01-18
+format:
+  revealjs: 
+    mainfont: Helvetica
+    sansfont: Helvetica
+---
+```
+
+## `quarto`
+
+
+- if you like `RStudio`, there is a nice interface
+
+- `VScode` has a plugin that works well
+
+- or if you prefer `emacs/vim/nano/TextEdit`, the command line tool is not that hard to use.
+
+```bash
+quarto preview test.qmd 
+# or render
+quarto render test.qmd --to pdf
+```
+
+## Any Questions?
+
+
+
+## Links
+
+- https://quarto.org/
+- https://rstudio.org/ - now pos.it: https://posit.co/
+- the original proposal for markdown: https://daringfireball.net/projects/markdown/
+
+- literate programming
+- Matlab / `publish()` 
+- notebooks, `Pluto.jl`

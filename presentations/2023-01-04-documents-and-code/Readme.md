@@ -18,4 +18,4 @@ Check out the [[github repo][ghrepo]) for code examples n `julia`, `python` and 
 - [01-doc-with-r.qmd](./01-doc-with-r.qmd)
 
 [md-slides]: ./00-presentation.html
-[ghrepo]: https://github.com/ng-data-club/
+[ghrepo]: https://github.com/schluppeck/ng-data-club/

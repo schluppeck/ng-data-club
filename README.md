@@ -42,7 +42,7 @@ Structure will be around:
 | Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides][julia-slides]]         |
 | Wed 14 Dec 2022 | MvR         | Linear regression  [[slides][regression-slides]]               |
 | Wed 18 Jan 2023 | DS          | Markdown, `quarto`, mixing text  + computations  [[slides][md-slides]]  |
-
+    d q
 [first-slides]: ./2022-11-23-first-meeting.html
 [julia-slides]: https://raw.githubusercontent.com/schluppeck/ng-data-club/main/presentations/2022-12-07-Julia-for-research.pdf
 [regression-slides]: ./presentations/2022-12-14-linear-regression.html

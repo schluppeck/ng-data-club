@@ -46,13 +46,14 @@ Structure will be around:
 | Wed 07 Dec 2022 | Tomas Fiers | `julia`, version control [[slides][julia-slides]]         |
 | Wed 14 Dec 2022 | MvR         | Linear regression  [[slides][regression-slides]]               |
 | Wed 18 Jan 2023 | DS          | Markdown, `quarto`, mixing text  + computations  [[slides][md-slides]]  |
-| Wed 15 Jan 2023 | everyone    | Interactive session: your 2 best tips for others, a question/problem from your work  |
+| Wed 15 Jan 2023 | everyone    | Interactive session: your 2 best tips for others, a question/problem from your work [[notes][interactive-notes]]  |
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
 [first-slides]: ./2022-11-23-first-meeting.html
 [julia-slides]: https://raw.githubusercontent.com/schluppeck/ng-data-club/main/presentations/2022-12-07-Julia-for-research.pdf
 [regression-slides]: ./presentations/2022-12-14-linear-regression.html
 [md-slides]: ./presentations/2023-01-04-documents-and-code/
+[interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
 
 ## Colophon
 

@@ -47,6 +47,11 @@ Structure will be around:
 | Wed 14 Dec 2022 | MvR         | Linear regression  [[slides][regression-slides]]               |
 | Wed 18 Jan 2023 | DS          | Markdown, `quarto`, mixing text  + computations  [[slides][md-slides]]  |
 | Wed 15 Jan 2023 | everyone    | Interactive session: your 2 best tips for others, a question/problem from your work [[notes][interactive-notes]]  |
+| Wed 8 Feb 2023 | Hazem    | Interactions / stats / discussion [[notes][ht-notes]]  |
+| Wed 8 Feb 2023 | DS **TBC**    | *Tidy* data - thinking about organising tabular (and other) data |
+| Wed 1 Mar 2023 **TBC** | Josefina    | Effect sizes, etc |
+| Wed 15 Mar 2023 **TBC** | `your name` ? | `your topic` ? |
+
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
 [first-slides]: ./2022-11-23-first-meeting.html
@@ -54,6 +59,7 @@ Structure will be around:
 [regression-slides]: ./presentations/2022-12-14-linear-regression.html
 [md-slides]: ./presentations/2023-01-04-documents-and-code/
 [interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
+[ht-notes]: ./presentations/2023-02-08-meeting-notes.md
 
 ## Colophon
 

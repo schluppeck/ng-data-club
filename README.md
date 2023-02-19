@@ -48,7 +48,7 @@ Structure will be around:
 | Wed 18 Jan 2023 | DS          | Markdown, `quarto`, mixing text  + computations  [[slides][md-slides]]  |
 | Wed 15 Jan 2023 | everyone    | Interactive session: your 2 best tips for others, a question/problem from your work [[notes][interactive-notes]]  |
 | Wed 8 Feb 2023 | Hazem    | Interactions / stats / discussion [[notes][ht-notes]]  |
-| Wed 22 Feb 2023 | DS      | *Tidy* data - thinking about organising tabular (and other) data [[notes][[tidy-data-notes]]] |
+| Wed 22 Feb 2023 | DS      | *Tidy* data - thinking about organising tabular (and other) data [[notes][tidy-data-notes]] |
 | Wed 1 Mar 2023 **TBC** | Josefina    | Effect sizes, etc |
 | Wed 15 Mar 2023 **TBC** | `your name` ? | `your topic` ? |
 

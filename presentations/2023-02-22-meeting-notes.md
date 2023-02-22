@@ -4,9 +4,9 @@ Denis Schluppeck
 
 - [slide presentation on the day](./2023-02-22-tidy-data/2023-02-22-tidy-data.html)
 
-- [a pdf version of the slides (./2023-02-22-tidy-data/2023-02-22-tidy-data.pdf)
+- [a pdf version of the slides](./2023-02-22-tidy-data/2023-02-22-tidy-data.pdf)
 
-- [the q-markdown file (./2023-02-22-tidy-data/2023-02-22-tidy-data.qmd)
+- [the q-markdown file](./2023-02-22-tidy-data/2023-02-22-tidy-data.qmd)
 
 ## Links
 

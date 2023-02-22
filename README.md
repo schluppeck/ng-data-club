@@ -53,8 +53,8 @@ Structure will be around:
 | Wed 15 Jan 2023 | everyone    | Interactive session: your 2 best tips for others, a question/problem from your work [[notes][interactive-notes]]  |
 | Wed 8 Feb 2023 | Hazem    | Interactions / stats / discussion [[notes][ht-notes]]  |
 | Wed 22 Feb 2023 | DS      | *Tidy* data - thinking about organising tabular (and other) data [[notes][tidy-data-notes]] |
-| Wed 1 Mar 2023 **TBC** | Josefina    | Effect sizes, etc |
-| Wed 15 Mar 2023 **TBC** | `your name` ? | `your topic` ? |
+| Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
+| Wed 22 Mar 2023 **TBC** | `your name` ? | `your topic` ? |
 
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
@@ -65,6 +65,7 @@ Structure will be around:
 [interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
 [ht-notes]: ./presentations/2023-02-08-meeting-notes.md
 [tidy-data-notes]: ./presentations/2023-02-22-meeting-notes.md
+[jw-notes]: ./presentations/2023-03-08-meeting-notes.md
 
 ## Colophon
 

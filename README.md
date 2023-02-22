@@ -23,6 +23,10 @@ Some materials for the lunchtime (?) *data club*, an informal weekly meeting at 
 
 You can find notes, presentations, and code at the [ng-data-club github repository](https://github.com/schluppeck/ng-data-club).
 
+## Discussion forum
+
+You can also check out the [github discussion forum](https://github.com/schluppeck/ng-data-club/discussions) for the data club. A good place to share ideas, links, etc.
+
 ## Ideas for meetings / wishlist
 
 We will try to keep meetings informal with some guided discussion by presenters that will change week by week.

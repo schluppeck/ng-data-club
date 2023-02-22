@@ -1,0 +1,255 @@
+---
+title: "Tidy data"
+author: "Denis Schluppeck"
+format:
+  revealjs: 
+    code-fold: true
+    include-in-header: 
+      text: |
+        <style>
+        .center-xy {
+          margin: 0;
+          position: absolute;
+          top: 15%;
+          left: 25%;
+          -ms-transform: translateY(-50%), translateX(-50%);
+          transform: translateY(-50%), translateX(-50%);
+        }
+        </style>
+  pdf: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ../ng-data-club.bib
+---
+
+```{r}
+#| warning: false
+#| echo: false
+#| include: false
+library(tidyverse)
+library(gt)
+library(janitor)
+d <- read.csv("zamboni-discrimination-data.csv") |>
+     clean_names()
+
+```
+
+## Introduction
+
+::: incremental
+-   a lot of data we work with is *tabular*
+
+-   can be represented in a table with *rows* and *columns*
+
+-   maybe particular important for reporting data from repeated trials, experiments, conditions (neuroscience)
+
+-   links to *statistical reports* and *visualisations* we often want/need
+:::
+
+## Examples:
+
+> You probably have your own, but eg:
+
+::: fragment
+-   rating in a questionnaire \[per item, participant\]
+-   reaction times \[per trial, subject, condition\]
+-   \% fMRI signal change \[per brain region across, subject, conditions\]
+-   spike rate \[per neuron, animal, task\]
+:::
+
+## Just put them in a table, right!?
+
+![The ~~files~~ are in the ~~computer~~?](./images/zoolander.png)
+
+## Anna Karenina principle
+
+> "Happy families are all alike; every unhappy family is unhappy in its own way." --- Leo Tolstoy
+
+::: fragment
+> "Tidy datasets are all alike, but every messy dataset is messy in its own way." --- Hadley Wickham
+:::
+
+## Example table A 
+
+number of TB cases in country, population
+
+```{r}
+table1 %>% gt()
+```
+
+
+## Example table B {.scrollable}
+
+```{r}
+table2 %>% gt()
+```
+
+## Example table C {.scrollable}
+
+```{r}
+table3 %>% gt()
+```
+
+
+## "Tidy" means
+
+@r4ds-site
+
+![Tidy data illustration from R4DS](images/tidy-1.png){fig-alt="Graphic showing tabular data" fig-align="center"}
+
+:::{.fragment}
+- each column represents a *variable*
+- each row an *observation*
+- each cell entry a *value* (number, text, ...)
+:::
+
+## Benefits
+
+- this layout leads to a series of elegant ways to manipulate table
+
+- it's a standard (so tool builders can make code to work with it)
+
+- it plays nicely with storage (files) and visualisation (*grammar of graphics* ideas)
+
+## Manipulating tables: concepts
+
+Some ideas that crop up in 
+
+- `sql`
+- **`dplyr` (a popular library in `r`),**
+- `pandas` (in `python`)
+- `QueryVerse.jl` (in `julia`)
+- `tables` in `matlab`
+
+## Main ideas
+
+A really good summary on [this cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf) -- using `r` syntax, but good for ideas!
+
+- subsetting (rows, columns)
+- mutating (calculating new values)
+- aggregating (grouping, summarising)
+- combining (including *relational* data, `join()`)
+
+## taking rows, `filter()`
+
+::: {layout="[[-1], [1], [-1]]"}
+
+![](images/filter.png)
+:::
+
+## taking columns, `select()`
+
+::: {layout="[[-1], [1], [-1]]"}
+
+![](images/select.png)
+:::
+
+## aggregate, `groupby(), summarize()`
+
+::: {layout="[[-1], [1], [-1]]"}
+
+![](images/groupby.png)
+
+:::
+
+
+## By example (Psychophysics data)
+
+::: {.center-xy}
+
+![](images/zamboni-1a.png)
+
+:::
+
+## As a table {.scrollable}
+
+```{r}
+#| echo: true
+#| code-fold: false
+d |> gt()
+  
+```
+
+
+
+## `group_by` and `summarize` {.scrollable}
+
+- pick one coherence level
+- group by direction
+- summarise across all observers
+
+```{{r}}
+d |> filter(coherence == 0.25) |> 
+     group_by(direction) |> 
+     summarise(mean_p_cw = mean(p_cw)) |>
+     gt()
+```
+
+## result {.smaller}
+
+```{r}
+#| echo: true
+#| code-fold: true
+d |> filter(coherence == 0.25) |> 
+     group_by(direction) |> 
+     summarise(mean_p_cw = mean(p_cw)) |>
+     gt()
+```
+
+
+## plotting can follow same ideas
+
+- *declarative* style (`ggplot`) versus
+- *imperative* style (`matlab`, `matplotlib`, ...)[^ds]
+
+[^ds]: what I used to use before I hit on / read the `tidyverse` stuff.
+
+## plot example
+
+5,6 lines of code to get this
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-fold: true
+d |> filter(coherence == 0.25) |>
+     ggplot(aes(x = direction, y = p_cw)) +
+      geom_jitter() +
+      geom_smooth() +
+      theme_minimal()
+```
+
+
+## **one** additional line...
+```{{r}}
+      ...
+      facet_wrap(~subject) +
+      ...
+```
+
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-fold: true
+d |> filter(coherence == 0.25) |>
+     ggplot(aes(x = direction, y = p_cw)) +
+      geom_jitter() +
+      geom_smooth() +
+      facet_wrap(~subject) +
+      theme_minimal()
+```
+
+## Discussion
+
+- data files (`csv`, `parquet`, `feather` ??)
+- what do people do (hand-wrap their own? other libraries)
+- how uses an actual **database**?
+- should we teach this at UG/PG level more??
+
+## References

@@ -10,7 +10,7 @@ Denis Schluppeck
 
 ## Links
 
-- {R for Data Science book / 2nd ed in progress}(https://r4ds.hadley.nz/)
+- {R for Data Science book / 2nd ed in progress](https://r4ds.hadley.nz/)
 - [tidyverse documentation](https://www.tidyverse.org/)
 - A matlab plotting library implemented in Matlab:  [gramm](https://blogs.mathworks.com/pick/2016/04/22/gramm/)
 

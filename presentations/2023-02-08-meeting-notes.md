@@ -1,4 +1,4 @@
-## 
+## Interactions, journal club
 
 >The next session will be led by Hazem Toutounji who will present around a paper: 
 >

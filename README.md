@@ -54,7 +54,11 @@ Structure will be around:
 | Wed 8 Feb 2023 | Hazem    | Interactions / stats / discussion [[notes][ht-notes]]  |
 | Wed 22 Feb 2023 | DS      | *Tidy* data - thinking about organising tabular (and other) data [[notes][tidy-data-notes]] |
 | Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
-| Wed 22 Mar 2023 **TBC** | `your name` ? | `your topic` ? |
+| **data visualisation** | | |
+| Wed 22 Mar 2023  | DS **TBC** | Launch data vis block - ideas - `r\ggplot2` |
+| Wed 29 Mar 2023  | `your name` ? | `python` plotting |
+| Wed 12 Apr 2023  | Scholes **TBC** | `matlab` + publication-ready figures |
+| Wed 26 Apr 2023 **TBC** | `your name` ? | `your topic` ? |
 
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md

@@ -73,7 +73,7 @@ Structure will be around:
 
 ## Code of conduct
 
-We have a [code of conduct](./CODE_OF_CONDUCT.md) that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.
+We have a [code of conduct](./CODE_OF_CONDUCT) that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.
 
 ## Colophon
 

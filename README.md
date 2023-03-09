@@ -71,6 +71,10 @@ Structure will be around:
 [tidy-data-notes]: ./presentations/2023-02-22-meeting-notes.md
 [jw-notes]: ./presentations/2023-03-08-meeting-notes.md
 
+## Code of conduct
+
+We have a [code of conduct](./CODE_OF_CONDUCT.md) that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.
+
 ## Colophon
 
 Organised by Mark v Rossum and Denis Schluppeck

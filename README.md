@@ -69,7 +69,7 @@ Structure will be around:
 [interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
 [ht-notes]: ./presentations/2023-02-08-meeting-notes.md
 [tidy-data-notes]: ./presentations/2023-02-22-meeting-notes.md
-[jw-notes]: ./presentations/2023-03-08-meeting-notes.md
+[jw-notes]: ./presentations/2023-03-08-meeting-notes.html
 
 ## Code of conduct
 

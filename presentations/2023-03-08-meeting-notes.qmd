@@ -1,10 +1,23 @@
+---
+title: "Journal Club and presentation"
+subtitle: Josefina Weinerova, PhD student
+author: "Denis Schluppeck"
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
 ## Journal Club and presentation
 
-Josefine Weinerova (PhD student)
+During the sessions we discussed a recent paper on reporting of effect sizes in social and developmental psychology publications [@Weinerova:2022ue].
 
-[Link to the paper](https://royalsocietypublishing.org/doi/10.1098/rsos.220311)
 
-![First page of paper](./jw-splash.png){width="25%"}
+![First page of paper](./jw-splash.png){width="35%"}
 
 ## Notes [ds]
 
@@ -32,9 +45,7 @@ Josefine Weinerova (PhD student)
 
 ## Links
 
-Wolfram, Wikipedia, Khan Academy??
-
-- power calculations
-- effect sizes
+- [power calculations, Khan academy](https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-categorical-proportions/error-probabilities-power/v/introduction-to-power-in-significance-tests)
+- [wikidpedia entry on effect sizes](https://en.wikipedia.org/wiki/Effect_size)
 - replication crisis
 - meta-science

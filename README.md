@@ -55,8 +55,7 @@ Structure will be around:
 | Wed 22 Feb 2023 | DS      | *Tidy* data - thinking about organising tabular (and other) data [[notes][tidy-data-notes]] |
 | Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
 | **data visualisation** | | |
-| Wed 22 Mar 2023  | DS **TBC** | Launch data vis block - ideas - `r\ggplot2` |
-| Wed 29 Mar 2023  | `your name` ? | `python` plotting |
+| Wed 29 Mar 2023  | DS  | Launch of data visualisation block - ideas - `r\ggplot2` [[notes][datavis-notes]] |
 | Wed 12 Apr 2023  | Scholes **TBC** | `matlab` + publication-ready figures |
 | Wed 26 Apr 2023 **TBC** | `your name` ? | `your topic` ? |
 
@@ -70,6 +69,7 @@ Structure will be around:
 [ht-notes]: ./presentations/2023-02-08-meeting-notes.md
 [tidy-data-notes]: ./presentations/2023-02-22-meeting-notes.md
 [jw-notes]: ./presentations/2023-03-08-meeting-notes.html
+[datavis-notes]: ./presentations/2023-03-29-meeting-notes.md
 
 ## Code of conduct
 

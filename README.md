@@ -27,20 +27,6 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 
 You can also check out the [github discussion forum](https://github.com/schluppeck/ng-data-club/discussions) for the data club. A good place to share ideas, links, etc.
 
-## Ideas for meetings / wishlist
-
-We will try to keep meetings informal with some guided discussion by presenters that will change week by week.
-
-Structure will be around:
-
-1. *I want answer the following question with my data... How do I do that?* and/or
-2. *I know the following technique, which could help you with bla...*
-
-## 2022-11-23 - first meeting
-
-- [the slides](./2022-11-23-first-meeting.html) from the first meeting
-- [meeting-notes](./2022-11-23-meeting-notes.md)
-- [some potential, additional ideas](./wishlist.md)
 
 ## Schedule
 
@@ -74,6 +60,21 @@ Structure will be around:
 ## Code of conduct
 
 We have a [code of conduct](./CODE-OF-CONDUCT.md) that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.
+
+## Ideas for meetings / wishlist
+
+We will try to keep meetings informal with some guided discussion by presenters that will change week by week.
+
+Structure will be around:
+
+1. *I want answer the following question with my data... How do I do that?* and/or
+2. *I know the following technique, which could help you with bla...*
+
+## 2022-11-23 - first meeting
+
+- [the slides](./2022-11-23-first-meeting.html) from the first meeting
+- [meeting-notes](./2022-11-23-meeting-notes.md)
+- [some potential, additional ideas](./wishlist.md)
 
 ## Colophon
 

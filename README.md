@@ -42,8 +42,8 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
 | **data visualisation** | | |
 | Wed 29 Mar 2023  | DS  | Launch of data visualisation block - ideas - `r\ggplot2` [[notes][datavis-notes]] |
-| Wed 12 Apr 2023  | Scholes **TBC** | `matlab` + publication-ready figures |
-| Wed 26 Apr 2023 **TBC** | `your name` ? | `your topic` ? |
+| Wed 19 Apr 2023  | Scholes **TBC** | `matlab` + publication-ready figures |
+| Wed 3 May 2023 **TBC** | `your name` ? | `your topic` ? |
 
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md

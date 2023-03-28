@@ -1,0 +1,314 @@
+---
+title: "Rethinking your plotting habits"
+subtitle: "Data visualisation block - data club"
+date: 2023-03-29
+date-format: iso
+self-contained: true
+embed-resources: true
+author: "Denis Schluppeck"
+format: 
+  revealjs: 
+    code-fold: true
+    include-in-header: 
+      text: |
+        <style>
+        .center-xy {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          -ms-transform: translateY(-50%), translateX(-50%);
+          transform: translateY(-50%), translateX(-50%);
+        }
+        </style>
+  html: 
+    output-file: "2023-03-29-datavis-notes.html"
+# mainfont:  Helvetica
+mainfont:  "Atkinson Hyperlegible"
+---
+
+## Introduction to this block
+
+Want to
+
+- explore *ideas* around data visualisation
+- think about better ways to show things
+- learn some practical /useful tips
+
+::: {.fragment}
+(maybe with your favourite tool, language, ...)
+:::
+
+## Discussion forum, webpage
+
+
+::: {.center-xy}
+
+<https://github.com/schluppeck/ng-data-club/discussions>
+
+
+<https://schluppeck.github.io/ng-data-club/>
+
+:::
+
+
+## Aims
+
+Make plots / visualisations of data:
+
+::: {.incremental}
+- reproducible
+- more flexible for exploration
+- publication-ready (little or no editing by hand)
+:::
+
+:::{.fragment}
+
+> Principles should apply across different languages:
+`matlab`, `python`, `r`, `julia`, …
+>
+> and different kinds of data: fMRI, EEG, psychophys, …
+
+
+:::
+
+## ... many people's default
+
+![](images/imperative-plots.png)
+
+## *Charts* vs *Graphics* {.scrollable}
+
+::: {.fragment}
+- a `chart` is one instance of a way to visualise, often tied to a function like `plot()` or `histogram()`, ...
+:::
+
+::: {.fragment}
+
+- a `graphic` is more flexible, may be a mixture, ... ideally it can be built up and **composed**
+
+:::
+
+::: {.fragment}
+
+<https://uk.mathworks.com/products/matlab/plot-gallery.html>
+
+::: {.center}
+![](images/matlab-plot-gallery.png){witdh="50%"}
+:::
+
+:::
+
+
+
+## Enter: A **Grammar** of Graphics
+
+::: {.columns}
+
+::: {.column width="50%"}
+![Leland Wilkinson's classic book](images/gg-book.jpeg){width="50%"}
+:::
+
+::: {.column}
+![<http://vita.had.co.nz/papers/layered-grammar.html>](images/wickham-article-page.png){width="50%"}
+:::
+:::
+
+## A caveat
+
+>this talk won't turn us into datavis professionals
+
+![](https://i.kym-cdn.com/photos/images/original/001/018/871/d19.gif)
+
+
+## Layered components
+
+![](images/grammar-of-graphics-diagram.png)
+
+## Data: variables $\rightarrow$ `aes`thetics {.smaller}
+
+- position (x,y) 
+- size (radius, area)
+- colour, shape, linewidth, ...
+
+::: {.fragment}
+![](./images/position-size-colour.png)
+:::
+
+## `stat` - transform data?! {.smaller}
+
+`identity` seems obvious... a do many others, but nb! `jitter` 
+
+![](./images/stat-transforms.png)
+
+## `geoms`
+
+The actual marks on the plot, points, lines, polygons, ...
+
+::: {.fragment}
+![](./images/geoms.png)
+:::
+
+## `scales`
+
+- governs mapping from data to aesthetic properties 
+- think about: domain / range
+- categorial, continuous data?
+
+::: {.fragment}
+![Wickham (2009), Figure 7](./images/scales.png)
+:::
+
+
+## facets
+
+- also **conditioned** or **trellis** plots
+
+- multiple panels / plots for subset of data 
+  + by cuts (e.g. quartiles) 
+  + by category (conditioned on a variable)
+
+>see example
+
+## coordinates
+
+Deciding on the coordinate system to use
+- linear
+- `log` / `semilog` / `sqrt`
+- polar
+
+::: {.fragment}
+![Wickham (2009), Figure 8](./images/coords.png)
+
+:::
+
+ 
+## Example data {.scrollable}
+
+```{r}
+#| warning: false
+#| echo: false
+#| include: false
+
+## this is setupcode for getting data from other folder + github repo
+library(tidyverse)
+library(gt)
+library(janitor)
+
+theme_set(theme_minimal())
+
+d <- read_csv("../2023-02-22-tidy-data/zamboni-discrimination-data.csv") |> clean_names()
+
+url <- "https://raw.githubusercontent.com/schluppeck/zamboni-2016/master/subjectA-reference-shift.csv"
+e <- read_csv(url, skip=1) |>
+  clean_names() |>
+  mutate(subject = "A")  |> # from filename here
+  mutate(shift = as_factor(shift))  
+```
+
+```{r}
+#| warning: false
+#| echo: false
+
+e |> head(20) |> gt()
+
+```
+## {#basic-plot data-menu-title="A basic plot"}
+
+> `delta` $\rightarrow$ x, `estimate` $\rightarrow$ y ;
+> use points
+
+
+```{r}
+#| warning: false
+#| include: true
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate)) +
+     geom_point() 
+```
+
+## {#add-aes-to-plot data-menu-title="Add another mapping"}
+
+> `delta` $\rightarrow$ x, `estimate` $\rightarrow$ y, `shift` $\rightarrow$ color
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
+    geom_point()
+```
+
+## {#fix-overplotting data-menu-title="`jitter` to the rescue"}
+
+> fix overplotting / small random `jitter` + transparency 
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
+    geom_jitter(alpha=0.5)
+```
+
+## {#facet data-menu-title="Facet to split data"}
+
+> too busy, split up by using `facets`
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
+     geom_jitter(alpha=0.5) +
+     facet_wrap(~shift)
+```
+
+## {#facet data-menu-title="Try out density on top?"}
+
+> can we add density estimate?
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
+     geom_jitter(alpha=0.5) +
+     geom_density2d(color="black", size=0.4)+
+     facet_wrap(~shift)
+```
+## {#facet data-menu-title="Fix the coordinates"}
+
+> make sure the coordinates x/y axes are equal + add a line at y=0
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
+     geom_jitter(alpha=0.5) +
+     geom_hline(yintercept = 0, color="black") +
+     facet_wrap(~shift) +
+     coord_equal() 
+```
+
+
+## {#density-plot data-menu-title="Change geoms "}
+
+> simple change geom from `point` to `bin2d` + flourish... add regression lines.
+
+```{r}
+#| warning: false
+#| echo: true
+e |> ggplot(aes(x = delta, y = estimate, group=sign(delta))) +
+     geom_bin2d() +
+     scale_fill_gradient(low = "#eeeeee", high="#ff0000") +
+     geom_smooth(method="lm", color="black") +
+     facet_wrap(~shift) +
+     coord_equal() 
+```
+
+## Etc, etc...
+
+::: {.r-fit}
+Now for some discussion + thinking...
+
+Slides, resources + links are on our webpage:
+
+<https://schluppeck.github.io/ng-data-club/>
+:::
+

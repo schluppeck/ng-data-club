@@ -8,6 +8,7 @@ embed-resources: true
 author: "Denis Schluppeck"
 format: 
   revealjs: 
+    slide-number: true
     code-fold: true
     include-in-header: 
       text: |

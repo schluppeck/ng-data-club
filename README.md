@@ -42,8 +42,8 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
 | **data visualisation** | | |
 | Wed 29 Mar 2023  | DS  | Launch of data visualisation block - ideas - Grammar of Graphics [[notes][datavis-notes]] |
-| Wed 19 Apr 2023  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-| Wed 3 May 2023 **TBC** | `your name` ? | `your topic` ? |
+| ~~Wed 19 Apr 2023~~  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
+| Thur 25 May 2023  **TBC** |  | **Special Data Visualisation event** |
 
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md

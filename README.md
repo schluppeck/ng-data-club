@@ -42,8 +42,9 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Wed 8 Mar 2023 | Josefina    | Effect sizes, etc - journal club [[notes][jw-notes]] |
 | **data visualisation** | | |
 | Wed 29 Mar 2023  | DS  | Launch of data visualisation block - ideas - Grammar of Graphics [[notes][datavis-notes]] |
-| ~~Wed 19 Apr 2023~~  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-| Thur 25 May 2023  **TBC** |  | **Special Data Visualisation event** |
+| Thur 25 May 2023  |  | **Special Data Visualisation event** Andy Kirk [[notes][visualisingdata-notes]] |
+| Wed 28 June 2023  | | PCA, ICA, dimensionality reduction [materials (zip)][pca-materials]|
+| TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
 
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
@@ -53,9 +54,12 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 [md-slides]: ./presentations/2023-01-04-documents-and-code/
 [interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
 [ht-notes]: ./presentations/2023-02-08-meeting-notes.md
-[tidy-data-notes]: ./presentations/2023-02-22-meeting-notes.md
+
 [jw-notes]: ./presentations/2023-03-08-meeting-notes.html
 [datavis-notes]: ./presentations/2023-03-29-meeting-notes.md
+[visualisingdata-notes]: ./presentations/2023-05-25-visualising-data-workshop/ 2023-05-25-workshop-notes.md
+[pca-materials]: ./presentations/PCA_20230628.zip
+
 
 ## Code of conduct
 

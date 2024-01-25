@@ -57,7 +57,7 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 
 [jw-notes]: ./presentations/2023-03-08-meeting-notes.html
 [datavis-notes]: ./presentations/2023-03-29-meeting-notes.md
-[visualisingdata-notes]: ./presentations/2023-05-25-visualising-data-workshop/ 2023-05-25-workshop-notes.md
+[visualisingdata-notes]: ./presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.md
 [pca-materials]: ./presentations/PCA_20230628.zip
 
 

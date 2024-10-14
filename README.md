@@ -9,7 +9,7 @@ Nottingham Psychology data club resources
 <caption>How DALL-E sees our data club</caption>
 </figure>
 
-Some materials for the lunchtime (?) *data club*, an informal weekly meeting at the [University of Nottingham](https://www.nottingham.ac.uk/psychology/).
+Some materials for the lunchtime (?) *data club*, an informal weekly/fortnightly meeting at the [University of Nottingham](https://www.nottingham.ac.uk/psychology/).
 
 ## Aim
 
@@ -26,7 +26,6 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 ## Discussion forum
 
 You can also check out the [github discussion forum](https://github.com/schluppeck/ng-data-club/discussions) for the data club. A good place to share ideas, links, etc.
-
 
 ## Schedule
 
@@ -45,7 +44,11 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Thur 25 May 2023  |  | **Special Data Visualisation event** Andy Kirk [[notes][visualisingdata-notes]] |
 | Wed 28 June 2023  | | PCA, ICA, dimensionality reduction [materials (zip)][pca-materials]|
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-
+| **2024 reboot** | | |
+| Tues 5 Nov 2024  | x | **UP-ESLC-A09**, tbc |
+| Tues 19 Nov 2024  | x | **UP-ESLC-A09**, tbc |
+| Tues 3 Dec 2024  | x | **UP-ESLC-A09**, tbc |
+| Tues 17 Dec 2024  | x | **UP-ESLC-A09**, tbc |
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
 [first-slides]: ./2022-11-23-first-meeting.html
@@ -54,11 +57,14 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 [md-slides]: ./presentations/2023-01-04-documents-and-code/
 [interactive-notes]: ./presentations/2023-01-25-meeting-notes.md
 [ht-notes]: ./presentations/2023-02-08-meeting-notes.md
-
+[tidy-data-notes]: ./presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html
 [jw-notes]: ./presentations/2023-03-08-meeting-notes.html
 [datavis-notes]: ./presentations/2023-03-29-meeting-notes.md
 [visualisingdata-notes]: ./presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.md
 [pca-materials]: ./presentations/PCA_20230628.zip
+
+[stats-with-counts]: ./presentations/2024-xx-xx-ordinal+count-data.md
+[ml-beginnings]: ./presentations/2024-xx-xx-ml-beginnings.md
 
 
 ## Code of conduct

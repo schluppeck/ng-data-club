@@ -45,7 +45,7 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Wed 28 June 2023  | | PCA, ICA, dimensionality reduction [materials (zip)][pca-materials]|
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
 | **2024 reboot** | | |
-| Tues 5 Nov 2024  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][[stats-with-counts]]]|
+| Tues 5 Nov 2024  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
 | Tues 19 Nov 2024  | x | **UP-ESLC-A09**, tbc |
 | Tues 3 Dec 2024  | x | **UP-ESLC-A09**, tbc |
 | Tues 17 Dec 2024  | x | **UP-ESLC-A09**, tbc |

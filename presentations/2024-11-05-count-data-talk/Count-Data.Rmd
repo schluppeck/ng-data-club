@@ -1,0 +1,747 @@
+---
+title: "Dealing with Count Data"
+subtitle: "NG Data Club"
+author: "Leonardo Cohen"
+date: "04 November 2024"
+output:
+  html_document: 
+    code_folding: hide
+    number_sections: true
+    code_download: true
+    keep_md: true
+editor_options:
+  chunk_output_type: console
+---
+
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px; margin: 20px}
+</style>
+
+# Preamble
+
+We start by loading the necessary packages and the .RData for these examples.
+
+```{r packages, message = FALSE, warning = FALSE}
+
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
+# Load the data, make sure the directory is the correct one
+load('Count_datasets.RData')
+
+# for running the different type of regressions
+library(MASS)
+library(pscl)
+library(glmmTMB)
+library(lme4)
+
+# for fitting distributions to your data
+library(fitdistrplus)
+library(gamlss)
+
+# for calculating marginal means from model outputs
+library(emmeans)
+
+# for checking model diagnostics
+library(DHARMa)
+library(vcd)
+
+# for displaying the results neatly
+library(sjPlot)
+library(ggplot2)
+library(knitr)
+
+# for changing databases between long and wide
+library(reshape2)
+```
+
+# Count data
+
+<div class = "blue">
+
+So you captured some data and it looks like these example datasets below. 
+
+</div>
+
+These three datasets are from gambling experiments, where participants were given some money and allowed to place as many bets as they wanted in a simulated roulette or football fixtures. They did not have to bet if they did not want to, and could simply keep the money given to them. Those that decided to bet were paid the outcomes of their bets.
+
+```{r load examples}
+# plot the histogram for example 1
+ggplot(example_data_1, aes(x = bet_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ylab('N participants') + ggtitle('Number of bets placed in roulette experiment 1')
+
+# plot the histogram for example 2
+ggplot(example_data_2, aes(x = bet_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ylab('N participants') + ggtitle('Number of bets placed in roulette experiment 2')
+
+# plot the histogram for example 3
+ggplot(example_data_3, aes(x = bet_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ylab('N participants') + ggtitle('Number of bets placed in football fixtures')
+```
+
+<div class = "blue">
+
+This is all **count data**. Count data can be characterized as:
+
+- Discrete (integers) data: 0, 1, 2, 3, ...
+- They count something, such as people, instances, events, actions, successes, or occurrences.
+- Cannot be smaller than zero (lower bound = 0) but do not have an upper limit.
+
+</div>
+
+There are many distributions used for count data, such as Binomial, Poisson, and Negative Binomial.
+
+## Binomial
+
+For example, there is the binomial distribution, and its special case, Bernoulli, which is used for binary logistic regression. The general binomial distribution has two parameters, *N* the number of trials, and *p* the probability of success at each trial. The mean is *N $\times$ p*.
+
+Below you can see some plots of different binomial distributions. They don't seem too similar to our datasets from above.
+
+```{r typical binomial}
+Ns <- c(10, 20, 30) # set some example for Ns
+probs <- c(0.1, 0.25, 0.5) # set some examples for probabilities
+Nprobs <- expand.grid(N=Ns, Prob=probs) # creates a matrix of all the Ns x all the probabilities
+# extract the point density of the binomial distribution with the Ns and Ps from above
+sim_binomial <- do.call(rbind, apply(Nprobs, 1, function(np) data.frame(N=np[[1]], Prob=np[[2]], Count=1:25, Frequency=dbinom(1:25,size=np[1], prob=np[2]))))
+sim_binomial$N <- factor(sim_binomial$N) # transform into factor for the legend
+sim_binomial$Prob <- factor(sim_binomial$Prob) # transform into factor for the legend
+
+# plot the histograms
+ggplot(sim_binomial, aes(x=Count+0.5, y = Frequency, color=N, group=N, fill=N)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/5, alpha = 1/2, linewidth=1) + facet_wrap(~Prob, labeller = label_both) + xlab("Count")
+```
+
+## Poisson
+
+The **Poisson** distribution is probably the most famous of the count distributions. It only has one parameter, *lambda*, which is the expected mean (and also its standard deviation). It is often used to model the number of people in a queue at any point in time, number of people who attend a class, or the number of daily customers that visit a store.
+
+Below you can see some plots of different Poisson distributions. These are more similar to our datasets, in particular with small lambdas, but with only one parameter they are not very flexible.
+
+```{r typical Poisson} 
+lambdas <- c(3, 6, 12) # set some example for lambdas
+# extract the point density of the poisson distribution with the lambdas from above
+sim_poisson <- do.call(rbind, lapply(lambdas, function(l) data.frame(Lambda=l, Count=1:25, Frequency=dpois(1:25,l))))
+sim_poisson$Lambda <- factor(sim_poisson$Lambda)
+
+# plot the histograms
+ggplot(sim_poisson, aes(x=Count+0.5, y = Frequency, color=Lambda, group=Lambda, fill=Lambda)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/3, alpha = 1/3, linewidth=1) + xlab("Count")
+```
+
+## Negative Binomial
+
+Another one is the **Negative Binomial** distribution, which is more flexible than Poisson with two parameters, *mu*, which is the expected mean, and *size* which is a measure of dispersion (similar to deviation).
+
+Below you can see some plots of different Negative Binomial distributions. These are the most similar to our distributions.
+
+<div class = "blue">
+
+Negative Binomial is probably the most useful distribution for psychological experimental data.
+
+</div>
+
+```{r typical negative binomial}
+mus <- c(3, 6, 12) # set some example for mus
+sizes <- c(3, 6, 12) # set some example for sizes
+musizes = expand.grid(mu=mus, size=sizes) # creates a matrix of all the mus x all the sizes
+# extract the point density of the negative binomial distribution with the mus and sizes from above
+sim_nbinom <- do.call(rbind, apply(musizes, 1, function(ms) data.frame(Mu=ms[[1]], Size=ms[[2]], Count=1:30, Frequency=dnbinom(1:30,size=ms[[2]], mu=ms[[1]]))))
+sim_nbinom$Mu <- factor(sim_nbinom$Mu) # transform into factor for the legend
+sim_nbinom$Size <- factor(sim_nbinom$Size) # transform into factor for the legend
+
+# plot the histograms
+ggplot(sim_nbinom, aes(x=Count+0.5, y = Frequency, color=Mu, group=Mu, fill=Mu)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/3, alpha = 1/3, linewidth=1) + facet_wrap(~Size, labeller = label_both) + xlab("Count")
+```
+
+# Example: Stock trading
+
+Let's look at one particular example: `trade_data`. This study was about stock trading behaviour, and participants were allowed to trade stocks (buy or sell) as they wanted in a simulated trading task.
+
+<div class = "blue">
+
+Crucially, the data **counts** how many trades participants made during the task. Participants did not **need** to trade at all, so the minimum number of trades was zero. There was **no upper limit**, participants could make as many trades as they wanted.
+
+</div>
+
+```{r trade data histogram}
+# show histogram of trade_count
+ggplot(trade_data, aes(x = trade_count)) + geom_histogram(fill="lightblue", color="black", binwidth=2) + theme_bw() + ggtitle("Number of trades made (buy + sell combined)")
+```
+
+We can see the range and quantiles of trades in the table below.
+
+```{r trade range}
+# quantiles of trades made
+kable(quantile(trade_data$trade_count), col.names = c("quantile", "trade count"))
+```
+
+R has a handy function that checks how well a distribution fits against a set distribution, `fitdist` from package `fitdistrplus`. It estimates the best fit parameters that most closely fits the data. In the case of a normal distribution, it estimates the mean and standard deviation (sd). 
+
+Let's see how well this fits a normal distribution. Ideally the data should be **as close as possible** to the theoretical best fit distribution (shown in red). As expected, it's a **very poor fit**. We have excess observations in both ends of the distribution.^[A note on statistical diagnostic tests for distributions and regressions: most tests of normality (Shapiro-Wilk, Kolmogorov-Smirnoff) and tests of diagnostics (Levene's, White's) are generally not recommended. This is because with large datasets they are over-sensitive and will highlight even tiny deviations (common in real-life due to noise) as significant. With small datasets they are under-powered to identify real deviations. Visual inspection is often best. For more read: https://towardsdatascience.com/stop-testing-for-normality-dba96bb73f90.]
+
+```{r trade fitdistr normal, class.source = 'fold-show'}
+# compare trade_count data with a normal distribution
+# 'Summary' shows the best fitting mean and sd of a normal distribution against this data, and the loglikelihood measures the deviance between the actual data and the best fitting distribution.
+summary(fitdist(trade_data$trade_count, dist="norm"))
+# 'Plot' is used to create the plot shown below.
+plot(fitdist(trade_data$trade_count, dist="norm"))
+```
+
+## Transformations
+
+Because the data seems skewed, you might be tempted to analyse its log. However, because this is discrete count data, transforming it will not fix the problem. If you log the data, it will be closer to, but still not exactly, a normal distribution. Transformations tend to work better with continuous data.
+
+<div class = "blue">
+
+There's an additional problem that count data often contains **zeros**, and the log of zero is undefined. So if we want to try the log of this data, we need to add +1 (or any other positive amount) before calculating the log. 
+
+</div>
+
+```{r trade logged data, class.source = 'fold-show'}
+# log trade_count + 1
+ggplot(trade_data, aes(x = log(trade_count+1))) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw()
+```
+
+The log of the trade count data + 1 is closer to a normal distribution, but still problematic - there is still an excess of observations at the lower end, and missing observations below zero. 
+
+<div class = "blue">
+
+This is because normal distributions assume that the data is unbounded (with no lower or upper limits) but in this case the raw data has a lower bound of zero, as you cannot have any **counts below zero**.
+
+Another problem is that Normal distributions assume that the data is continuous, and in this case the raw data is **discrete** (only integers are allowed: 1, 2, 3, etc). 
+
+The fit of the normal distribution here is not *too* bad, but it would much worse when there are **extreme (very large) values** - very high counts - which can be very common in count data. Normal distributions struggle with large values, which will skew analysis and interpretation. Count distribution will handle extreme outliers much better.
+
+</div>
+
+```{r trade fitdistr log normal, class.source = 'fold-show'}
+# compare log of trade_count + 1 data with a normal distribution
+plot(fitdist(log(trade_data$trade_count+1), dist="norm"))
+```
+
+Adding +1 is also completely subjective and **arbitrary**, we could arguably add +0.1 or +10. The results are quite different and it also changes how well the new log data fits a theoretical normal distribution, and will impact the results and interpretation of any analysis we might run on this data. And no matter what we do, we always have a problem with the excess observations at the lower end.
+
+<div class = "blue">
+
+Unless you are pre-registering how much you will add before the log (and have a good theoretical reason for this), this transformation can easily lead to p-hacking.
+
+</div>
+
+```{r trade fitdistr log normal plus, class.source = 'fold-show'}
+# testing other logs
+plot(fitdist(log(trade_data$trade_count+.1), dist="norm"))
+plot(fitdist(log(trade_data$trade_count+10), dist="norm"))
+```
+
+Therefore we should never log count data when it's this close to zero.^[If the count data is far away enough from zero, then it would be more acceptable to either treat it as a normal distribution (if it looks like one), or try to log the data if it is skewed.]
+
+## Ordinary linear regression applied to count data
+
+We could try to analyse this trade count data (*the raw data, not the log*) anyway with a ordinary (general)^[Note that a *general* linear regression is the ordinary type which assumes that the data follows a normal distribution, while a *generalized* linear regression is a more flexible version that accepts different types of distributions, such as binomial (for logistic regression), or poisson and negative binomial (and many others).] linear regression to see what we would get. 
+
+<div class = "blue">
+
+The ordinary linear regression model will fit the count data. But is it correct?
+
+</div>
+
+Here we have two predictors: the *experimental condition* `exp_cond` (there were two: *low-risk* and *high-risk*, with a zero sum contrast -1 and +1) and *participant's age*. Age has been centered as `age_c`.
+
+In this case, all predictors are significant.
+
+```{r trade normal model, class.source = 'fold-show'}
+contrasts(trade_data$exp_cond) <- contr.sum(2) # zero-sum contrast code
+trade_data$age_c <- scale(trade_data$age, scale=F) # centre the age
+
+trade.m1.lm <- lm(trade_count ~ exp_cond * age_c, data=trade_data) # run the linear regression
+tab_model(trade.m1.lm, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE) # show the result in a nice table
+```
+
+<br>
+
+What kind of predictions does this model make? We can create and average 100 random simulated datasets from the model, using the fitted parameters plus random noise. 
+
+<div class = "blue">
+
+First of all, some of these predictions are negative, which is simply not possible with count data. Participants could not make fewer than zero (negative) trades. This is a common problem with **bounded data** or **censored data**. Normal distributions (which we assume for an ordinary linear regression) are not bounded, and will try to predict negative data.
+
+And it definitely does not match the shape of the original dataset. This clearly shows how an **ordinary linear regression predicts normally distributed data**.
+
+</div>
+
+```{r trade normal predictions}
+pred.samples <- 1:100 # how many predictions do we want?
+# simulate the predictions
+pred.count <- data.frame(data='Prediction (Ordinary Linear Regression)', trade_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(trade.m1.lm)}))))
+# bind the predictions with the raw data in a single data frame for plotting
+pred.count <- rbind(pred.count, data.frame(data='Original Data', trade_count=trade_data$trade_count))
+
+# show a histogram of the simulated outcomes next to the original raw data
+ggplot(data=pred.count, aes(trade_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill="lightblue", color = "black", binwidth=2) + theme_bw() + xlab("Trade Count") + ylab("% of participants") + facet_wrap(~data)
+```
+
+### Assumptions
+
+There are packages in R that are very useful for checking the **assumptions** of a model and how well a model fits a dataset, such as `DHARMa` (which we use here) and `performance`. A good-fitting model should not have anything red highlighted on this output. 
+
+The output shows how this ordinary linear model has **several deviations from the assumptions**. 
+
+On the left we see that the residuals deviate from a normal distribution (the black dots should be on the red line). 
+
+On the right we see that the residuals are not evenly spread across the predictions, therefore there is heteroskedasticity (the solid lines - which show the 25%, 50%, and 75% quartiles - should be horizontal, showing that the dispersion of residuals is flat across the levels of predictions).
+
+```{r normal DHARMa, class.source = 'fold-show'}
+# the way DHARMa works is that first we simulate the residuals, and save it
+sim.m1.lm <- simulateResiduals(fittedModel = trade.m1.lm)
+# then we plot it
+plot(sim.m1.lm, title="Residual diagnostics for linear model")
+```
+
+### Transformation (log)
+
+If you used the log of the data, it would fit better, and all the predictors are still significant. However, there are still some red deviations highlighted. 
+
+<div class = "blue">
+
+The amount that you add to the log (+1 or +.01) would impact the results, coefficients, effect sizes, and inferences. If you add 0.1 instead of 1, the interaction is no longer significant. 
+
+</div>
+
+Log data also would never return a trade count of zero (it would tend to zero but never be zero), which is not ideal as we clearly have zero counts in the dataset. 
+
+```{r trade log normal model}
+trade.m1.lm.log01 <- lm(log(trade_count+.1) ~ exp_cond * age_c, data=trade_data) # run the log regression
+trade.m1.lm.log1 <- lm(log(trade_count+1) ~ exp_cond * age_c, data=trade_data) # run the log regression
+trade.m1.lm.log10 <- lm(log(trade_count+10) ~ exp_cond * age_c, data=trade_data) # run the log regression
+
+tab_model(trade.m1.lm.log01, trade.m1.lm.log1, trade.m1.lm.log10, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE)
+
+sim.m1.lm.log01 <- simulateResiduals(fittedModel = trade.m1.lm.log01) # runs the DHARMa output
+plot(sim.m1.lm.log01, title="Residual diagnostics for linear model")
+```
+
+There are better ways to analyse this data. 
+
+## Count distributions: Poisson and Negative Binomial
+
+<div class = "blue">
+
+We can check if this data fits a count distribution, in accordance with the underlying *counting nature of the data* - counting the number of trades made. 
+
+</div>
+
+We can try to fit our data to a *Poisson* distribution. However it *does not fit the data particularly well* - the predictions (in red) peak later than the actual data peaks. The red lines do not match the black lines and dots.
+
+The mean of this Poisson distribution is also the same mean as the normal distribution previously fitted to this data. However, the Poisson distribution *does not predict negative outcomes* (as the normal distribution did).
+
+```{r trade fitdistr poisson, class.source = 'fold-show'}
+# to fit against a poisson distribution use 'pois'
+summary(fitdist(trade_data$trade_count, dist="pois"))
+plot(fitdist(trade_data$trade_count, dist="pois"))
+```
+
+We can try to fit a *Negative Binomial* distribution. This is a *much better fit*, even though it does not capture the peaks as well, it is the best fit so far. 
+
+<div class = "blue">
+
+In most experimental conditions, Negative Binomial tends to fit data better, because it is more flexible (with two parameters instead of Poisson's single parameter).
+
+</div>
+
+Once again, the mean of the distribution is the same. But because the negatibe binomial has the extra *size* (dispersion) parameters, it fits the data better.
+
+```{r trade fitdistr nbinom, class.source = 'fold-show'}
+# to fit against a negative binomial distribution use 'nbinom'
+summary(fitdist(trade_data$trade_count, dist="nbinom"))
+plot(fitdist(trade_data$trade_count, dist="nbinom"))
+```
+
+In addition to visual comparison of the outputs from this function, you could also compare the Log-Likelihoods of the outputs from the function - the closer to zero the better. The Log-Likelihood of the negative binomial distribution is much closer to zero.^[You might have come across Log-Likelihood (LL) before in logistic regressions, often called *deviance*, and it is the base to calculate pseudo-$R^2$ measures such as Nagelkerke. LL is great for comparing across model fits, but be careful as certain approaches use different ways to calculate LL which means they might not be directly comparable sometimes.]
+
+Another tool for identifying your type of distribution is this **Ord plot** named after J.K. Ord. This function is implemented in the package `vcd`. An upward trending line shows a negative binomial distribution. For more information on interpreting this plot, there are examples in the original paper by [Ord (1967)](https://www.jstor.org/stable/2343403?seq=2).
+
+```{r trade ord plot}
+Ord_plot(trade_data$trade_count)
+```
+
+## Negative Binomial model
+
+There are several packages and functions in R for fitting count data models. 
+
+For Poisson, the most common is probably the `glm` function from the base package, which you might have used in the past to fit logistic regressions. You simply need to specify `family = 'poisson'`.
+
+For Negative Binomial, you can use the function `glm.nb` from the package `MASS`.
+
+As our data more closely resembles a negative binomial, we will fit a negative binomial generalized linear regression to our data, with the same predictors.
+
+<div class = "blue">
+
+Exponentiating the coefficients in count regressions ($e^\beta$) gives us **Incident Rate Ratios** which has a similar interpretation to Odds Ratios (ORs). 
+
+- IRRs above 1 indicate positive correlation - higher incidences when the predictor goes up;
+- IRRs below 1 indicate negative correlation - higher incidences when the predictor goes down.
+
+IRRs are multiplicative (not additive) again similar to ORs.
+
+</div>
+
+With a negative binomial regression, the **interaction is no longer significant**.
+
+```{r trade nb model, class.source = 'fold-show'}
+trade.m2.nb <- glm.nb(trade_count ~ exp_cond * age_c, data=trade_data) # run the negative binomial regression
+tab_model(trade.m2.nb, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE) # show the results in a nice table
+```
+
+<br>
+
+Again we simulate a series of 100 predicted datasets from our model and compare it to the original dataset. It's a **much better fit** - there are no predictions below 0. The shape of the distribution of predictions **closely matches the original data** distribution.
+
+```{r trade nb predictions}
+pred.samples <- 1:100 # how many predictions do we want?
+# simulate the predictions
+pred.count <- data.frame(data='Prediction (Neg Bin)', trade_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(trade.m2.nb)}))))
+# bind the predictions with the raw data in a single data frame for plotting
+pred.count <- rbind(pred.count, data.frame(data='Original Data', trade_count=trade_data$trade_count))
+
+# show a histogram of the simulated outcomes next to the original raw data
+ggplot(data=pred.count, aes(trade_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill="lightblue", color = "black", binwidth=2) + theme_bw() + xlab("Trade Count") + ylab("% of participants") + facet_wrap(~data) + coord_cartesian(xlim=c(0,100))
+```
+
+If we look at the two models side-by-side, we see that we would make different inferences from each model with regards to the interactions. The coefficients are not directly comparable. But we can ask R to give us some estimated marginal means.
+
+```{r trade nb model comparison}
+tab_model(trade.m1.lm, trade.m2.nb, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE, dv.labels=c("general linear model", "negative binomial model")) # show the two models side by side
+```
+
+<br>
+
+We can compare the predictions that the model makes of the means of each experimental condition using the functions `emmeans` and `emmip`. 
+
+<div class = "blue">
+
+They are close in this case - general linear regressions are very good at finding the means of distribution - the differences in this case are in the **standard errors**. This translates into differences in the *effect sizes* and *interpretation of the results*.
+
+If there were extreme (very large) values, as we will see later, the results would not have been so similar.
+
+</div>
+
+```{r trade emmeans}
+# get the means for each experimental condition, for each model
+emmeans.lm <- summary(emmeans(trade.m1.lm, ~exp_cond, type="r"))
+emmeans.lm$model <- "lm" # name the models for the plot below
+emmeans.nb <- summary(emmeans(trade.m2.nb, ~exp_cond, type="r"))
+emmeans.nb$model <- "nb"
+colnames(emmeans.nb) <- colnames(emmeans.lm) # we need the column names to be the same for the rbind below
+
+# plot the results
+ggplot(rbind(emmeans.lm, emmeans.nb), aes(x=exp_cond, y=emmean, ymin=lower.CL, ymax=upper.CL, group=model, color=model, fill=model)) + geom_bar(stat="identity", width=0.5, position=position_dodge(width=0.55), color="black") + geom_errorbar(width=0.2, position=position_dodge(width=0.55), color="black") + theme_bw() + xlab("experimental condition") + ylab("estimated marginal means")
+
+# get the slopes of age for each experimental condition, for each model
+emmip.lm <- emmip(trade.m1.lm, ~age_c|exp_cond, at=list(age_c=c(-20:40)), CIs=T, plotit = FALSE)
+emmip.lm$model <- "lm"
+emmip.nb <- emmip(trade.m2.nb, ~age_c|exp_cond, at=list(age_c=c(-20:40)), CIs=T, type="r", plotit = FALSE)
+emmip.nb$model <- "nb"
+colnames(emmip.nb) <- colnames(emmip.lm)
+
+ggplot(rbind(emmip.lm, emmip.nb), aes(x=age_c, y=yvar, ymin=LCL, ymax=UCL, group=model, color=model, fill=model)) + geom_line(position=position_dodge(width=1), linewidth=1) + geom_ribbon(position=position_dodge(width=1), alpha=0.2) + theme_bw() + xlab("centered Age in years") + ylab("estimated marginal means") + facet_wrap(~exp_cond)
+
+```
+
+We can look at the diagnostics again, and we see **no deviations** with the negative binomial model (nothing is highlighted in red, apart from a couple of potential outliers).
+
+```{r nb DHARMa, class.source = 'fold-show'}
+sim.m2.nb <- simulateResiduals(fittedModel = trade.m2.nb)
+plot(sim.m2.nb, title="Residual diagnostics for negative binomial model")
+```
+
+# Repeated-measures (Mixed effects) Example 
+
+In this new example, the data (`sampling_data`) comes from a decision-making study. 
+
+Before making a financially-consequential decision that affected their bonus, participants could freely sample from the available options without any costs or consequences, to determine which option they preferred. 
+
+This is again count data, as it counts the number of samples taken by each participant before each choice. They could sample for as long as they liked. Each participant made 18 choices, and they could sample a different number of times for each choice.
+
+```{r sampling data histogram}
+# plot the histogram of sample count
+ggplot(sampling_data, aes(x = sample_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ggtitle("Number of samples taken before each choice")
+```
+
+It's not immediately obvious, but the peak of the data (and also the lowest count of samples) is not zero, but instead, it is 2. That is because participants were required to sample at least twice for each choice they made, although there was no upper bound.
+
+<div class = "blue">
+
+With count data it's always best to have the data starting from zero if there was some structural characteristic that limited the minimum count. We create a new variable, *excess sample count*, which counts how many samples participants took *in excess* of the minimum. This was calculated by subtracting 2 from each sample count.
+
+</div>
+
+Now the data starts from zero, which will help it more closely match a count distribution.
+
+```{r sample excess sample count, class.source = 'fold-show'}
+# subtract two to create excess sample count
+sampling_data$excess_sample_count <- sampling_data$sample_count - 2
+# plot the new excess sample count
+ggplot(sampling_data, aes(x = excess_sample_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ggtitle("Number of excess samples taken before each choice")
+``` 
+
+Again this data is clearly not normally distributed, but instead it seems to follow a negative binomial distribution.
+
+```{r sample fitdist}
+# compare trade_count data with a normal distribution
+summary(fitdist(sampling_data$excess_sample_count,dist="norm"))
+plot(fitdist(sampling_data$excess_sample_count,dist="norm"))
+
+# compare trade_count data with a negative binomial distribution
+summary(fitdist(sampling_data$excess_sample_count,dist="nbinom"))
+plot(fitdist(sampling_data$excess_sample_count,dist="nbinom"))
+```
+
+Because this was *within-subjects (repeated measures)* with each participant making 18 choices (and each choice associated with its own sampling) we need to fit a *mixed effects model* to this data. 
+
+The best package for this is `glmmTMB` which is flexible enough to allow for several different distributions, including negative binomial.^[Don't ask me why there are three different negative binomial families in glmmTMB (`nbinom1`, `nbinom2`, and `nbinom12`). The difference between them seem minimal - and mostly philosophical about how to define variance. I'm not sure which one is the "best" or why. I often just use the first one and if it throws me an error I try one of the other ones. Also annoyingly, note that different functions call the distributions different names, such as `nbinom` vs `negbinom` and `poisson` vs `pois`. Always check the help for each function.] 
+
+There were *two experimental conditions* `expcond`, and we also add two continuous predictors: *age* and *choice number* (both centered). Choice number was the sequential choice they made, from 1 to 18, to see if sampling behaviour changed as they made more choices and the task progressed. There is a random intercept for each participant. The random effects are specified using the same format as the more traditional `lmer` or `glmer` functions.
+
+<div class = "blue">
+
+We compare the outputs with an ordinary linear regression. The conclusions would have been different. We can see that one of the predictors (experimental condition) is significant with the negative binomial regression, but not with the ordinary linear regression.
+
+</div>
+
+```{r sample glmmTMB, class.source = 'fold-show'}
+contrasts(sampling_data$expcond) <- contr.sum(2) # zero-sum contrast code
+sampling_data$choice_number_c <- scale(sampling_data$choice_number, scale=FALSE) # centre the choice number
+sampling_data$age_c <- scale(sampling_data$age, scale=FALSE) # centre the age
+
+# run an ordinary mixed effects linear regression
+sample.m1.lm <- lmer(excess_sample_count ~ expcond + age_c + choice_number_c + (1|pptid), data=sampling_data)
+
+# run a negative binomial mixed effects regression
+sample.m2.nb <- glmmTMB(excess_sample_count ~ expcond + age_c + choice_number_c + (1|pptid), data=sampling_data, family="nbinom1")
+
+tab_model(sample.m1.lm, sample.m2.nb, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE, show.icc=FALSE, show.re.var = FALSE, dv.labels=c("ordinary mixed-effects linear model", "negative binomial mixed-effects model"))
+```
+
+When we compare the model outputs, we see a **large difference in the estimate of the sample count**. This is because the ordinary linear model is heavily influenced by some **very large sample counts**, which push the average up.
+
+<div class = "blue">
+
+Because of these extreme values, the estimated marginal means from count models can be significantly different from the actual means of the underlying data, and will be closer to the median, which was `r median(sampling_data$excess_sample_count)`. In comparison, the estimated marginal means from general linear models will be closer to the mean, which was `r round(mean(sampling_data$excess_sample_count),2)`.
+
+</div>
+
+```{r sample emmeans}
+# emmeans is used to create estimated marginal means for each experimental condition
+# we calculate these for each model
+emmeans.lm <- summary(emmeans(sample.m1.lm, ~expcond, type="r", lmer.df = "asymp"))
+emmeans.lm$model <- "lm"
+emmeans.nb <- summary(emmeans(sample.m2.nb, ~expcond, type="r", lmer.df = "asymp"))
+emmeans.nb$model <- "nb"
+colnames(emmeans.nb) <- colnames(emmeans.lm)
+
+ggplot(rbind(emmeans.lm, emmeans.nb), aes(x=expcond, y=emmean, ymin=asymp.LCL, ymax=asymp.UCL, group=model, color=model, fill=model)) + geom_bar(stat="identity", width=0.5, position=position_dodge(width=0.55), color="black") + geom_errorbar(width=0.2, position=position_dodge(width=0.55), color="black") + theme_bw() + xlab("experimental condition") + ylab("estimated marginal means")
+
+# emmip is used to create regression lines for each predictor
+emmip.lm <- emmip(sample.m1.lm, ~age_c, at=list(age_c=c(-20:40)), CIs=T, plotit = FALSE, lmer.df = "asymp")
+emmip.lm$model <- "lm"
+emmip.nb <- emmip(sample.m2.nb, ~age_c, at=list(age_c=c(-20:40)), CIs=T, type="r", plotit = FALSE, lmer.df = "asymp")
+emmip.nb$model <- "nb"
+
+ggplot(rbind(emmip.lm, emmip.nb), aes(x=age_c, y=yvar, ymin=LCL, ymax=UCL, group=model, color=model, fill=model)) + geom_line(position=position_dodge(width=1), linewidth=1) + geom_ribbon(position=position_dodge(width=1), alpha=0.2) + theme_bw() + xlab("Centered age in years") + ylab("estimated marginal means")
+
+emmip.lm <- emmip(sample.m1.lm, ~choice_number_c, at=list(choice_number_c=c(-10:10)), CIs=T, plotit = FALSE, lmer.df = "asymp")
+emmip.lm$model <- "lm"
+emmip.nb <- emmip(sample.m2.nb, ~choice_number_c, at=list(choice_number_c=c(-10:10)), CIs=T, type="r", plotit = FALSE, lmer.df = "asymp")
+emmip.nb$model <- "nb"
+
+ggplot(rbind(emmip.lm, emmip.nb), aes(x=choice_number_c, y=yvar, ymin=LCL, ymax=UCL, group=model, color=model, fill=model)) + geom_line(position=position_dodge(width=1), linewidth=1) + geom_ribbon(position=position_dodge(width=1), alpha=0.2) + theme_bw() + xlab("Centered Choice number") + ylab("estimated marginal means") 
+
+```
+
+# Zero inflation 
+
+In this final example, the data (`zi_data`) comes from a study on gambling.^[This data is adapted from a real study, but the actual data has been tweaked slightly to simplify this example. In the actual dataset there was no correlation between switch count and PGSI.] 
+
+Participants were given £3 and allowed to place as many bets as they wanted across four simulated slot machines. We measured how often participants switched between the different machines. They did not have to switch at all, and could switch as many times as they wanted. We also measured the participants' PGSI, which is the problem gambling severity index: higher scores in the PGSI correlate with more disordered gambling and more harm from gambling.
+
+<div class = "blue">
+
+What we have here is what we call **zero-inflated** data, or data which has more zero observations than we would expect. These are the participants that did not switch between slot machines and placed all their bets with a single machine. 
+
+Zero-inflation count data often has two peaks, one at zero, then a dip in responses, and another peak later on, as we see here. If there is a single peak, there might not be zero inflation at all.
+
+</div>
+
+```{r zi data histogram}
+# plot the histogram of number of switches
+ggplot(zi_data, aes(x = switch_count)) + geom_histogram(fill="lightblue", color="black", binwidth=1) + theme_bw() + ggtitle("Number of switches between the different slot machines")
+```
+
+In fact, `r round(nrow(subset(zi_data, switch_count==0))/nrow(zi_data),2)*100`% of participants did not switch at all.
+
+When we compare this data to a normal distribution and to a negative binomial distribution, we can see the excess zero responses. The negative binomial distribution fits the data slightly better but it's still quite different, because of the excess zeros. 
+
+```{r zi fitdist}
+# compare number of switches data with a normal distribution
+summary(fitdist(zi_data$switch_count,dist="norm"))
+plot(fitdist(zi_data$switch_count,dist="norm"))
+
+# compare number of switches data with a negative binomial distribution
+fit_output_nb <- fitdist(zi_data$switch_count,dist="nbinom")
+summary(fit_output_nb)
+plot(fit_output_nb)
+```
+
+What we have here is a count distribution with a relatively high mean -- if you ignore the excessive zeros. 
+
+The fit function in R tries to compensate by fitting a distribution with a smaller mean (mu) and larger variance (size) to account for the excessive zeros. However, it's not a very good fit. Accounting for the excessive zeros and allowing for a larger mean would fit this data better.
+
+## Testing for zero-inflation
+
+<div class = "blue">
+
+We can test if the data has zero inflation in a few different ways. 
+
+</div>
+
+### Fit a zero-inflated distribution
+
+First, we can try the `fitdist` function by specifying the `ZINBI` distribution from package `gamlss`. 
+
+However, this is always clunky and likes to throw many warnings and errors. But in this case, the AIC is smaller and it seems to fit better than a regular negative binomial distribution. You can also see how it now estimated a higher mean (mu). 
+
+*Nu* is the probability of responding with a zero, or the zero-inflation parameter, which was 0.208. The zero-inflated distribution assumes that there were around 21% excessive zeros.
+
+```{r zi fitdist zinb, warning=FALSE, class.source = 'fold-show'}
+# To run a ZINBI fit you need to specify starting points for the different parameters, as well as bounds for the parameters. Sometimes you need to try different starting parameters until it fits.
+fit_output_zinbi <- fitdist(zi_data$switch_count, dist="ZINBI", start=list(mu=1, sigma=1, nu=0.1), upper=c(Inf, Inf, 1), lower=c(0,0,0), discrete=TRUE)
+summary(fit_output_zinbi)
+plot(fit_output_zinbi)
+```
+
+We can also plot a typical negative binomial distribution (without zero inflation) over our data to see how the zero inflation works. The plot below shows that without the zero inflation part, the negative binomial fits the second peak of the data, with a higher average (mu) and smaller variance (sigma).
+
+The negative binomial predicts around 10% are zeros, but the actual observed zero count was 30%. The difference in zeros is accounted by the 21% excessive zeros.
+
+```{r zi plotdist zinb, warning=FALSE, class.source = 'fold-show'}
+# we compare the zero inflated data to a negative binomial model, without zero inflation, but with the mu and sigma from the zero inflation model.
+# this shows us the zero inflation component
+plotdist(zi_data$switch_count, dist="NBI", para=list(sigma=coef(fit_output_zinbi)['sigma'], mu=coef(fit_output_zinbi)['mu']), discrete=T)
+```
+
+### Run a negative binomial and test for zero inflation
+
+Alternatively, we can run a negative binomial regression (without zero inflation) using the same `glm.nb` function as before, and use the `testZeroInflation` function from `DHARMa`. 
+
+Significant values above 1 mean that there is zero inflation. Ideally the red line in the plot below should be in the middle of the data distribution. Because the data is to the left of the red line, and the statistic is significant, this test confirms that there is zero inflation.^[Significant values below 1 with data significantly to the right of the red line would mean a lack of zeros.]
+
+```{r zero inflation test, class.source = 'fold-show'}
+zi.m2.nb <- glm.nb(switch_count ~ pgsi, data=zi_data) # run a standard negative binomial regression
+testZeroInflation(zi.m2.nb) # test for zero inflation
+```
+
+### Compare a negative binomial model with a zero-inflated model
+
+Finally, another way to test is to run a **Zero-Inflation Negative Binomial** (`ZINB`) $-$ or `ZIP` for **Zero-Inflated Poisson** $-$ regression and compare the two models. There are several packages that allow for zero-inflated models, but one of the simplest is the function `zeroinfl` from package `pscl`.^[If your data is repeated measures and you need a mixed effects model, the same function `glmmTMB` from before allows for zero inflation, all you need to do is specify the zero-inflation component using `zi=...`, although it can be very slow to fit.]
+
+Zero-inflation models assume that two different and separate processes generate the data. 
+
+- **Zero inflation**: This process is responsible for excessive zero responses (in other words, is the response going to be an excessive zero, more than expected?). This is commonly estimated using a binary logistic regression. In this example, did the participant decide to switch between slot machines at all?
+
+- **Conditional regression**: Then, assuming that the model does not classify this response as an excessive zero, a conditional negative binomial regression is run (conditional that the result is not an excessive zero) to determine the actual response, in this case, the number of switches between different machines. 
+
+It is important to note that the conditional regression part of the model can also return a count of zero, and the zero-inflation part is only responsible for excessive zeros (or inflation of zeros). If you believe this cannot be the case, then **Hurdle** models do not allow for zeros in the conditional part, only the zero-inflation part generates zeros. You can think of this as a hurdle that the participant has to pass (e.g., is the response a zero or not).
+
+**NB**: The packages that allow for zero-inflation often require the zero-inflation part of the model to be specified separately. In the case of the `zeroinfl` function, if you don't specify anything, the function assumes that the zero inflation part of the model is the same as the conditional part of the mode, ie, it has the same predictors. This is the simplest and easiest approach.^[Some other functions **require** you to specify a zero-inflated component using some sort of syntax such as `zi = ...`. Please read the help for the specific function you are using. Even for `zeroinfl` you can specify separate models for each part, with separate predictors, if you believe that the processes generating outcomes from each component are different.]
+
+<div class = "blue">
+
+We can then compare the two models to see if the zero-inflated model fits the data better. The model with the lowest AIC is considered to fit the data better, and that's the case here for the ZINB model in comparison to the NB model (without zero-inflation).^[Again be careful when comparing AIC as not all are comparable, but in this case they are. Also if you want to evaluate if the difference in AIC between the two models is significant or not, there are ways of calculating this, but I did not include it here.]
+
+</div>
+
+```{r zi zinb regression}
+# run a zero-inflation negative binomial regression
+zi.m3.zinb <- zeroinfl(switch_count ~ pgsi, data=zi_data, dist="negbin")
+# compare the AICs of the two models. Lower AIC is better.
+AIC(zi.m2.nb, zi.m3.zinb)
+```
+
+The output from zero-inflation models follow the two components described above: The **conditional** and the **zero-inflation** components.
+
+- The zero-inflation component outputs Odds-Ratios (OR) based on a binary logistic regression (1 = excess zero). It measures the likelihood of a participant responding with an excessive zero response or not. Note that this part of the model is positively correlated with zero responses, therefore negatively correlated with actual bets placed Higher ORs here indicate a higher propensity to respond with a zero (and therefore a lower number of switches overall).
+
+   - In this example, the PGSI predictor was significant, with an OR below 1. Participants with higher PGSI scores were less likely to not switch at all. 
+
+<br>
+
+- The conditional component Incidence Rate Ratios (IRRs) based on a negative binomial regression. IRRs above 1 indicate a higher switch count and vice-versa.
+
+   - In this example, PGSI scores significantly influenced how often a participant switched between slot machines. The OR was significantly above 1, which means that with higher PGSI scores, participants switched more times.
+
+```{r zi tab model interpretation}
+tab_model(zi.m3.zinb) # nice table of the results of the ZINB model
+```
+
+We can compare model predictions to see how the zero-inflated model predicts many more zeros and more closely matches the original dataset. We see that the zero-inflated model fits the data better.
+
+```{r zi predictions}
+pred.samples <- 1:100 # how many predictions do we want?
+# simulate the predictions for negative binomial
+pred.count.nb <- data.frame(data='Prediction (Negative Binomial)', switch_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(zi.m2.nb)}))))
+# simulate the predictions for the ZINB model
+probabilities <- predict(zi.m3.zinb, type="prob") # get the probabilities
+pred.count.zi <- data.frame(data='Prediction (Zero-Inflated Neg Bin)', switch_count=as.vector(sapply(pred.samples, function(s){apply(probabilities, 1, function(p) sample(1:ncol(probabilities), 1, prob=p))})))
+
+# bind the predictions with the raw data in a single data frame for plotting
+pred.count <- rbind(pred.count.nb, pred.count.zi, data.frame(data='Original Data', switch_count=zi_data$switch_count))
+
+# show a histogram of the simulated outcomes next to the original raw data
+ggplot(data=pred.count, aes(switch_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill="lightblue", color="black", binwidth=1) + theme_bw() + xlab("Switch Count") + ylab("% of participants") + facet_wrap(~data) + coord_cartesian(xlim=c(0,20))
+```
+
+When interpreting the results of a zero-inflated model, you need to consider both components separately, the zero-inflated and the conditional components. Not only the coefficients, predictors, and their significance, but also their estimated marginal means. 
+
+You can do that by setting the component of the regression that you want to evaluate at each time, often using `component=...` or `mode=...`. These can be identified using `zero` or `zi` for zero-inflation and `count` or `cond` for the conditional component. Each function requires slightly different parameters, so check the help. 
+
+<div class = "blue">
+
+If you don't set the component for your analyses, often you will only be shown the conditional component by default. Be careful as this is only part of the picture.
+
+</div>
+
+```{r zi emmeans}
+# emmip is used to calculate the slope of the predictors against the DV
+# one is needed for each component of the zero-inflation regression.
+emout.zero <- emmip(zi.m3.zinb, ~pgsi, at=list(pgsi=0:20), type="r", CIs=T, mode="zero", plotit=FALSE) 
+emout.zero$component <- "zero inflation"
+emout.cond <- emmip(zi.m3.zinb, ~pgsi, at=list(pgsi=0:20), type="r", CIs=T, mode="count", plotit=FALSE)
+emout.cond$component <- "conditional"
+
+ggplot(rbind(emout.zero, emout.cond), aes(x=pgsi, y=yvar, ymin=LCL, ymax=UCL)) + geom_line(linewidth=1) + geom_ribbon(alpha=0.2) + theme_bw() + xlab("pgsi") + ylab("Count of Switches / Probability of Excess Zero") + facet_wrap(~component, scales="free")
+
+```
+
+# Postscript: Don't like to use R?
+
+If you don't like using R, Jamovi has an implementation for Poisson and Negative Binomial regressions including mixed effects, while JASP supports only Poisson distributions (also mixed effects). Neither seems to support zero inflation at the moment.
+
+# Further reading
+
+There are several useful online guides on count data analysis. Here are some that I have found:
+
+[Regression Models for Count Data in R using the pscl package](https://cran.r-project.org/web/packages/pscl/vignettes/countreg.pdf)
+
+[UCLA's Advanced Research Computing Statistical Methods and Data Analytics page on Negative Binomial Regression](https://stats.oarc.ucla.edu/r/dae/negative-binomial-regression/)
+[... and Zero Inflated Negative Binomial Regression](https://stats.oarc.ucla.edu/r/dae/zinb/)
+
+[The Poisson distribution: From basic probability theory to regression models](https://www.r-bloggers.com/2022/06/the-poisson-distribution-from-basic-probability-theory-to-regression-models/)
+
+[Count data and GLMs: choosing among Poisson, negative binomial, and zero-inflated models](https://www.r-bloggers.com/2012/08/count-data-and-glms-choosing-among-poisson-negative-binomial-and-zero-inflated-models/)
+
+[GLM with zero-inflated data](https://fukamilab.github.io/BIO202/04-C-zero-data.html)
+
+[Zero-inflated Models Using DHARMa and glmmTMB](https://eddatascienceees.github.io/tutorial-zacharyli1/)
+
+# Other (similar) types of data
+
+Sometimes your data might look like Count data, but it really ain't.
+
+If your data is *ranked*, for example, a *Likert scale*, then you should use an **ordinal** regression. R has several implementations for ordinal logistic regressions, such as the function `polr` from the package `MASS` or the much more flexible `clm` from the package `ordinal`. If you need a mixed-effects ordinal logistic regression (for within-subjects repeated-measures data) then there is the function `clmm` also from `ordinal`.
+
+If your data has both *lower and upper bounds*, then it could potentially be *percentage or proportional* data, and you should consider a **beta** regression. You can use the function `betareg` from the same-named package. Note that beta regressions do not accept zeros or ones, so either you need to convert your data to remove the zeros and ones (e.g., see [Smithson & Verkuilen, 2006](https://doi.apa.org/doi/10.1037/1082-989X.11.1.54); [Verkuilen & Smithson, 2012](https://doi.org/10.3102/1076998610396895)) or you can use zero-one-inflated-beta regression (ZOIB).
+

@@ -8,7 +8,8 @@ output:
     code_folding: hide
     number_sections: true
     code_download: true
-    keep_md: true
+    keep_md: false
+    embed-resources: true
 editor_options:
   chunk_output_type: console
 ---

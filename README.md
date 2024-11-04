@@ -44,13 +44,13 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Thur 25 May 2023  |  | **Special Data Visualisation event** Andy Kirk [[notes][visualisingdata-notes]] |
 | Wed 28 June 2023  | | PCA, ICA, dimensionality reduction [materials (zip)][pca-materials]|
 | **2024 reboot** | | |
-| Tues 5 Nov 2024  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
-| Tues 19 Nov 2024  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes][non-normal-stats]] |
-| Tues 3 Dec 2024  | x | **UP-ESLC-A09**, tbc |
-| Tues 17 Dec 2024  | x | **UP-ESLC-A09**, tbc |
+| Tue 2024-11-05  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
+| Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes][non-normal-stats]] |
+| Tue 2024-12-03  | x | **UP-ESLC-A09**, tbc |
+| Tue 2024-11-17  | x | **UP-ESLC-A09**, tbc |
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-| Tues 7 Jan 2024  | x | **UP**, tbc |
-| Tues 21 Jan 2024  | x | **UP**, tbc |
+| Tue 2025-01-07  | x | **UP**, tbc |
+| Tue 2025-01-21  | x | **UP**, tbc |
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
 [first-slides]: ./2022-11-23-first-meeting.html

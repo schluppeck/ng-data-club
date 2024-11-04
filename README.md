@@ -47,7 +47,7 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Tue 2024-11-05  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
 | Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes][non-normal-stats]] |
 | Tue 2024-12-03  | x | **UP-ESLC-A09**, tbc |
-| Tue 2024-11-17  | x | **UP-ESLC-A09**, tbc |
+| Tue 2024-12-17  | x | **UP-ESLC-A09**, tbc |
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
 | Tue 2025-01-07  | x | **UP**, tbc |
 | Tue 2025-01-21  | x | **UP**, tbc |

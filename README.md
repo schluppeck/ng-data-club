@@ -45,7 +45,7 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | Wed 28 June 2023  | | PCA, ICA, dimensionality reduction [materials (zip)][pca-materials]|
 | **2024 reboot** | | |
 | Tue 2024-11-05  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
-| Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes][non-normal-stats]] |
+| Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes, links & some code][non-normal-stats]] |
 | Tue 2024-12-03  | x | **UP-ESLC-A09**, tbc |
 | Tue 2024-12-17  | x | **UP-ESLC-A09**, tbc |
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |

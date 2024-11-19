@@ -1,0 +1,167 @@
+---
+title: "Non-parametric stats, bootstrap, permutation testing"
+author: Denis Schluppeck
+date: 2024-11-19
+date-format: iso
+subtitle: Some notes related to presentation
+engine: julia
+includesource: true
+embed-resources: true
+reference-location: margin
+citation-location: margin
+bibliography: references.bib
+---
+
+## Talk
+
+James Read-Tannock gave talk with general background ideas on non-parametric stats, more classical tests still taught in Psych programmes, and then introduced the ideas of the bootstrap, jackknife, and permutation testing. [Slides]
+
+- Wikipedia article on the general idea 😀 of [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping) a la Baron von Münchhausen.
+- In the [statistics context, the bootrap](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)) refers to a method of obtaining the distribution of a statistic / estimator by resampling data.
+- The [Alpaca shampoo website w/ scrollytelling](https://www.jwilber.me/permutationtest/) - the cool visual explainer shown by James during the talk
+
+::: {.column-margin}
+![alpaca-shampoo](./images/alpacas.png)
+:::
+
+- There is a key paper by Efron that introduces the idea @Efron_1979. Some bit of this paper are very technical, so might be *beyond the scope of what we need here*, but a useful resource to dip into for the nitty gritty, if you are interested.
+- The [plug-in principle](https://en.wikipedia.org/wiki/Resampling_(statistics)#:~:text=It%20has%20been%20called%20the,the%20samples%20with%20high%20weights.) came up and we also talked about population vs sample statistics and ideas around
+- using the *bootstrap* procedure to get confidence intervals for a statistic, whereas a related idea, *permutation tests*, is more suited to hypothesis testing. There is a [free online book chapter](https://bcs.whfreeman.com/webpub/statistics/ips9e/9781319013387/companionchapters/companionchapter16.pdf), which includes a discussion of the accuracy of the boostrap distribution, dependence on sample size, etc.
+
+## Worked examples with data from the Efron & Tibshirani book
+
+Some thoughts on computationally expensive methods. To get some hands on the basics, let's have a look at a basic example (from Chapter 2 in the book. Table 2.1), in which survival data from mouse in a treatment / control experiment are presented.
+
+I decided to use `julia` in this notebook, but it shouldn't be hard to reproduce in `R`, `python`, `matlab`, or your own preferred method of working with and plotting data.
+
+The `julia` packages required are listed in the `Project.toml` and `Manifest.toml`. You should be able to download the folder from the [github repo](https://github.com/schluppeck/ng-data-club/) and `import Pkg` follwed by `Pkg.activate(".")` and `Pkg.instantiate()`.
+
+```{julia}
+#| code-fold: true
+using Bootstrap
+using Statistics
+using Plots
+gr(); # activate gr backend
+```
+
+```{julia}
+#| code-fold: true
+
+# data from Table 2.1 in Efron & Tibshirani book
+treatment = [94,197,16,38,99,141,23];
+control = [52,104,146,10,51,30,40,27,46];
+
+plot(treatment,ones(size(treatment)), line=:stem, color=:red, lw=2, label="Treatment")
+plot!(control,ones(size(treatment)), line=:stem, 
+        color=:blue, lw=2, label="Control",
+        size=[600,100], ylim=[0, 1.2], 
+        legend = :outertopright, yticks=[0,1],
+        title = "Efron & Tibshirani murine example", 
+        titlefont = font(10,"Arial"),
+        titlefonthaligns=:right,
+        tickfont = font(10,"Arial"),
+        legendfont = font(10,"Arial"))
+xaxis!(label="Survival time (days)")
+```
+
+### Bootstrap of the `median`
+
+Now we can create *`{julia} n_boot = 10000` bootstrap samples from the `treatment` and `control` data - making sure to respect the size of each list/vector, and to use sampling *with replacement*.
+
+```{julia}
+#| code-fold: true
+## basic bootstrap of the "median" treatment data
+@time bs1 = bootstrap(median, treatment, BasicSampling(n_boot))
+```
+
+The `Bootstrap.jl` package ([see documentation](https://github.com/juliangehring/Bootstrap.jl?tab=readme-ov-file#examples)) also has tools for getting confidence intervals, and extracting other info like # of observations, etc
+
+```{julia}
+## calculate 95% confidence intervals
+cil = 0.95;
+
+## basic CI
+bci1 = confint(bs1, BasicConfInt(cil));
+
+## percentile CI
+bci2 = confint(bs1, PercentileConfInt(cil));
+
+## BCa CI
+bci3 = confint(bs1, BCaConfInt(cil));
+
+## Normal CI
+bci4 = confint(bs1, NormalConfInt(cil));
+```
+
+which lets you compare, e.g. the *normal confidence interval* `{julia} bci4[1]`, with the *percentile confidence interval* `{julia} bci2[1]`.
+
+
+To visualise the distribution of bootstrapped medians, we can get them with `straps()` and use the `histogram()` function from `Plots.jl`. The bootstrap estimate of the *standard error* of the statistic of interest can be obtained from the *standard deviation* of the bootstrap replications. (The library will do this under the hood).
+
+```{julia}
+#| code-fold: true
+# look at the distribution (called "straps")
+histogram( straps(bs1)[1], title="Distribution of bootstrapped medians [treatment]", 
+                label="",
+                size=[600,300] )
+```
+
+### Bootstrap of other, more unusual statistics
+
+We can also try something a bit more complicated, like boostrap sample `treatment` and `sample` and use those to look at the distribution of *difference* in means.
+
+```{julia}
+#| code-fold: true
+## basic bootstrap of the "mean"  data
+bs_t = bootstrap(x->mean(x), treatment, BasicSampling(n_boot))
+bs_c = bootstrap(y->mean(y), control, BasicSampling(n_boot))
+
+# the difference estimator
+# calculated from the
+t = straps(bs_t)[1];
+c = straps(bs_c)[1];
+z =  t - c;
+nbins = 50;
+
+bins = range(minimum([t;c;z]),maximum([t;c;z]), nbins )
+# percentile
+pc = quantile(z, [0.025, 0.975])
+
+histogram(t,  bins = bins, alpha=0.8, color=:gray, label="treatment",size=[600,400])
+histogram!(c,  bins = bins, alpha=0.8, color=:white, label="control")
+```
+
+... and from those bootstrapped means, we can calculate the difference and look at the distribution, and percentiles of that:
+
+```{julia}
+#| code-fold: true
+# look at the distribution (called "straps")
+histogram( z, bins = bins, 
+              title="Distribution of bootstrapped difference", 
+              color=:red, 
+              label="treatment - control",
+              size=[600,400])
+vline!(pc, lw=2, label="2.5 and 97.5 percentiles")
+vline!([mean(z)], lw=2, color=:black, label="")
+```
+
+### Permutation testing
+
+There is a whole ecosystem for doing hypothesis testing in `julia` which also includes permutation testing (see [documentation for `HypothesisTests.jl`](https://juliastats.org/HypothesisTests.jl/stable/)) or dip into `R`, which will have tons of options, too.
+
+Lots more interesting stuff out there - if you want to add things here, send me a message.
+
+## References
+
+There is a pretty comprehensive article on boot strap methods by the inventors of the methods - worth a look if this is something you will use in your work @10.1214/ss/1177013815.
+
+
+The classic textbook is quite expensive and a bit harder to get but you can ask around and/or look in the library to check it out. 
+
+![An Introduction to the Bootstrap](./images/intro-to-bootstrap.jpeg){fig-align="left"}
+
+The first couple of chapters are available at [Born lab, Harvard Medical School](https://www.hms.harvard.edu/bss/neuro/bornlab/nb204/statistics/bootstrap.pdf) as part of some neurobio class. Check it out. @tibshirani1993introduction.
+
+
+::: {#refs}
+:::

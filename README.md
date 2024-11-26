@@ -46,10 +46,10 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | **2024 reboot** | | |
 | Tue 2024-11-05  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
 | Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes, links & some code][non-normal-stats]] |
-| Tue 2024-12-03  | DS | **UP-ESLC-A09**, Version control / `git`/`github` Zero to Hero(ish) [[notes][version-control-zero-to-hero]]|
+| Tue 2024-12-03  |  | **UP-ESLC-A09**, **(update)** Nick Myers hosts visiting speaker: [Prof Martin Hebart](http://martin-hebart.de/) |
 | Tue 2024-12-17  | MvR | **UP-ESLC-A09**, Bayesian Hierarchical Modelling [[notes][hierarchical-bayes]] |
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-| Tue 2025-01-07  | x | **UP**, tbc |
+| Tue 2025-01-07  | DS | **UP-ESLC-A09**, Version control / `git`/`github` Zero to Hero(ish) [[notes][version-control-zero-to-hero]]|
 | Tue 2025-01-21  | Damian Eke | **UP**, Data Ethics, Governance |
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md
@@ -67,7 +67,7 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 
 [stats-with-counts]: ./presentations/2024-11-05-ordinal+count-data.md
 [non-normal-stats]: ./presentations/2024-11-19-non-normal-stats.md
-[version-control-zero-to-hero]: ./presentations/2024-12-03-version-control-zero-to-hero.md
+[version-control-zero-to-hero]: ./presentations/2025-01-07-version-control-zero-to-hero.md
 [hierarchical-bayes]: ./presentations/2024-12-17-bayesian-hierarchical-model.md
 [ml-beginnings]: ./presentations/2024-xx-xx-ml-beginnings.md
 

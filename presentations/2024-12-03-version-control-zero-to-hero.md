@@ -4,7 +4,7 @@
 
 ## Prepare?
 
-- **Sign up!** - If you don't have a `github id`, yet... sign up for a free account at https://github.com/ 
+- **Sign up!** - If you don't have a `github id`, yet... sign up for a free account at <https://github.com/> 
 
 - to gauge everyone's level of experience, please [spend 2 minutes on this form](https://forms.office.com/r/9H3T3dfA2p)
 

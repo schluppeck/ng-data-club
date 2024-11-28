@@ -46,10 +46,10 @@ You can also check out the [github discussion forum](https://github.com/schluppe
 | **2024 reboot** | | |
 | Tue 2024-11-05  | Leo Cohen | **UP-ESLC-A09**, Count distributions and analyses – Poisson and Negative Binomial [[notes][stats-with-counts]]|
 | Tue 2024-11-19  | James Read-Tannock | **UP-ESLC-A09**, Non-Normal, No Problem: A Crash Course in Non-Parametric Statistics [[notes, links & some code][non-normal-stats]] |
-| Tue 2024-12-03  |  | **UP-ESLC-A09**, **(update)** Nick Myers hosts visiting speaker: [Prof Martin Hebart](http://martin-hebart.de/) |
+| Tue 2024-12-03  |  | ~~**UP-ESLC-A09**~~, **(update)** Nick Myers hosts visiting speaker, **UP-PSYC A1**: [Prof Martin Hebart](http://martin-hebart.de/) |
 | Tue 2024-12-17  | MvR | **UP-ESLC-A09**, Bayesian Hierarchical Modelling [[notes][hierarchical-bayes]] |
 | TBC  | Everyone | Discussion round - your most/least favourite plots. BYOP - bring your own plot |
-| Tue 2025-01-07  | DS | **UP-ESLC-A09**, Version control / `git`/`github` Zero to Hero(ish) [[notes][version-control-zero-to-hero]]|
+| Tue 2025-01-07  | DS | **UP-ESLC-A09**, (*rescheduled*) Version control / `git`/`github` Zero to Hero(ish) [[notes][version-control-zero-to-hero]]|
 | Tue 2025-01-21  | Damian Eke | **UP**, Data Ethics, Governance |
 
 [meeting-notes]: ./2022-11-23-meeting-notes.md

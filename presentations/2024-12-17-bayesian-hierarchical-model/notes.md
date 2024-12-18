@@ -45,11 +45,11 @@ I have also had a play around with a linear regression example, which is not a h
 
 Nice diagnostic plots out of the box
 
-... and nice values for the MCMC diagnostics and summaries
+<img width="100%" src="./hairy-caterpillar-julia.svg"/>
+
+... and nice display tables for values for the MCMC diagnostics and summaries:
 
 ![MCMC diagnostics](./mcmc-output.png)
-
-
 
 ## Reading
 

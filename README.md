@@ -93,6 +93,6 @@ Structure will be around:
 
 ## Colophon
 
-Organised by Mark v Rossum and Denis Schluppeck
+Organised by Denis Schluppeck and Mark v Rossum
 
 **artwork by DALL-E** (https://labs.openai.com/) using the prompt: "a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic"

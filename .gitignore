@@ -4,4 +4,7 @@
 /.quarto/
 _freeze
 .vscode
-
+*_cache/
+*_files/
+*_ipynb
+*.tex

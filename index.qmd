@@ -29,9 +29,18 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 
 **Upcoming talks:**
 
-- **Denis Schluppeck*:* *Version control - git/github zero to hero* 2025-01-14 (UP-PSYC-B37)
+>**Denis Schluppeck**
+>   
+>*Version control - git/github zero to hero* 
+>
+>2025-01-14 (UP-PSYC-B37)
 
-- **Damian Eke:** *Data governance, FAIR principles, ABDN, ...* 2025-01-21 (UP-PSYC-B37)
+>
+**Damian Eke:** 
+>
+>*Data governance, FAIR principles, ABDN, ...* 
+>
+>2025-01-21 (UP-PSYC-B37)
 
 
 Have a look at the [list of presentations](./presentations/index.qmd) for past presentations, code, etc.

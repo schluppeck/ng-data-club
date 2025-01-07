@@ -2,7 +2,9 @@
 title: "Dealing with Count Data"
 subtitle: "NG Data Club"
 author: "Leonardo Cohen"
-date: "04 November 2024"
+date: 2024-11-04
+date-format: iso
+image: ../listing.png
 output:
   html_document: 
     code_folding: hide

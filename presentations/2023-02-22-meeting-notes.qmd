@@ -16,9 +16,9 @@ bibliography: ng-data-club.bib
 
 ## Notes
 
-- [slide presentation on the day](./presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html)
+- [slide presentation on the day](./2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html)
 
-- [a pdf version of the slides](./presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.pdf)
+- [a pdf version of the slides](./2023-02-22-tidy-data/2023-02-22-tidy-data-slides.pdf)
 
 
 ## Links

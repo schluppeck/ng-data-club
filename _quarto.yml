@@ -9,6 +9,7 @@ execute:
 website:
   title: "NG data club"
   navbar:
+    background: light
     left:
       - href: index.qmd
         text: Home
@@ -20,5 +21,5 @@ website:
       - "cp -r data/. docs/data/"
 format:
   html:
-    theme: flatly
+    theme: default
     toc: true

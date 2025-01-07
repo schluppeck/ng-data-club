@@ -1,0 +1,12 @@
+---
+title: "About the NG data club"
+author: "Denis Schluppeck"
+---
+
+Started after a corridor conversation between Mark v Rossum and Denis Schluppeck.
+
+We had our first meeting as a group on 2022-11-23 and have been making steady progress ;)
+
+- [notes](./presentations/2022-11-23-first-meeting.html) from the first meeting
+- [some potential, additional ideas](./wishlist.md)
+

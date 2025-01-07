@@ -2,28 +2,30 @@
 title: "Rethinking your plotting habits"
 subtitle: "Data visualisation block - data club"
 date: 2023-03-29
+published-title: "Session date:"
 date-format: iso
+image: images/geoms.png
 self-contained: true
 embed-resources: true
 author: "Denis Schluppeck"
 format: 
-  revealjs: 
-    slide-number: true
-    code-fold: true
-    include-in-header: 
-      text: |
-        <style>
-        .center-xy {
-          margin: 0;
-          position: absolute;
-          top: 50%;
-          left: 0%;
-          -ms-transform: translateY(-50%), translateX(-50%);
-          transform: translateY(-50%), translateX(-50%);
-        }
-        </style>
-  html: 
-    output-file: "2023-03-29-datavis-notes.html"
+  # revealjs: 
+  #   slide-number: true
+  #   code-fold: true
+  #   include-in-header: 
+  #     text: |
+  #       <style>
+  #       .center-xy {
+  #         margin: 0;
+  #         position: absolute;
+  #         top: 50%;
+  #         left: 0%;
+  #         -ms-transform: translateY(-50%), translateX(-50%);
+  #         transform: translateY(-50%), translateX(-50%);
+  #       }
+  #       </style>
+  html: default
+    # output-file: "2023-03-29-datavis-notes.html"
 # mainfont:  Helvetica
 mainfont:  "Atkinson Hyperlegible"
 ---
@@ -249,7 +251,7 @@ e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
     geom_jitter(alpha=0.5)
 ```
 
-## {#facet data-menu-title="Facet to split data"}
+## {#facet-1 data-menu-title="Facet to split data"}
 
 > too busy, split up by using `facets`
 
@@ -261,7 +263,7 @@ e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
      facet_wrap(~shift)
 ```
 
-## {#facet data-menu-title="Try out density on top?"}
+## {#facet-2 data-menu-title="Try out density on top?"}
 
 > can we add density estimate?
 
@@ -273,7 +275,7 @@ e |> ggplot(aes(x = delta, y = estimate, color=shift)) +
      geom_density2d(color="black", size=0.4)+
      facet_wrap(~shift)
 ```
-## {#facet data-menu-title="Fix the coordinates"}
+## {#facet-3 data-menu-title="Fix the coordinates"}
 
 > make sure the coordinates x/y axes are equal + add a line at y=0
 

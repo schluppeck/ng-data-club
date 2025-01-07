@@ -1,9 +1,17 @@
 ---
 title: "Tidy data"
 author: "Denis Schluppeck"
-format:
+published-title: "Session date:"
+date: 2023-02-22
+date-format: iso
+image: images/zoolander.png
+execute:
+  freeze: auto
+format: 
+  html: default
   revealjs: 
     code-fold: true
+    output-file: 2023-02-22-tidy-data-slides
     include-in-header: 
       text: |
         <style>
@@ -16,10 +24,12 @@ format:
           transform: translateY(-50%), translateX(-50%);
         }
         </style>
-  pdf: default
+  typst: 
+     output-file: 2023-02-22-tidy-data-slides
 mainfont: Helvetica
 sansfont: Menlo 
 self-contained: true
+embed-resources: true
 reference-location: margin
 citation-location: margin
 bibliography: ../ng-data-club.bib

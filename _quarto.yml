@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto  # re-render only when source changes
+  cache: true
+
+website:
+  title: "NG data club"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: presentations/index.qmd
+        text: Presentations
+      - href: about.qmd
+        text: About
+    post-render:
+      - "cp -r data/. docs/data/"
+format:
+  html:
+    theme: flatly
+    toc: true

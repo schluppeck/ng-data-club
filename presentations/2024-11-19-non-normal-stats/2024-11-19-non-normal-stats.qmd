@@ -1,10 +1,14 @@
 ---
-title: "Non-parametric stats, bootstrap, permutation testing"
+title: "Non-parametric stats, bootstrap, permutation testing **[notes]**"
 author: Denis Schluppeck
 date: 2024-11-19
 date-format: iso
+published-title: "Session date:"
 subtitle: Some notes related to presentation
+image: https://juliangehring.github.io/Bootstrap.jl/stable/assets/logo.png
 engine: julia
+execute:
+  freeze: auto
 includesource: true
 embed-resources: true
 reference-location: margin

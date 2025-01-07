@@ -1,0 +1,36 @@
+---
+title: "Version control: Zero to hero"
+author: Denis Schluppeck
+date: 2025-01-14
+published-title: "Session date:"
+image: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+
+## Prepare?
+
+- **Sign up!** - If you don't have a `github id`, yet... sign up for a free account at <https://github.com/> 
+
+- to gauge everyone's level of experience, please [spend 2 minutes on this form](https://forms.office.com/r/9H3T3dfA2p)
+
+- bring your laptop along to the session. I'll walk through some common tasks.
+
+## Plan
+
+- a quick overview of the ideas. (Why should you care? How does it help? Do I really need it>?)
+
+- some walk-throughs of common tasks
+
+- some really useful aspects of using `git` with `github.com` that might help you in your work
+  
+## Materials
+
+To come.

@@ -2,25 +2,16 @@
 title: "Mixing text + computations"
 subtitle: "Markdown, quarto, webpages, pandoc"
 author: Denis Schluppeck
-date: 2023-01-18
+date: 2023-01-04
+published-title: "Session date:"
+date-format: iso
+image: https://live.staticflickr.com/65535/52728937397_c682ed9d70_z.jpg
 format:
-  docx: default
-  revealjs: 
-    code-fold: true
-    self-contained: true
-    mainfont: Helvetica
-    sansfont: Helvetica
   html:
     code-fold: true
     self-contained: true
     mainfont: Helvetica
     sansfont: Helvetica
-  pdf:
-    mainfont: Helvetica
-    sansfont: Helvetica
-    pdf-engine: xelatex
-    monofont: Menlo
-    papersize: a4
 ---
 
 ## Motivation

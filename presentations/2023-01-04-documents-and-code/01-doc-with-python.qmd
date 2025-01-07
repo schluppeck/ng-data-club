@@ -1,5 +1,10 @@
 ---
 title: "Mixing writing and `python`"
+author: Denis Schluppeck
+date: 2023-01-04
+published-title: "Session date:"
+date-format: iso
+image: https://live.staticflickr.com/65535/52728937397_c682ed9d70_z.jpg
 format:
   html:
     code-fold: true

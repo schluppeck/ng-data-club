@@ -1,0 +1,65 @@
+# NG data club
+
+Nottingham Psychology data club resources
+
+<figure>
+
+<img src="images/dall-e-image.png" width="30%"/>
+<br>
+<caption>How DALL-E sees our data club</caption>
+</figure>
+
+Some materials for the lunchtime *data club*, an informal weekly/fortnightly meeting at the [University of Nottingham](https://www.nottingham.ac.uk/psychology/).
+
+## Aim
+
+>Bring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data
+
+- organising
+- analysing
+- visualising
+
+## Github repo
+
+You can find notes, presentations, and code at the [ng-data-club github repository](https://github.com/schluppeck/ng-data-club).
+
+
+
+## Schedule
+
+**Upcoming talks:**
+
+- **Denis Schluppeck*:* *Version control - git/github zero to hero* 2025-01-14 (UP-PSYC-B37)
+
+- **Damian Eke:** *Data governance, FAIR principles, ABDN, ...* 2025-01-21 (UP-PSYC-B37)
+
+
+Have a look at the [list of presentations](./presentations/index.qmd) for past presentations, code, etc.
+
+
+
+## Discussion forum
+
+You can also check out the [github discussion forum](https://github.com/schluppeck/ng-data-club/discussions) for the data club. A good place to share ideas, links, etc.
+
+## Code of conduct
+
+We have a [code of conduct](./CODE-OF-CONDUCT.md) that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.
+
+## Ideas for meetings / wishlist
+
+We will try to keep meetings informal with some guided discussion by presenters that will change week by week.
+
+Structure will be around:
+
+1. *I want answer the following question with my data... How do I do that?* and/or
+2. *I know the following technique, which could help you with bla...*
+
+
+## Colophon
+
+Organised by Denis Schluppeck and Mark v Rossum
+
+**artwork by DALL-E** (https://labs.openai.com/) using the prompt: "a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic"
+
+

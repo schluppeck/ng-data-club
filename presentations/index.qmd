@@ -1,0 +1,12 @@
+---
+title: "Presentations"
+listing: 
+    sort-ui: true
+    sort:
+    - "date desc"
+    - "title desc"
+contents:
+  - "*.qmd"
+  - "*.md"
+  - "*/*.qmd"
+---

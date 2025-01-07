@@ -1,0 +1,18 @@
+---
+title: "Bayesian hierarchical models"
+subtitle: A talk about Bayes' rule, MCMC, ...
+author: Mark van Rossum
+date: 2024-12-17
+published-title: "Session date:"
+image: https://wikimedia.org/api/rest_v1/media/math/render/svg/4211e3e7c3482573cdfbc0653d48a6279104c899
+format:
+  html: default
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+- Some notes on Bayes, `python` and `julia` packages and even some example code [on this page](./2024-12-17-bayesian-hierarchical-model/notes.html) 
+
+- [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_hierarchical_modeling)

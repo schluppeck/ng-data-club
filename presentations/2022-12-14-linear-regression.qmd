@@ -1,16 +1,14 @@
 ---
-title: "Linear regression [session notes]"
+title: "Linear regression **[session notes]**"
 author: "Denis Schluppeck"
-format:
-  html: default
-  pdf: default
-mainfont: Helvetica
-sansfont: Menlo 
+date: 2022-12-14
+published-title: "Session date:"
+image: listing.png
+format: html
 self-contained: true
 reference-location: margin
 citation-location: margin
 bibliography: ng-data-club.bib
-jupyter: julia-1.8
 ---
 
 ## Introduction

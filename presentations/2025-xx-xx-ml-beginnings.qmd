@@ -1,0 +1,19 @@
+---
+title: "ML beginnings..."
+author: TBD
+date: TBD
+published-title: "Session date:"
+image: listing.png
+format:
+  html: default
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+# ML beginnings
+
+Intro level information for machine learning enthusiasts
+
+maybe a chapter / homework and read through before meet?

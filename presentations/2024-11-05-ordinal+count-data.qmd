@@ -1,0 +1,21 @@
+---
+title: "Ordinal data and counts"
+subtitle: "Count distributions and analyses – Poisson and Negative Binomial distributions"
+author: Leonardo Cohen
+date: 2024-11-05
+published-title: "Session date:"
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/330px-Poisson_pmf.svg.png
+format:
+  html: default
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+
+## Resources
+
+- [rendered notes](./2024-11-05-count-data-talk/Count-Data.html)
+- [R markdown file](./2024-11-05-count-data-talk/Count-Data.Rmd)
+- [data files .RData format](./data/Count_datasets.RData)

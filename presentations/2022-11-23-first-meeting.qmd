@@ -1,0 +1,98 @@
+---
+title: "NG data club"
+author: "Schluppeck / van Rossum"
+date: 2022-11-23
+published-title: "Session date:"
+image: listing.png
+format:
+  html: default
+self-contained: true
+---
+## Where, when?
+
+Meeting time + place
+
+- Wednesday, 12:00-12:45, weekly
+- a seminar room like this here? (or somewhere else?)
+
+## What
+
+Could structure things according to
+
+1. *I want to answer the following question with my data... How do I do that?* 
+
+2. *I know the following technique, which could help you with [bla]...*
+
+3. Other format?
+
+## What 2
+
+- Want to share knowledge of *principles* / intuition / maths background
+- ... but also practical advice:
+  + tools 
+  + code snippets (multi-lingual?)
+
+## Padlet link + Team + resources
+
+- https://padlet.com/denisschluppeck/ng_data_club
+- MS Team (for chat / ad-hoc questions)
+- github repo, gists (for sharing code )
+
+ 
+## Lots of potential topics {.scrollable}
+
+- PCA, ICA, related methods
+- linear regression, basics of linear algebra?
+- "dimensionality reduction"
+- t-SNE
+- basic ideas behind solving inverse problems
+- how do people organise data, meta-data
+- "Tidy Data" / tidyverse and related ideas (in `r`), Pandas (`python`), Tables (`matlab`). Long and wide data? `select`, `filter`, `mutate`, `summarise` (`dplyr`/`sql` syntax) 
+- logistic regression
+- intro to bayesian stats/estimation?
+- more machine learning stuff (`svm`, intro to deep learning models)
+- RL?
+
+<hr>
+
+## Notes from first meeting
+
+- Time slot, lunchtime, 12:00-12:45 seems good
+- Room, TBC (depending on availability)
+- General mix of sessions that address "questions" and "available tools/techniques" sounded good to people
+- There were lots of good suggestions for what to cover
+
+## Suggested Topics
+
+- Missing data
+- Visualization
+- code/data sharing
+- Stat tests
+- Linear regression (MvR)
+- Bugs
+- Code style guide (MvR)
+- Software tools
+- Pandas
+- Bring You Own Problem (**BYOP**)
+- DAGs / directed ayclic graphs
+- inferring causality from non-experimental data (e.g., selection models, instrumental variables, difference-in-difference)
+
+## Initial Schedule
+
+1. 2022-11-30: Tomas: `julia` and code sharing
+
+2. 2022-12-07: Helen, Bring your own problem, BYOP (data visualisation)
+
+3. 2022-12-14: Hazem, thinking about, choosing appropriate statistical tests
+
+## Future
+
+- Roni & MvR: Hidden Markov Models
+
+- Denis & Jan: mixing code and writing; documents, webpages, presentations
+
+## Actions
+
+- [ ] send e-mail with details of upcoming meetings to `lp-notug` [ds]
+- [ ] sort out recurring room [ds]
+- [ ] consider moving emails/discussion to Teams [ds, maybe after away day in 2023] 

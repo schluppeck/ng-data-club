@@ -1,9 +1,12 @@
 ---
-title: "Journal Club and presentation"
-subtitle: Josefina Weinerova, PhD student
-author: "Denis Schluppeck"
+title: "Effect sizes, statistical power, statistics"
+subtitle: DS's notes
+date: 2023-03-08
+published-title: "Session date:"
+author: Josefina Weinerova
 format:
   html: default
+image: listing.png
 mainfont: Helvetica
 sansfont: Menlo 
 self-contained: true

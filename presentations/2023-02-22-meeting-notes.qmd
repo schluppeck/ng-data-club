@@ -1,0 +1,31 @@
+---
+title: "Tidy data"
+date: 2023-02-22
+published-title: "Session date:"
+author: Denis Schluppeck
+format:
+  html: default
+image: listing.png
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+## Notes
+
+- [slide presentation on the day](./presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html)
+
+- [a pdf version of the slides](./presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.pdf)
+
+
+## Links
+
+- {R for Data Science book / 2nd ed in progress](https://r4ds.hadley.nz/)
+- [tidyverse documentation](https://www.tidyverse.org/)
+- A matlab plotting library implemented in Matlab:  [gramm](https://blogs.mathworks.com/pick/2016/04/22/gramm/)
+
+
+

@@ -21,5 +21,7 @@ website:
       - "cp -r data/. docs/data/"
 format:
   html:
-    theme: default
+    theme: 
+      light: flatly
+      dark: darkly
     toc: true

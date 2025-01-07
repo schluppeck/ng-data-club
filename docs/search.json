@@ -1,0 +1,1374 @@
+[
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "NG data club",
+    "section": "",
+    "text": "matlab\npython\nr / rstudio (posit)\njulia\nvisualisation tools (online)\nstyle guides\ndata storage\nmodelling?\nmaths"
+  },
+  {
+    "objectID": "tools.html#links-to-tools",
+    "href": "tools.html#links-to-tools",
+    "title": "NG data club",
+    "section": "",
+    "text": "matlab\npython\nr / rstudio (posit)\njulia\nvisualisation tools (online)\nstyle guides\ndata storage\nmodelling?\nmaths"
+  },
+  {
+    "objectID": "presentations/2023-03-08-meeting-notes.html",
+    "href": "presentations/2023-03-08-meeting-notes.html",
+    "title": "Effect sizes, statistical power, statistics",
+    "section": "",
+    "text": "During the sessions we discussed a recent paper on reporting of effect sizes in social and developmental psychology publications (Weinerová, Szűcs, and Ioannidis 2022).\n\nWeinerová, Josefı́na, Dénes Szűcs, and John P A Ioannidis. 2022. “Published Correlational Effect Sizes in Social and Developmental Psychology.” R Soc Open Sci 9 (12): 220311. https://doi.org/10.1098/rsos.220311.\n\n\n\nFirst page of paper"
+  },
+  {
+    "objectID": "presentations/2023-03-08-meeting-notes.html#journal-club-and-presentation",
+    "href": "presentations/2023-03-08-meeting-notes.html#journal-club-and-presentation",
+    "title": "Effect sizes, statistical power, statistics",
+    "section": "",
+    "text": "During the sessions we discussed a recent paper on reporting of effect sizes in social and developmental psychology publications (Weinerová, Szűcs, and Ioannidis 2022).\n\nWeinerová, Josefı́na, Dénes Szűcs, and John P A Ioannidis. 2022. “Published Correlational Effect Sizes in Social and Developmental Psychology.” R Soc Open Sci 9 (12): 220311. https://doi.org/10.1098/rsos.220311.\n\n\n\nFirst page of paper"
+  },
+  {
+    "objectID": "presentations/2023-03-08-meeting-notes.html#notes-ds",
+    "href": "presentations/2023-03-08-meeting-notes.html#notes-ds",
+    "title": "Effect sizes, statistical power, statistics",
+    "section": "Notes [ds]",
+    "text": "Notes [ds]\n\nMain ideas: effect size\nQuick summary of Cohen’s guidelines for small, medium and large effect sizes (\\(d=0.2\\), \\(d=0.5\\), \\(d=0.8\\)) - and how Cohen apparently didn’t really espouse them (!)\n\npoint about issues with effect size measures not being directly comparable: same data analysed in context of GLM (either with ANOVA or t-tests) leads to different “effect size” for same underlying effect\nalso difference in fields on empirically found effect sizes \\(\\therefore\\) idea to look at distribution of effect sizes and 25th, 50th and 75th quartiles to correspond to small, medium, and large effect sizes\nsee also MRC CBU rules of thumb on magnitude of effect sizes\n\nDescription of methodology of paper\nsome discussion around method for obtaining 12k (sample 1) and &gt;30k (sample 2) reported effect sizes from paper in social and developmental psychology journals\n\nmanual version: better context, also includes tables\ncomputerised, python-based scraping captured patterns along the lines of r=(0\\.[0-9]*) or r\\(([0-9]*)\\)=(0\\.[0-9]*) to get a correlation based effect size (Pearson’s \\(r\\))\n\nDiscussion around publication bias??, text descriptions emphasizing larger effect sizes"
+  },
+  {
+    "objectID": "presentations/2023-03-08-meeting-notes.html#quick-look-at-common-measures",
+    "href": "presentations/2023-03-08-meeting-notes.html#quick-look-at-common-measures",
+    "title": "Effect sizes, statistical power, statistics",
+    "section": "Quick look at common measures",
+    "text": "Quick look at common measures\n\n\n\n\n\n\n\n\nMeasure\nWhat?\nEquation\n\n\n\n\n\\(r\\)\nPearson’s product moment correlation\n\\(\\frac{\\text{COV}(X,Y)}{\\sigma_X \\sigma_Y}\\)\n\n\n\\(d\\)\nCohen’s d\n\\(\\frac{\\bar{X}_2 - \\bar{X}_2 }{\\sigma}\\)\n\n\n\\(f\\)\nCohen’s f\n\n\n\n\\(\\eta^2\\)\nEta squared\n\n\n\n\\(\\vdots\\)"
+  },
+  {
+    "objectID": "presentations/2023-03-08-meeting-notes.html#links",
+    "href": "presentations/2023-03-08-meeting-notes.html#links",
+    "title": "Effect sizes, statistical power, statistics",
+    "section": "Links",
+    "text": "Links\n\npower calculations, Khan academy\nwikidpedia entry on effect sizes\nreplication crisis\nmeta-science"
+  },
+  {
+    "objectID": "presentations/2023-02-22-meeting-notes.html",
+    "href": "presentations/2023-02-22-meeting-notes.html",
+    "title": "Tidy data",
+    "section": "",
+    "text": "slide presentation on the day\na pdf version of the slides"
+  },
+  {
+    "objectID": "presentations/2023-02-22-meeting-notes.html#notes",
+    "href": "presentations/2023-02-22-meeting-notes.html#notes",
+    "title": "Tidy data",
+    "section": "",
+    "text": "slide presentation on the day\na pdf version of the slides"
+  },
+  {
+    "objectID": "presentations/2023-02-22-meeting-notes.html#links",
+    "href": "presentations/2023-02-22-meeting-notes.html#links",
+    "title": "Tidy data",
+    "section": "Links",
+    "text": "Links\n\n{R for Data Science book / 2nd ed in progress](https://r4ds.hadley.nz/)\ntidyverse documentation\nA matlab plotting library implemented in Matlab: gramm"
+  },
+  {
+    "objectID": "presentations/2023-02-08-meeting-notes.html",
+    "href": "presentations/2023-02-08-meeting-notes.html",
+    "title": "Statistical significance, Interactions, Statistics",
+    "section": "",
+    "text": "The next session will be led by Hazem Toutounji who will present around a paper:\nNieuwenhuis, S., Forstmann, B. U., & Wagenmakers, E.-J. (2011). Erroneous analyses of interactions in neuroscience: a problem of significance. Nat Neurosci link to PDF\nExpect some general discussion about the challenges to do with meaningful stats in neuroscience / psychology.\n\nThe [slides from the presentation] have some more details and ideas."
+  },
+  {
+    "objectID": "presentations/2023-02-08-meeting-notes.html#notes",
+    "href": "presentations/2023-02-08-meeting-notes.html#notes",
+    "title": "Statistical significance, Interactions, Statistics",
+    "section": "",
+    "text": "The next session will be led by Hazem Toutounji who will present around a paper:\nNieuwenhuis, S., Forstmann, B. U., & Wagenmakers, E.-J. (2011). Erroneous analyses of interactions in neuroscience: a problem of significance. Nat Neurosci link to PDF\nExpect some general discussion about the challenges to do with meaningful stats in neuroscience / psychology.\n\nThe [slides from the presentation] have some more details and ideas."
+  },
+  {
+    "objectID": "presentations/2023-02-08-meeting-notes.html#some-discussion-points-from-the-session",
+    "href": "presentations/2023-02-08-meeting-notes.html#some-discussion-points-from-the-session",
+    "title": "Statistical significance, Interactions, Statistics",
+    "section": "Some discussion points from the session",
+    "text": "Some discussion points from the session\n[ds]\n\nintro: difference in cultures between maths/engineering/physics and psychology on how stats is taught and introduced during training.\nPsychology has a particular way of teaching this - emphasis on linear regression, ANOVA, experimental design.\neven though other discipiplines often require much stronger quantitative skills, intuition for experimental design / stats / analysis of data sets common in neuroscience and psychology is not a given\npop-quiz: based on figure from paper… is there sufficient information in this plot + description for you to accept the conclusions?\ntwo levels of issue: reasoning about stats, significance, p-values, etc is hard (and even experienced pracitioners make mistakes), appropriateness of techniques/techinical details may not always be correct (people often stick with what they know, have learnt before)\nvisual short-cuts from graphs that look like they may imply a significant difference can be misleading\n[see slides for some more pointers]"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html",
+    "title": "Mixing writing and julia",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in ?@fig-timeseries shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#background",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#background",
+    "title": "Mixing writing and julia",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in ?@fig-timeseries shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#an-actual-computed-figure",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#an-actual-computed-figure",
+    "title": "Mixing writing and julia",
+    "section": "an actual computed figure",
+    "text": "an actual computed figure\n#| label: fig-timeseries\n#| fig-cap: \"A line plot of some mystery data\"\n\n# julia script\n#\n# schluppeck, 2022-12-12\n\nusing CSV\nusing Dates\nusing DataFrames\nusing Plots\nusing FindPeaks1D\n\ngr()\n\ndf = DataFrame(CSV.File(\"2017-mysteryTimeseries.csv\"))\n\nthe_plot = plot(df.theTime_day, df.n;\n         lw = 2, \n         xlims = Date.((\"2016-09-01\", \"2016-12-31\")),\n         legend = false\n)\nylabel!(\"# of moodle interactions\")\nxlabel!(\"day\")"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#or-a-table",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#or-a-table",
+    "title": "Mixing writing and julia",
+    "section": "or a table",
+    "text": "or a table\nA badly formatted table… rstats with various packages handles tabular data much more nicely!\n# get head()... first 10 rows\nhead(d) = first(d, 10)\nhead(df)"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#or-some-further-analysis",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#or-some-further-analysis",
+    "title": "Mixing writing and julia",
+    "section": "or some further analysis",
+    "text": "or some further analysis\nIf you want to compute things for including in your text, so-called inline code, then you can make your code spit out markdown that’s been patched up. If you turn #| echo: true to false, then the code is hidden!\nWe can also elaborate on previous plots, bu adding additional analysis. ?@fig-timeseries-with-peaks shows the days, where \\(n&gt;100\\).\n#| echo: false\n#| label: fig-timeseries-with-peaks\n#| fig-cap: \"Events with &gt; 100 interactions labelled\"\n\n# use findpeaks to find days where \n# interactions topped 100\np = findpeaks1d(df.n, height = 100)\n\n# and superimpose on previous plot\nplot(the_plot, size = (600,300), widen = 1.1)\nscatter!(df[p[1],:theTime_day], p[2][\"peak_heights\"]) #, color=:red, ms=12)"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#notes",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-julia.html#notes",
+    "title": "Mixing writing and julia",
+    "section": "Notes",
+    "text": "Notes\n\nto find out which kernels you can use with jupyter, you can check in terminal with\n\njupyter kernelspec list\n\nCheck out how conveniently the output format can be swapped out with quarto render 01-doc-with-julia.qmd --to pdf etc"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html",
+    "title": "Mixing writing and python",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in Figure 1 shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#background",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#background",
+    "title": "Mixing writing and python",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in Figure 1 shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#an-actual-computed-figure",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#an-actual-computed-figure",
+    "title": "Mixing writing and python",
+    "section": "an actual computed figure",
+    "text": "an actual computed figure\n\n\nCode\n#! /usr/bin/env python3\n#\n# schluppeck, 2022-12-10\n\nimport numpy as np\nimport matplotlib as mpl\nimport matplotlib.pyplot as plt\nimport pandas as pd\nfrom IPython.display import display, Markdown\n\n# in terminal (but not here), we need\n# mpl.use('tkagg')\n\nfile_name = \"2017-mysteryTimeseries.csv\"\nrawdata = pd.read_csv(file_name)\n\ndata = rawdata.rename(\n    columns={\n        \"theTime_day\" : \"date\",  \n        \"n\" : \"interactions\",\n    }\n)\n\n# can inspect first few rows like this:\n# data.head() \n\ndata.plot() # pd dataframe has plot() method\nplt.legend(\"\")\nplt.xlabel('Days on course')\nplt.ylabel('Moodle interactions')\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot of some mystery data"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#or-a-table",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#or-a-table",
+    "title": "Mixing writing and python",
+    "section": "or a table",
+    "text": "or a table\nA badly formatted table… rstats with various packages handles tabular data much more nicely!\n\n\nCode\ndata.head()\\\n  .style\n\n\n\n\n\n\n\n \ndate\ninteractions\n\n\n\n\n0\n2016-06-13\n2\n\n\n1\n2016-07-21\n1\n\n\n2\n2016-09-01\n2\n\n\n3\n2016-09-09\n2\n\n\n4\n2016-09-13\n1"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#or-some-maths",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#or-some-maths",
+    "title": "Mixing writing and python",
+    "section": "or some “maths”",
+    "text": "or some “maths”\nIf you want to compute things for including in your text, so-called inline code, then you can make your code spit out markdown that’s been patched up. If you turn #| echo: true to false, then the code is hidden!\n`python data.shape[0]`\n\n\nCode\nnrows =  data.shape[0]\nncols = data.shape[1]\n\nnInteractions = data.max()[1]\ndInteractions = data.max()[0]\n\ndisplay(\n    Markdown(\n    \"\"\"\n### Patched up markdown\n\nThe dataframe had {nrows} rows and {ncols} columns.\n\nThe largest number of interactions was {n} on {d}\n\n\"\"\".format(nrows = nrows, ncols = ncols, n = nInteractions, d=dInteractions)))\n\n\n/var/folders/t6/cyw370ts3tqfydrs33_n_39m0000gr/T/ipykernel_45716/1740164801.py:4: FutureWarning:\n\nSeries.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`\n\n/var/folders/t6/cyw370ts3tqfydrs33_n_39m0000gr/T/ipykernel_45716/1740164801.py:5: FutureWarning:\n\nSeries.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`\n\n\n\nPatched up markdown\nThe dataframe had 81 rows and 2 columns.\nThe largest number of interactions was 534 on 2016-12-08"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#notes",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-python.html#notes",
+    "title": "Mixing writing and python",
+    "section": "Notes",
+    "text": "Notes\n\nFor me, to get the quarto preview to run correctly, I also had to install pip3 install matplotlib-inline\nCheck out how conveniently the output format can be swapped out with `quarto render 01-doc-with-python"
+  },
+  {
+    "objectID": "presentations/index.html",
+    "href": "presentations/index.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nData governance, ethics, FAIR principles, …\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nDamian Eke\n\n\n\n\n\n\n\n\n\n\n\n\nVersion control: Zero to hero\n\n\n\n\n\n\n\n\n\n\n\nJan 14, 2025\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nBayesian stats, Hierarchical models\n\n\nSome notes related to MvR’s presentation on Bayesian stats and\n\n\n\n\n\n\n\n\nDec 18, 2024\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nBayesian hierarchical models\n\n\nA talk about Bayes’ rule, MCMC, …\n\n\n\n\n\n\n\n\nDec 17, 2024\n\n\nMark van Rossum\n\n\n\n\n\n\n\n\n\n\n\n\nNon-parametric stats, bootstrap, permutation testing [notes]\n\n\nSome notes related to presentation\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nNon-Normal, No Problem\n\n\nA Crash Course in Non-Parametric Statistics\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\nJames Read-Tannock, Madan Lab\n\n\n\n\n\n\n\n\n\n\n\n\nOrdinal data and counts\n\n\nCount distributions and analyses – Poisson and Negative Binomial distributions\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\nLeonardo Cohen\n\n\n\n\n\n\n\n\n\n\n\n\nRethinking your plotting habits\n\n\nData visualisation block - data club\n\n\n\n\n\n\n\n\nMar 29, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nEffect sizes, statistical power, statistics\n\n\nDS’s notes\n\n\n\n\n\n\n\n\nMar 8, 2023\n\n\nJosefina Weinerova\n\n\n\n\n\n\n\n\n\n\n\n\nTidy data\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nTidy data\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical significance, Interactions, Statistics\n\n\n\n\n\n\n\n\n\n\n\nFeb 8, 2023\n\n\nHazem Toutounji\n\n\n\n\n\n\n\n\n\n\n\n\nMixing writing and r\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nMixing writing and julia\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nMixing text and computations\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nLinear regression [session notes]\n\n\n\n\n\n\n\n\n\n\n\nDec 14, 2022\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nNG data club\n\n\n\n\n\n\n\n\n\n\n\nNov 23, 2022\n\n\nSchluppeck / van Rossum\n\n\n\n\n\n\n\n\n\n\n\n\nML beginnings…\n\n\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nTBD\n\n\n\n\n\n\n\n\n\n\n\n\nDealing with Count Data\n\n\nNG Data Club\n\n\n\n\n\n\n\n\nNov 4, 2024\n\n\nLeonardo Cohen\n\n\n\n\n\n\n\n\n\n\n\n\nData visualistion Essentials\n\n\n\n\n\n\n\n\n\n\n\nMay 25, 2023\n\n\nAndy Kirk\n\n\n\n\n\n\n\n\n\n\n\n\nData visualisation\n\n\n\n\n\n\n\n\n\n\n\nMar 29, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical significance, Interactions, Statistics / notes\n\n\n\n\n\n\n\n\n\n\n\nJan 25, 2023\n\n\nEveryone\n\n\n\n\n\n\n\n\n\n\n\n\nMixing writing and python\n\n\n\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\n\n\n\n\n\n\nMixing text + computations\n\n\nMarkdown, quarto, webpages, pandoc\n\n\n\n\n\n\n\n\nJan 4, 2023\n\n\nDenis Schluppeck\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "Want to\n\nexplore ideas around data visualisation\nthink about better ways to show things\nlearn some practical /useful tips\n\n\n(maybe with your favourite tool, language, …)"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#introduction-to-this-block",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#introduction-to-this-block",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "Want to\n\nexplore ideas around data visualisation\nthink about better ways to show things\nlearn some practical /useful tips\n\n\n(maybe with your favourite tool, language, …)"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#discussion-forum-webpage",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#discussion-forum-webpage",
+    "title": "Rethinking your plotting habits",
+    "section": "Discussion forum, webpage",
+    "text": "Discussion forum, webpage\n\nhttps://github.com/schluppeck/ng-data-club/discussions\nhttps://schluppeck.github.io/ng-data-club/"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#aims",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#aims",
+    "title": "Rethinking your plotting habits",
+    "section": "Aims",
+    "text": "Aims\nMake plots / visualisations of data:\n\n\nreproducible\nmore flexible for exploration\npublication-ready (little or no editing by hand)\n\n\n\n\nPrinciples should apply across different languages: matlab, python, r, julia, …\nand different kinds of data: fMRI, EEG, psychophys, …"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#many-peoples-default",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#many-peoples-default",
+    "title": "Rethinking your plotting habits",
+    "section": "… many people’s default",
+    "text": "… many people’s default"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#charts-vs-graphics",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#charts-vs-graphics",
+    "title": "Rethinking your plotting habits",
+    "section": "Charts vs Graphics",
+    "text": "Charts vs Graphics\n\n\na chart is one instance of a way to visualise, often tied to a function like plot() or histogram(), …\n\n\n\n\na graphic is more flexible, may be a mixture, … ideally it can be built up and composed\n\n\n\nhttps://uk.mathworks.com/products/matlab/plot-gallery.html"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#enter-a-grammar-of-graphics",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#enter-a-grammar-of-graphics",
+    "title": "Rethinking your plotting habits",
+    "section": "Enter: A Grammar of Graphics",
+    "text": "Enter: A Grammar of Graphics\n\n\n\n\n\nLeland Wilkinson’s classic book\n\n\n\n\n\n\nhttp://vita.had.co.nz/papers/layered-grammar.html"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#a-caveat",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#a-caveat",
+    "title": "Rethinking your plotting habits",
+    "section": "A caveat",
+    "text": "A caveat\n\nthis talk won’t turn us into datavis professionals"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#layered-components",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#layered-components",
+    "title": "Rethinking your plotting habits",
+    "section": "Layered components",
+    "text": "Layered components"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#data-variables-rightarrow-aesthetics",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#data-variables-rightarrow-aesthetics",
+    "title": "Rethinking your plotting habits",
+    "section": "Data: variables \\(\\rightarrow\\) aesthetics",
+    "text": "Data: variables \\(\\rightarrow\\) aesthetics\n\nposition (x,y)\nsize (radius, area)\ncolour, shape, linewidth, …"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#stat---transform-data",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#stat---transform-data",
+    "title": "Rethinking your plotting habits",
+    "section": "stat - transform data?!",
+    "text": "stat - transform data?!\nidentity seems obvious… a do many others, but nb! jitter"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#geoms",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#geoms",
+    "title": "Rethinking your plotting habits",
+    "section": "geoms",
+    "text": "geoms\nThe actual marks on the plot, points, lines, polygons, …"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#scales",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#scales",
+    "title": "Rethinking your plotting habits",
+    "section": "scales",
+    "text": "scales\n\ngoverns mapping from data to aesthetic properties\nthink about: domain / range\ncategorial, continuous data?\n\n\n\n\n\nWickham (2009), Figure 7"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facets",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facets",
+    "title": "Rethinking your plotting habits",
+    "section": "facets",
+    "text": "facets\n\nalso conditioned or trellis plots\nmultiple panels / plots for subset of data\n\nby cuts (e.g. quartiles)\nby category (conditioned on a variable)\n\n\n\nsee example"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#coordinates",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#coordinates",
+    "title": "Rethinking your plotting habits",
+    "section": "coordinates",
+    "text": "coordinates\nDeciding on the coordinate system to use - linear - log / semilog / sqrt - polar\n\n\n\n\nWickham (2009), Figure 8"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#example-data",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#example-data",
+    "title": "Rethinking your plotting habits",
+    "section": "Example data",
+    "text": "Example data\n\n\n\n\n\n\n\n\ndelta\nestimate\nshift\ncoherence\nsubject\n\n\n\n\n-12.5\n-6\n-6\n0.04\nA\n\n\n-0.5\n-8\n-6\n0.04\nA\n\n\n-16.5\n-8\n-6\n0.04\nA\n\n\n-11.5\n-4\n-6\n0.04\nA\n\n\n-22.5\n-1\n-6\n0.04\nA\n\n\n-16.5\n-14\n-6\n0.04\nA\n\n\n-1.5\n-3\n-6\n0.04\nA\n\n\n-8.5\n-3\n-6\n0.04\nA\n\n\n-7.5\n-3\n-6\n0.04\nA\n\n\n-15.5\n-8\n-6\n0.04\nA\n\n\n-17.5\n-2\n-6\n0.04\nA\n\n\n-8.5\n-13\n-6\n0.04\nA\n\n\n-15.5\n-4\n-6\n0.04\nA\n\n\n-3.5\n-7\n-6\n0.04\nA\n\n\n-16.5\n-12\n-6\n0.04\nA\n\n\n-23.5\n-14\n-6\n0.04\nA\n\n\n-20.5\n-5\n-6\n0.04\nA\n\n\n-14.5\n-1\n-6\n0.04\nA\n\n\n-18.5\n-1\n-6\n0.04\nA\n\n\n-22.5\n-5\n-6\n0.04\nA"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#basic-plot",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#basic-plot",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "delta \\(\\rightarrow\\) x, estimate \\(\\rightarrow\\) y ; use points\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate)) +\n     geom_point()"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#add-aes-to-plot",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#add-aes-to-plot",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "delta \\(\\rightarrow\\) x, estimate \\(\\rightarrow\\) y, shift \\(\\rightarrow\\) color\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, color=shift)) +\n    geom_point()"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#fix-overplotting",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#fix-overplotting",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "fix overplotting / small random jitter + transparency\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, color=shift)) +\n    geom_jitter(alpha=0.5)"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-1",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-1",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "too busy, split up by using facets\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, color=shift)) +\n     geom_jitter(alpha=0.5) +\n     facet_wrap(~shift)"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-2",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-2",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "can we add density estimate?\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, color=shift)) +\n     geom_jitter(alpha=0.5) +\n     geom_density2d(color=\"black\", size=0.4)+\n     facet_wrap(~shift)"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-3",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#facet-3",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "make sure the coordinates x/y axes are equal + add a line at y=0\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, color=shift)) +\n     geom_jitter(alpha=0.5) +\n     geom_hline(yintercept = 0, color=\"black\") +\n     facet_wrap(~shift) +\n     coord_equal()"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#density-plot",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#density-plot",
+    "title": "Rethinking your plotting habits",
+    "section": "",
+    "text": "simple change geom from point to bin2d + flourish… add regression lines.\n\n\ne |&gt; ggplot(aes(x = delta, y = estimate, group=sign(delta))) +\n     geom_bin2d() +\n     scale_fill_gradient(low = \"#eeeeee\", high=\"#ff0000\") +\n     geom_smooth(method=\"lm\", color=\"black\") +\n     facet_wrap(~shift) +\n     coord_equal()"
+  },
+  {
+    "objectID": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#etc-etc",
+    "href": "presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html#etc-etc",
+    "title": "Rethinking your plotting habits",
+    "section": "Etc, etc…",
+    "text": "Etc, etc…\n\nNow for some discussion + thinking…\nSlides, resources + links are on our webpage:\nhttps://schluppeck.github.io/ng-data-club/"
+  },
+  {
+    "objectID": "presentations/2024-11-05-ordinal+count-data.html",
+    "href": "presentations/2024-11-05-ordinal+count-data.html",
+    "title": "Ordinal data and counts",
+    "section": "",
+    "text": "rendered notes\nR markdown file\ndata files .RData format"
+  },
+  {
+    "objectID": "presentations/2024-11-05-ordinal+count-data.html#resources",
+    "href": "presentations/2024-11-05-ordinal+count-data.html#resources",
+    "title": "Ordinal data and counts",
+    "section": "",
+    "text": "rendered notes\nR markdown file\ndata files .RData format"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html",
+    "title": "Dealing with Count Data",
+    "section": "",
+    "text": "We start by loading the necessary packages and the .RData for these examples.\n\nknitr::opts_chunk$set(warning = FALSE, message = FALSE) \n\n# Load the data, make sure the directory is the correct one\nload('Count_datasets.RData')\n\n# for running the different type of regressions\nlibrary(MASS)\nlibrary(pscl)\nlibrary(glmmTMB)\nlibrary(lme4)\n\n# for fitting distributions to your data\nlibrary(fitdistrplus)\nlibrary(gamlss)\n\n# for calculating marginal means from model outputs\nlibrary(emmeans)\n\n# for checking model diagnostics\nlibrary(DHARMa)\nlibrary(vcd)\n\n# for displaying the results neatly\nlibrary(sjPlot)\nlibrary(ggplot2)\nlibrary(knitr)\n\n# for changing databases between long and wide\nlibrary(reshape2)"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#binomial",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#binomial",
+    "title": "Dealing with Count Data",
+    "section": "Binomial",
+    "text": "Binomial\nFor example, there is the binomial distribution, and its special case, Bernoulli, which is used for binary logistic regression. The general binomial distribution has two parameters, N the number of trials, and p the probability of success at each trial. The mean is N \\(\\times\\) p.\nBelow you can see some plots of different binomial distributions. They don’t seem too similar to our datasets from above.\n\nNs &lt;- c(10, 20, 30) # set some example for Ns\nprobs &lt;- c(0.1, 0.25, 0.5) # set some examples for probabilities\nNprobs &lt;- expand.grid(N=Ns, Prob=probs) # creates a matrix of all the Ns x all the probabilities\n# extract the point density of the binomial distribution with the Ns and Ps from above\nsim_binomial &lt;- do.call(rbind, apply(Nprobs, 1, function(np) data.frame(N=np[[1]], Prob=np[[2]], Count=1:25, Frequency=dbinom(1:25,size=np[1], prob=np[2]))))\nsim_binomial$N &lt;- factor(sim_binomial$N) # transform into factor for the legend\nsim_binomial$Prob &lt;- factor(sim_binomial$Prob) # transform into factor for the legend\n\n# plot the histograms\nggplot(sim_binomial, aes(x=Count+0.5, y = Frequency, color=N, group=N, fill=N)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/5, alpha = 1/2, linewidth=1) + facet_wrap(~Prob, labeller = label_both) + xlab(\"Count\")"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#poisson",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#poisson",
+    "title": "Dealing with Count Data",
+    "section": "Poisson",
+    "text": "Poisson\nThe Poisson distribution is probably the most famous of the count distributions. It only has one parameter, lambda, which is the expected mean (and also its standard deviation). It is often used to model the number of people in a queue at any point in time, number of people who attend a class, or the number of daily customers that visit a store.\nBelow you can see some plots of different Poisson distributions. These are more similar to our datasets, in particular with small lambdas, but with only one parameter they are not very flexible.\n\nlambdas &lt;- c(3, 6, 12) # set some example for lambdas\n# extract the point density of the poisson distribution with the lambdas from above\nsim_poisson &lt;- do.call(rbind, lapply(lambdas, function(l) data.frame(Lambda=l, Count=1:25, Frequency=dpois(1:25,l))))\nsim_poisson$Lambda &lt;- factor(sim_poisson$Lambda)\n\n# plot the histograms\nggplot(sim_poisson, aes(x=Count+0.5, y = Frequency, color=Lambda, group=Lambda, fill=Lambda)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/3, alpha = 1/3, linewidth=1) + xlab(\"Count\")"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#negative-binomial",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#negative-binomial",
+    "title": "Dealing with Count Data",
+    "section": "Negative Binomial",
+    "text": "Negative Binomial\nAnother one is the Negative Binomial distribution, which is more flexible than Poisson with two parameters, mu, which is the expected mean, and size which is a measure of dispersion (similar to deviation).\nBelow you can see some plots of different Negative Binomial distributions. These are the most similar to our distributions.\n\nNegative Binomial is probably the most useful distribution for psychological experimental data.\n\n\nmus &lt;- c(3, 6, 12) # set some example for mus\nsizes &lt;- c(3, 6, 12) # set some example for sizes\nmusizes = expand.grid(mu=mus, size=sizes) # creates a matrix of all the mus x all the sizes\n# extract the point density of the negative binomial distribution with the mus and sizes from above\nsim_nbinom &lt;- do.call(rbind, apply(musizes, 1, function(ms) data.frame(Mu=ms[[1]], Size=ms[[2]], Count=1:30, Frequency=dnbinom(1:30,size=ms[[2]], mu=ms[[1]]))))\nsim_nbinom$Mu &lt;- factor(sim_nbinom$Mu) # transform into factor for the legend\nsim_nbinom$Size &lt;- factor(sim_nbinom$Size) # transform into factor for the legend\n\n# plot the histograms\nggplot(sim_nbinom, aes(x=Count+0.5, y = Frequency, color=Mu, group=Mu, fill=Mu)) + theme_bw() + scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0, 0.1, 0)) + stat_smooth(formula = y ~ x, geom = 'area', method = 'loess', span = 1/3, alpha = 1/3, linewidth=1) + facet_wrap(~Size, labeller = label_both) + xlab(\"Count\")"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#transformations",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#transformations",
+    "title": "Dealing with Count Data",
+    "section": "Transformations",
+    "text": "Transformations\nBecause the data seems skewed, you might be tempted to analyse its log. However, because this is discrete count data, transforming it will not fix the problem. If you log the data, it will be closer to, but still not exactly, a normal distribution. Transformations tend to work better with continuous data.\n\nThere’s an additional problem that count data often contains zeros, and the log of zero is undefined. So if we want to try the log of this data, we need to add +1 (or any other positive amount) before calculating the log.\n\n\n# log trade_count + 1\nggplot(trade_data, aes(x = log(trade_count+1))) + geom_histogram(fill=\"lightblue\", color=\"black\", binwidth=1) + theme_bw()\n\n\n\n\n\n\n\n\nThe log of the trade count data + 1 is closer to a normal distribution, but still problematic - there is still an excess of observations at the lower end, and missing observations below zero.\n\nThis is because normal distributions assume that the data is unbounded (with no lower or upper limits) but in this case the raw data has a lower bound of zero, as you cannot have any counts below zero.\nAnother problem is that Normal distributions assume that the data is continuous, and in this case the raw data is discrete (only integers are allowed: 1, 2, 3, etc).\nThe fit of the normal distribution here is not too bad, but it would much worse when there are extreme (very large) values - very high counts - which can be very common in count data. Normal distributions struggle with large values, which will skew analysis and interpretation. Count distribution will handle extreme outliers much better.\n\n\n# compare log of trade_count + 1 data with a normal distribution\nplot(fitdist(log(trade_data$trade_count+1), dist=\"norm\"))\n\n\n\n\n\n\n\n\nAdding +1 is also completely subjective and arbitrary, we could arguably add +0.1 or +10. The results are quite different and it also changes how well the new log data fits a theoretical normal distribution, and will impact the results and interpretation of any analysis we might run on this data. And no matter what we do, we always have a problem with the excess observations at the lower end.\n\nUnless you are pre-registering how much you will add before the log (and have a good theoretical reason for this), this transformation can easily lead to p-hacking.\n\n\n# testing other logs\nplot(fitdist(log(trade_data$trade_count+.1), dist=\"norm\"))\n\n\n\n\n\n\n\nplot(fitdist(log(trade_data$trade_count+10), dist=\"norm\"))\n\n\n\n\n\n\n\n\nTherefore we should never log count data when it’s this close to zero.2"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#ordinary-linear-regression-applied-to-count-data",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#ordinary-linear-regression-applied-to-count-data",
+    "title": "Dealing with Count Data",
+    "section": "Ordinary linear regression applied to count data",
+    "text": "Ordinary linear regression applied to count data\nWe could try to analyse this trade count data (the raw data, not the log) anyway with a ordinary (general)3 linear regression to see what we would get.\n\nThe ordinary linear regression model will fit the count data. But is it correct?\n\nHere we have two predictors: the experimental condition exp_cond (there were two: low-risk and high-risk, with a zero sum contrast -1 and +1) and participant’s age. Age has been centered as age_c.\nIn this case, all predictors are significant.\n\ncontrasts(trade_data$exp_cond) &lt;- contr.sum(2) # zero-sum contrast code\ntrade_data$age_c &lt;- scale(trade_data$age, scale=F) # centre the age\n\ntrade.m1.lm &lt;- lm(trade_count ~ exp_cond * age_c, data=trade_data) # run the linear regression\ntab_model(trade.m1.lm, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE) # show the result in a nice table\n\n\n\n\n\n\n\n\n\n\n \ntrade count\n\n\nPredictors\nEstimates\nCI\np\n\n\n(Intercept)\n12.77\n(0.45)\n11.90 – 13.64\n&lt;0.001\n\n\nexp cond [1]\n1.53\n(0.45)\n0.66 – 2.41\n0.001\n\n\nage c\n-0.08\n(0.04)\n-0.15 – -0.01\n0.025\n\n\nexp cond [1] × age c\n-0.07\n(0.04)\n-0.14 – -0.00\n0.046\n\n\nObservations\n596\n\n\nR2 / R2 adjusted\n0.034 / 0.029\n\n\nlog-Likelihood\n-2264.606\n\n\n\n\n\n\n\n\nWhat kind of predictions does this model make? We can create and average 100 random simulated datasets from the model, using the fitted parameters plus random noise.\n\nFirst of all, some of these predictions are negative, which is simply not possible with count data. Participants could not make fewer than zero (negative) trades. This is a common problem with bounded data or censored data. Normal distributions (which we assume for an ordinary linear regression) are not bounded, and will try to predict negative data.\nAnd it definitely does not match the shape of the original dataset. This clearly shows how an ordinary linear regression predicts normally distributed data.\n\n\npred.samples &lt;- 1:100 # how many predictions do we want?\n# simulate the predictions\npred.count &lt;- data.frame(data='Prediction (Ordinary Linear Regression)', trade_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(trade.m1.lm)}))))\n# bind the predictions with the raw data in a single data frame for plotting\npred.count &lt;- rbind(pred.count, data.frame(data='Original Data', trade_count=trade_data$trade_count))\n\n# show a histogram of the simulated outcomes next to the original raw data\nggplot(data=pred.count, aes(trade_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill=\"lightblue\", color = \"black\", binwidth=2) + theme_bw() + xlab(\"Trade Count\") + ylab(\"% of participants\") + facet_wrap(~data)\n\n\n\n\n\n\n\n\n\nAssumptions\nThere are packages in R that are very useful for checking the assumptions of a model and how well a model fits a dataset, such as DHARMa (which we use here) and performance. A good-fitting model should not have anything red highlighted on this output.\nThe output shows how this ordinary linear model has several deviations from the assumptions.\nOn the left we see that the residuals deviate from a normal distribution (the black dots should be on the red line).\nOn the right we see that the residuals are not evenly spread across the predictions, therefore there is heteroskedasticity (the solid lines - which show the 25%, 50%, and 75% quartiles - should be horizontal, showing that the dispersion of residuals is flat across the levels of predictions).\n\n# the way DHARMa works is that first we simulate the residuals, and save it\nsim.m1.lm &lt;- simulateResiduals(fittedModel = trade.m1.lm)\n# then we plot it\nplot(sim.m1.lm, title=\"Residual diagnostics for linear model\")\n\n\n\n\n\n\n\n\n\n\nTransformation (log)\nIf you used the log of the data, it would fit better, and all the predictors are still significant. However, there are still some red deviations highlighted.\n\nThe amount that you add to the log (+1 or +.01) would impact the results, coefficients, effect sizes, and inferences. If you add 0.1 instead of 1, the interaction is no longer significant.\n\nLog data also would never return a trade count of zero (it would tend to zero but never be zero), which is not ideal as we clearly have zero counts in the dataset.\n\ntrade.m1.lm.log01 &lt;- lm(log(trade_count+.1) ~ exp_cond * age_c, data=trade_data) # run the log regression\ntrade.m1.lm.log1 &lt;- lm(log(trade_count+1) ~ exp_cond * age_c, data=trade_data) # run the log regression\ntrade.m1.lm.log10 &lt;- lm(log(trade_count+10) ~ exp_cond * age_c, data=trade_data) # run the log regression\n\ntab_model(trade.m1.lm.log01, trade.m1.lm.log1, trade.m1.lm.log10, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nlog(trade count+0.1)\nlog(trade count+1)\nlog(trade count+10)\n\n\nPredictors\nEstimates\nCI\np\nEstimates\nCI\np\nEstimates\nCI\np\n\n\n(Intercept)\n2.07\n(0.05)\n1.97 – 2.17\n&lt;0.001\n2.28\n(0.04)\n2.21 – 2.36\n&lt;0.001\n3.03\n(0.02)\n2.99 – 3.06\n&lt;0.001\n\n\nexp cond [1]\n0.13\n(0.05)\n0.03 – 0.23\n0.012\n0.11\n(0.04)\n0.04 – 0.18\n0.003\n0.06\n(0.02)\n0.02 – 0.09\n0.001\n\n\nage c\n-0.01\n(0.00)\n-0.02 – -0.00\n0.023\n-0.01\n(0.00)\n-0.01 – -0.00\n0.029\n-0.00\n(0.00)\n-0.01 – -0.00\n0.032\n\n\nexp cond [1] × age c\n-0.01\n(0.00)\n-0.02 – 0.00\n0.052\n-0.01\n(0.00)\n-0.01 – -0.00\n0.039\n-0.00\n(0.00)\n-0.01 – -0.00\n0.038\n\n\nObservations\n596\n596\n596\n\n\nR2 / R2 adjusted\n0.025 / 0.020\n0.029 / 0.024\n0.033 / 0.028\n\n\nlog-Likelihood\n-971.297\n-770.473\n-336.274\n\n\n\n\n\n\nsim.m1.lm.log01 &lt;- simulateResiduals(fittedModel = trade.m1.lm.log01) # runs the DHARMa output\nplot(sim.m1.lm.log01, title=\"Residual diagnostics for linear model\")\n\n\n\n\n\n\n\n\nThere are better ways to analyse this data."
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#count-distributions-poisson-and-negative-binomial",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#count-distributions-poisson-and-negative-binomial",
+    "title": "Dealing with Count Data",
+    "section": "Count distributions: Poisson and Negative Binomial",
+    "text": "Count distributions: Poisson and Negative Binomial\n\nWe can check if this data fits a count distribution, in accordance with the underlying counting nature of the data - counting the number of trades made.\n\nWe can try to fit our data to a Poisson distribution. However it does not fit the data particularly well - the predictions (in red) peak later than the actual data peaks. The red lines do not match the black lines and dots.\nThe mean of this Poisson distribution is also the same mean as the normal distribution previously fitted to this data. However, the Poisson distribution does not predict negative outcomes (as the normal distribution did).\n\n# to fit against a poisson distribution use 'pois'\nsummary(fitdist(trade_data$trade_count, dist=\"pois\"))\n\nFitting of the distribution ' pois ' by maximum likelihood \nParameters : \n       estimate Std. Error\nlambda 12.82886  0.1467138\nLoglikelihood:  -3744.46   AIC:  7490.919   BIC:  7495.31 \n\nplot(fitdist(trade_data$trade_count, dist=\"pois\"))\n\n\n\n\n\n\n\n\nWe can try to fit a Negative Binomial distribution. This is a much better fit, even though it does not capture the peaks as well, it is the best fit so far.\n\nIn most experimental conditions, Negative Binomial tends to fit data better, because it is more flexible (with two parameters instead of Poisson’s single parameter).\n\nOnce again, the mean of the distribution is the same. But because the negatibe binomial has the extra size (dispersion) parameters, it fits the data better.\n\n# to fit against a negative binomial distribution use 'nbinom'\nsummary(fitdist(trade_data$trade_count, dist=\"nbinom\"))\n\nFitting of the distribution ' nbinom ' by maximum likelihood \nParameters : \n     estimate Std. Error\nsize  1.49464 0.09590306\nmu   12.82693 0.45404943\nLoglikelihood:  -2120.557   AIC:  4245.115   BIC:  4253.895 \nCorrelation matrix:\n             size           mu\nsize 1.0000000000 0.0002446197\nmu   0.0002446197 1.0000000000\n\nplot(fitdist(trade_data$trade_count, dist=\"nbinom\"))\n\n\n\n\n\n\n\n\nIn addition to visual comparison of the outputs from this function, you could also compare the Log-Likelihoods of the outputs from the function - the closer to zero the better. The Log-Likelihood of the negative binomial distribution is much closer to zero.4\nAnother tool for identifying your type of distribution is this Ord plot named after J.K. Ord. This function is implemented in the package vcd. An upward trending line shows a negative binomial distribution. For more information on interpreting this plot, there are examples in the original paper by Ord (1967).\n\nOrd_plot(trade_data$trade_count)"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#negative-binomial-model",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#negative-binomial-model",
+    "title": "Dealing with Count Data",
+    "section": "Negative Binomial model",
+    "text": "Negative Binomial model\nThere are several packages and functions in R for fitting count data models.\nFor Poisson, the most common is probably the glm function from the base package, which you might have used in the past to fit logistic regressions. You simply need to specify family = 'poisson'.\nFor Negative Binomial, you can use the function glm.nb from the package MASS.\nAs our data more closely resembles a negative binomial, we will fit a negative binomial generalized linear regression to our data, with the same predictors.\n\nExponentiating the coefficients in count regressions (\\(e^\\beta\\)) gives us Incident Rate Ratios which has a similar interpretation to Odds Ratios (ORs).\n\nIRRs above 1 indicate positive correlation - higher incidences when the predictor goes up;\nIRRs below 1 indicate negative correlation - higher incidences when the predictor goes down.\n\nIRRs are multiplicative (not additive) again similar to ORs.\n\nWith a negative binomial regression, the interaction is no longer significant.\n\ntrade.m2.nb &lt;- glm.nb(trade_count ~ exp_cond * age_c, data=trade_data) # run the negative binomial regression\ntab_model(trade.m2.nb, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE) # show the results in a nice table\n\n\n\n\n\n\n\n\n\n\n \ntrade count\n\n\nPredictors\nIncidence Rate Ratios\nCI\np\n\n\n(Intercept)\n12.62\n(0.44)\n11.79 – 13.53\n&lt;0.001\n\n\nexp cond [1]\n1.12\n(0.04)\n1.05 – 1.20\n0.001\n\n\nage c\n0.99\n(0.00)\n0.99 – 1.00\n0.034\n\n\nexp cond [1] × age c\n0.99\n(0.00)\n0.99 – 1.00\n0.065\n\n\nObservations\n596\n\n\nR2 Nagelkerke\n0.047\n\n\nlog-Likelihood\n-2110.859\n\n\n\n\n\n\n\n\nAgain we simulate a series of 100 predicted datasets from our model and compare it to the original dataset. It’s a much better fit - there are no predictions below 0. The shape of the distribution of predictions closely matches the original data distribution.\n\npred.samples &lt;- 1:100 # how many predictions do we want?\n# simulate the predictions\npred.count &lt;- data.frame(data='Prediction (Neg Bin)', trade_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(trade.m2.nb)}))))\n# bind the predictions with the raw data in a single data frame for plotting\npred.count &lt;- rbind(pred.count, data.frame(data='Original Data', trade_count=trade_data$trade_count))\n\n# show a histogram of the simulated outcomes next to the original raw data\nggplot(data=pred.count, aes(trade_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill=\"lightblue\", color = \"black\", binwidth=2) + theme_bw() + xlab(\"Trade Count\") + ylab(\"% of participants\") + facet_wrap(~data) + coord_cartesian(xlim=c(0,100))\n\n\n\n\n\n\n\n\nIf we look at the two models side-by-side, we see that we would make different inferences from each model with regards to the interactions. The coefficients are not directly comparable. But we can ask R to give us some estimated marginal means.\n\ntab_model(trade.m1.lm, trade.m2.nb, show.se = TRUE, collapse.se = TRUE, show.loglik = TRUE, dv.labels=c(\"general linear model\", \"negative binomial model\")) # show the two models side by side\n\n\n\n\n\n\n\n\n\n\n\n\n\n \ngeneral linear model\nnegative binomial model\n\n\nPredictors\nEstimates\nCI\np\nIncidence Rate Ratios\nCI\np\n\n\n(Intercept)\n12.77\n(0.45)\n11.90 – 13.64\n&lt;0.001\n12.62\n(0.44)\n11.79 – 13.53\n&lt;0.001\n\n\nexp cond [1]\n1.53\n(0.45)\n0.66 – 2.41\n0.001\n1.12\n(0.04)\n1.05 – 1.20\n0.001\n\n\nage c\n-0.08\n(0.04)\n-0.15 – -0.01\n0.025\n0.99\n(0.00)\n0.99 – 1.00\n0.034\n\n\nexp cond [1] × age c\n-0.07\n(0.04)\n-0.14 – -0.00\n0.046\n0.99\n(0.00)\n0.99 – 1.00\n0.065\n\n\nObservations\n596\n596\n\n\nR2 / R2 adjusted\n0.034 / 0.029\n0.047\n\n\nlog-Likelihood\n-2264.606\n-2110.859\n\n\n\n\n\n\n\n\nWe can compare the predictions that the model makes of the means of each experimental condition using the functions emmeans and emmip.\n\nThey are close in this case - general linear regressions are very good at finding the means of distribution - the differences in this case are in the standard errors. This translates into differences in the effect sizes and interpretation of the results.\nIf there were extreme (very large) values, as we will see later, the results would not have been so similar.\n\n\n# get the means for each experimental condition, for each model\nemmeans.lm &lt;- summary(emmeans(trade.m1.lm, ~exp_cond, type=\"r\"))\nemmeans.lm$model &lt;- \"lm\" # name the models for the plot below\nemmeans.nb &lt;- summary(emmeans(trade.m2.nb, ~exp_cond, type=\"r\"))\nemmeans.nb$model &lt;- \"nb\"\ncolnames(emmeans.nb) &lt;- colnames(emmeans.lm) # we need the column names to be the same for the rbind below\n\n# plot the results\nggplot(rbind(emmeans.lm, emmeans.nb), aes(x=exp_cond, y=emmean, ymin=lower.CL, ymax=upper.CL, group=model, color=model, fill=model)) + geom_bar(stat=\"identity\", width=0.5, position=position_dodge(width=0.55), color=\"black\") + geom_errorbar(width=0.2, position=position_dodge(width=0.55), color=\"black\") + theme_bw() + xlab(\"experimental condition\") + ylab(\"estimated marginal means\")\n\n\n\n\n\n\n\n# get the slopes of age for each experimental condition, for each model\nemmip.lm &lt;- emmip(trade.m1.lm, ~age_c|exp_cond, at=list(age_c=c(-20:40)), CIs=T, plotit = FALSE)\nemmip.lm$model &lt;- \"lm\"\nemmip.nb &lt;- emmip(trade.m2.nb, ~age_c|exp_cond, at=list(age_c=c(-20:40)), CIs=T, type=\"r\", plotit = FALSE)\nemmip.nb$model &lt;- \"nb\"\ncolnames(emmip.nb) &lt;- colnames(emmip.lm)\n\nggplot(rbind(emmip.lm, emmip.nb), aes(x=age_c, y=yvar, ymin=LCL, ymax=UCL, group=model, color=model, fill=model)) + geom_line(position=position_dodge(width=1), linewidth=1) + geom_ribbon(position=position_dodge(width=1), alpha=0.2) + theme_bw() + xlab(\"centered Age in years\") + ylab(\"estimated marginal means\") + facet_wrap(~exp_cond)\n\n\n\n\n\n\n\n\nWe can look at the diagnostics again, and we see no deviations with the negative binomial model (nothing is highlighted in red, apart from a couple of potential outliers).\n\nsim.m2.nb &lt;- simulateResiduals(fittedModel = trade.m2.nb)\nplot(sim.m2.nb, title=\"Residual diagnostics for negative binomial model\")"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#testing-for-zero-inflation",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#testing-for-zero-inflation",
+    "title": "Dealing with Count Data",
+    "section": "Testing for zero-inflation",
+    "text": "Testing for zero-inflation\n\nWe can test if the data has zero inflation in a few different ways.\n\n\nFit a zero-inflated distribution\nFirst, we can try the fitdist function by specifying the ZINBI distribution from package gamlss.\nHowever, this is always clunky and likes to throw many warnings and errors. But in this case, the AIC is smaller and it seems to fit better than a regular negative binomial distribution. You can also see how it now estimated a higher mean (mu).\nNu is the probability of responding with a zero, or the zero-inflation parameter, which was 0.208. The zero-inflated distribution assumes that there were around 21% excessive zeros.\n\n# To run a ZINBI fit you need to specify starting points for the different parameters, as well as bounds for the parameters. Sometimes you need to try different starting parameters until it fits.\nfit_output_zinbi &lt;- fitdist(zi_data$switch_count, dist=\"ZINBI\", start=list(mu=1, sigma=1, nu=0.1), upper=c(Inf, Inf, 1), lower=c(0,0,0), discrete=TRUE)\nsummary(fit_output_zinbi)\n\nFitting of the distribution ' ZINBI ' by maximum likelihood \nParameters : \n       estimate Std. Error\nmu    3.4937468 0.04500344\nsigma 0.4335047 0.08676652\nnu    0.2076853 0.05081428\nLoglikelihood:  -828.697   AIC:  1663.394   BIC:  1675.246 \nCorrelation matrix:\n              mu      sigma         nu\nmu     1.0000000 -0.5240354  0.2766188\nsigma -0.5240354  1.0000000 -0.2524488\nnu     0.2766188 -0.2524488  1.0000000\n\nplot(fit_output_zinbi)\n\n\n\n\n\n\n\n\nWe can also plot a typical negative binomial distribution (without zero inflation) over our data to see how the zero inflation works. The plot below shows that without the zero inflation part, the negative binomial fits the second peak of the data, with a higher average (mu) and smaller variance (sigma).\nThe negative binomial predicts around 10% are zeros, but the actual observed zero count was 30%. The difference in zeros is accounted by the 21% excessive zeros.\n\n# we compare the zero inflated data to a negative binomial model, without zero inflation, but with the mu and sigma from the zero inflation model.\n# this shows us the zero inflation component\nplotdist(zi_data$switch_count, dist=\"NBI\", para=list(sigma=coef(fit_output_zinbi)['sigma'], mu=coef(fit_output_zinbi)['mu']), discrete=T)\n\n\n\n\n\n\n\n\n\n\nRun a negative binomial and test for zero inflation\nAlternatively, we can run a negative binomial regression (without zero inflation) using the same glm.nb function as before, and use the testZeroInflation function from DHARMa.\nSignificant values above 1 mean that there is zero inflation. Ideally the red line in the plot below should be in the middle of the data distribution. Because the data is to the left of the red line, and the statistic is significant, this test confirms that there is zero inflation.7\n\nzi.m2.nb &lt;- glm.nb(switch_count ~ pgsi, data=zi_data) # run a standard negative binomial regression\ntestZeroInflation(zi.m2.nb) # test for zero inflation\n\n\n\n\n\n\n\n\n\n    DHARMa zero-inflation test via comparison to expected zeros with\n    simulation under H0 = fitted model\n\ndata:  simulationOutput\nratioObsSim = 1.1837, p-value = 0.024\nalternative hypothesis: two.sided\n\n\n\n\nCompare a negative binomial model with a zero-inflated model\nFinally, another way to test is to run a Zero-Inflation Negative Binomial (ZINB) \\(-\\) or ZIP for Zero-Inflated Poisson \\(-\\) regression and compare the two models. There are several packages that allow for zero-inflated models, but one of the simplest is the function zeroinfl from package pscl.8\nZero-inflation models assume that two different and separate processes generate the data.\n\nZero inflation: This process is responsible for excessive zero responses (in other words, is the response going to be an excessive zero, more than expected?). This is commonly estimated using a binary logistic regression. In this example, did the participant decide to switch between slot machines at all?\nConditional regression: Then, assuming that the model does not classify this response as an excessive zero, a conditional negative binomial regression is run (conditional that the result is not an excessive zero) to determine the actual response, in this case, the number of switches between different machines.\n\nIt is important to note that the conditional regression part of the model can also return a count of zero, and the zero-inflation part is only responsible for excessive zeros (or inflation of zeros). If you believe this cannot be the case, then Hurdle models do not allow for zeros in the conditional part, only the zero-inflation part generates zeros. You can think of this as a hurdle that the participant has to pass (e.g., is the response a zero or not).\nNB: The packages that allow for zero-inflation often require the zero-inflation part of the model to be specified separately. In the case of the zeroinfl function, if you don’t specify anything, the function assumes that the zero inflation part of the model is the same as the conditional part of the mode, ie, it has the same predictors. This is the simplest and easiest approach.9\n\nWe can then compare the two models to see if the zero-inflated model fits the data better. The model with the lowest AIC is considered to fit the data better, and that’s the case here for the ZINB model in comparison to the NB model (without zero-inflation).10\n\n\n# run a zero-inflation negative binomial regression\nzi.m3.zinb &lt;- zeroinfl(switch_count ~ pgsi, data=zi_data, dist=\"negbin\")\n# compare the AICs of the two models. Lower AIC is better.\nAIC(zi.m2.nb, zi.m3.zinb)\n\n           df      AIC\nzi.m2.nb    3 1638.248\nzi.m3.zinb  5 1565.833\n\n\nThe output from zero-inflation models follow the two components described above: The conditional and the zero-inflation components.\n\nThe zero-inflation component outputs Odds-Ratios (OR) based on a binary logistic regression (1 = excess zero). It measures the likelihood of a participant responding with an excessive zero response or not. Note that this part of the model is positively correlated with zero responses, therefore negatively correlated with actual bets placed Higher ORs here indicate a higher propensity to respond with a zero (and therefore a lower number of switches overall).\n\nIn this example, the PGSI predictor was significant, with an OR below 1. Participants with higher PGSI scores were less likely to not switch at all.\n\n\n\n\nThe conditional component Incidence Rate Ratios (IRRs) based on a negative binomial regression. IRRs above 1 indicate a higher switch count and vice-versa.\n\nIn this example, PGSI scores significantly influenced how often a participant switched between slot machines. The OR was significantly above 1, which means that with higher PGSI scores, participants switched more times.\n\n\n\ntab_model(zi.m3.zinb) # nice table of the results of the ZINB model\n\n\n\n\n \nswitch count\n\n\n\nPredictors\nIncidence Rate Ratios\nCI\np\n\n\n\nCount Model\n\n\n(Intercept)\n3.17\n2.73 – 3.69\n&lt;0.001\n\n\n\npgsi\n1.07\n1.02 – 1.11\n0.004\n\n\n\nZero-Inflated Model\n\n\n\n(Intercept)\n1.09\n0.75 – 1.58\n0.641\n\n\n\npgsi\n0.31\n0.22 – 0.45\n&lt;0.001\n\n\n\nObservations\n384\n\n\n\nR2 / R2 adjusted\n0.525 / 0.523\n\n\n\n\n\n\n\n\nWe can compare model predictions to see how the zero-inflated model predicts many more zeros and more closely matches the original dataset. We see that the zero-inflated model fits the data better.\n\npred.samples &lt;- 1:100 # how many predictions do we want?\n# simulate the predictions for negative binomial\npred.count.nb &lt;- data.frame(data='Prediction (Negative Binomial)', switch_count=as.vector(do.call(rbind, sapply(pred.samples, function(x){simulate(zi.m2.nb)}))))\n# simulate the predictions for the ZINB model\nprobabilities &lt;- predict(zi.m3.zinb, type=\"prob\") # get the probabilities\npred.count.zi &lt;- data.frame(data='Prediction (Zero-Inflated Neg Bin)', switch_count=as.vector(sapply(pred.samples, function(s){apply(probabilities, 1, function(p) sample(1:ncol(probabilities), 1, prob=p))})))\n\n# bind the predictions with the raw data in a single data frame for plotting\npred.count &lt;- rbind(pred.count.nb, pred.count.zi, data.frame(data='Original Data', switch_count=zi_data$switch_count))\n\n# show a histogram of the simulated outcomes next to the original raw data\nggplot(data=pred.count, aes(switch_count, group=data)) + geom_histogram(aes(y=after_stat(density)), fill=\"lightblue\", color=\"black\", binwidth=1) + theme_bw() + xlab(\"Switch Count\") + ylab(\"% of participants\") + facet_wrap(~data) + coord_cartesian(xlim=c(0,20))\n\n\n\n\n\n\n\n\nWhen interpreting the results of a zero-inflated model, you need to consider both components separately, the zero-inflated and the conditional components. Not only the coefficients, predictors, and their significance, but also their estimated marginal means.\nYou can do that by setting the component of the regression that you want to evaluate at each time, often using component=... or mode=.... These can be identified using zero or zi for zero-inflation and count or cond for the conditional component. Each function requires slightly different parameters, so check the help.\n\nIf you don’t set the component for your analyses, often you will only be shown the conditional component by default. Be careful as this is only part of the picture.\n\n\n# emmip is used to calculate the slope of the predictors against the DV\n# one is needed for each component of the zero-inflation regression.\nemout.zero &lt;- emmip(zi.m3.zinb, ~pgsi, at=list(pgsi=0:20), type=\"r\", CIs=T, mode=\"zero\", plotit=FALSE) \nemout.zero$component &lt;- \"zero inflation\"\nemout.cond &lt;- emmip(zi.m3.zinb, ~pgsi, at=list(pgsi=0:20), type=\"r\", CIs=T, mode=\"count\", plotit=FALSE)\nemout.cond$component &lt;- \"conditional\"\n\nggplot(rbind(emout.zero, emout.cond), aes(x=pgsi, y=yvar, ymin=LCL, ymax=UCL)) + geom_line(linewidth=1) + geom_ribbon(alpha=0.2) + theme_bw() + xlab(\"pgsi\") + ylab(\"Count of Switches / Probability of Excess Zero\") + facet_wrap(~component, scales=\"free\")"
+  },
+  {
+    "objectID": "presentations/2024-11-05-count-data-talk/Count-Data.html#footnotes",
+    "href": "presentations/2024-11-05-count-data-talk/Count-Data.html#footnotes",
+    "title": "Dealing with Count Data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nA note on statistical diagnostic tests for distributions and regressions: most tests of normality (Shapiro-Wilk, Kolmogorov-Smirnoff) and tests of diagnostics (Levene’s, White’s) are generally not recommended. This is because with large datasets they are over-sensitive and will highlight even tiny deviations (common in real-life due to noise) as significant. With small datasets they are under-powered to identify real deviations. Visual inspection is often best. For more read: https://towardsdatascience.com/stop-testing-for-normality-dba96bb73f90.↩︎\nIf the count data is far away enough from zero, then it would be more acceptable to either treat it as a normal distribution (if it looks like one), or try to log the data if it is skewed.↩︎\nNote that a general linear regression is the ordinary type which assumes that the data follows a normal distribution, while a generalized linear regression is a more flexible version that accepts different types of distributions, such as binomial (for logistic regression), or poisson and negative binomial (and many others).↩︎\nYou might have come across Log-Likelihood (LL) before in logistic regressions, often called deviance, and it is the base to calculate pseudo-\\(R^2\\) measures such as Nagelkerke. LL is great for comparing across model fits, but be careful as certain approaches use different ways to calculate LL which means they might not be directly comparable sometimes.↩︎\nDon’t ask me why there are three different negative binomial families in glmmTMB (nbinom1, nbinom2, and nbinom12). The difference between them seem minimal - and mostly philosophical about how to define variance. I’m not sure which one is the “best” or why. I often just use the first one and if it throws me an error I try one of the other ones. Also annoyingly, note that different functions call the distributions different names, such as nbinom vs negbinom and poisson vs pois. Always check the help for each function.↩︎\nThis data is adapted from a real study, but the actual data has been tweaked slightly to simplify this example. In the actual dataset there was no correlation between switch count and PGSI.↩︎\nSignificant values below 1 with data significantly to the right of the red line would mean a lack of zeros.↩︎\nIf your data is repeated measures and you need a mixed effects model, the same function glmmTMB from before allows for zero inflation, all you need to do is specify the zero-inflation component using zi=..., although it can be very slow to fit.↩︎\nSome other functions require you to specify a zero-inflated component using some sort of syntax such as zi = .... Please read the help for the specific function you are using. Even for zeroinfl you can specify separate models for each part, with separate predictors, if you believe that the processes generating outcomes from each component are different.↩︎\nAgain be careful when comparing AIC as not all are comparable, but in this case they are. Also if you want to evaluate if the difference in AIC between the two models is significant or not, there are ways of calculating this, but I did not include it here.↩︎"
+  },
+  {
+    "objectID": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html",
+    "href": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html",
+    "title": "Non-parametric stats, bootstrap, permutation testing [notes]",
+    "section": "",
+    "text": "James Read-Tannock gave talk with general background ideas on non-parametric stats, more classical tests still taught in Psych programmes, and then introduced the ideas of the bootstrap, jackknife, and permutation testing. [Slides]\n\nWikipedia article on the general idea 😀 of bootstrapping a la Baron von Münchhausen.\nIn the statistics context, the bootrap refers to a method of obtaining the distribution of a statistic / estimator by resampling data.\nThe Alpaca shampoo website w/ scrollytelling - the cool visual explainer shown by James during the talk\n\n\n\n\n\n\nalpaca-shampoo\n\n\n\nThere is a key paper by Efron that introduces the idea Efron (1979). Some bit of this paper are very technical, so might be beyond the scope of what we need here, but a useful resource to dip into for the nitty gritty, if you are interested.\nThe plug-in principle came up and we also talked about population vs sample statistics and ideas around\nusing the bootstrap procedure to get confidence intervals for a statistic, whereas a related idea, permutation tests, is more suited to hypothesis testing. There is a free online book chapter, which includes a discussion of the accuracy of the boostrap distribution, dependence on sample size, etc.\n\n\nEfron, B. 1979. “Bootstrap Methods: Another Look at the Jackknife.” The Annals of Statistics 7 (1). https://doi.org/10.1214/aos/1176344552."
+  },
+  {
+    "objectID": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#talk",
+    "href": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#talk",
+    "title": "Non-parametric stats, bootstrap, permutation testing [notes]",
+    "section": "",
+    "text": "James Read-Tannock gave talk with general background ideas on non-parametric stats, more classical tests still taught in Psych programmes, and then introduced the ideas of the bootstrap, jackknife, and permutation testing. [Slides]\n\nWikipedia article on the general idea 😀 of bootstrapping a la Baron von Münchhausen.\nIn the statistics context, the bootrap refers to a method of obtaining the distribution of a statistic / estimator by resampling data.\nThe Alpaca shampoo website w/ scrollytelling - the cool visual explainer shown by James during the talk\n\n\n\n\n\n\nalpaca-shampoo\n\n\n\nThere is a key paper by Efron that introduces the idea Efron (1979). Some bit of this paper are very technical, so might be beyond the scope of what we need here, but a useful resource to dip into for the nitty gritty, if you are interested.\nThe plug-in principle came up and we also talked about population vs sample statistics and ideas around\nusing the bootstrap procedure to get confidence intervals for a statistic, whereas a related idea, permutation tests, is more suited to hypothesis testing. There is a free online book chapter, which includes a discussion of the accuracy of the boostrap distribution, dependence on sample size, etc.\n\n\nEfron, B. 1979. “Bootstrap Methods: Another Look at the Jackknife.” The Annals of Statistics 7 (1). https://doi.org/10.1214/aos/1176344552."
+  },
+  {
+    "objectID": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#worked-examples-with-data-from-the-efron-tibshirani-book",
+    "href": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#worked-examples-with-data-from-the-efron-tibshirani-book",
+    "title": "Non-parametric stats, bootstrap, permutation testing [notes]",
+    "section": "Worked examples with data from the Efron & Tibshirani book",
+    "text": "Worked examples with data from the Efron & Tibshirani book\nSome thoughts on computationally expensive methods. To get some hands on the basics, let’s have a look at a basic example (from Chapter 2 in the book. Table 2.1), in which survival data from mouse in a treatment / control experiment are presented.\nI decided to use julia in this notebook, but it shouldn’t be hard to reproduce in R, python, matlab, or your own preferred method of working with and plotting data.\nThe julia packages required are listed in the Project.toml and Manifest.toml. You should be able to download the folder from the github repo and import Pkg follwed by Pkg.activate(\".\") and Pkg.instantiate().\n\n\nCode\nusing Bootstrap\nusing Statistics\nusing Plots\ngr(); # activate gr backend\n\n\n\n\nCode\n# data from Table 2.1 in Efron & Tibshirani book\ntreatment = [94,197,16,38,99,141,23];\ncontrol = [52,104,146,10,51,30,40,27,46];\n\nplot(treatment,ones(size(treatment)), line=:stem, color=:red, lw=2, label=\"Treatment\")\nplot!(control,ones(size(treatment)), line=:stem, \n        color=:blue, lw=2, label=\"Control\",\n        size=[600,100], ylim=[0, 1.2], \n        legend = :outertopright, yticks=[0,1],\n        title = \"Efron & Tibshirani murine example\", \n        titlefont = font(10,\"Arial\"),\n        titlefonthaligns=:right,\n        tickfont = font(10,\"Arial\"),\n        legendfont = font(10,\"Arial\"))\nxaxis!(label=\"Survival time (days)\")\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap of the median\nNow we can create 10000 bootstrap samples from the treatment and control data - making sure to respect the size of each list/vector, and to use sampling with replacement*.\n\n\nCode\n## basic bootstrap of the \"median\" treatment data\n@time bs1 = bootstrap(median, treatment, BasicSampling(n_boot))\n\n\n  0.369251 seconds (809.74 k allocations: 41.080 MiB, 2.26% gc time, 99.74% compilation time)\n\n\nBootstrap Sampling\n  Estimates:\n     Var │ Estimate  Bias      StdError\n         │ Float64   Float64   Float64\n    ─────┼──────────────────────────────\n       1 │     94.0  -13.6295   37.6526\n  Sampling: BasicSampling\n  Samples:  10000\n  Data:     Vector{Int64}: { 7 }\n\n\nThe Bootstrap.jl package (see documentation) also has tools for getting confidence intervals, and extracting other info like # of observations, etc\n\n## calculate 95% confidence intervals\ncil = 0.95;\n\n## basic CI\nbci1 = confint(bs1, BasicConfInt(cil));\n\n## percentile CI\nbci2 = confint(bs1, PercentileConfInt(cil));\n\n## BCa CI\nbci3 = confint(bs1, BCaConfInt(cil));\n\n## Normal CI\nbci4 = confint(bs1, NormalConfInt(cil));\n\nwhich lets you compare, e.g. the normal confidence interval (94.0, 33.83184038161308, 181.4271596183869), with the percentile confidence interval (94.0, 23.0, 141.0).\nTo visualise the distribution of bootstrapped medians, we can get them with straps() and use the histogram() function from Plots.jl. The bootstrap estimate of the standard error of the statistic of interest can be obtained from the standard deviation of the bootstrap replications. (The library will do this under the hood).\n\n\nCode\n# look at the distribution (called \"straps\")\nhistogram( straps(bs1)[1], title=\"Distribution of bootstrapped medians [treatment]\", \n                label=\"\",\n                size=[600,300] )\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBootstrap of other, more unusual statistics\nWe can also try something a bit more complicated, like boostrap sample treatment and sample and use those to look at the distribution of difference in means.\n\n\nCode\n## basic bootstrap of the \"mean\"  data\nbs_t = bootstrap(x-&gt;mean(x), treatment, BasicSampling(n_boot))\nbs_c = bootstrap(y-&gt;mean(y), control, BasicSampling(n_boot))\n\n# the difference estimator\n# calculated from the\nt = straps(bs_t)[1];\nc = straps(bs_c)[1];\nz =  t - c;\nnbins = 50;\n\nbins = range(minimum([t;c;z]),maximum([t;c;z]), nbins )\n# percentile\npc = quantile(z, [0.025, 0.975])\n\nhistogram(t,  bins = bins, alpha=0.8, color=:gray, label=\"treatment\",size=[600,400])\nhistogram!(c,  bins = bins, alpha=0.8, color=:white, label=\"control\")\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n… and from those bootstrapped means, we can calculate the difference and look at the distribution, and percentiles of that:\n\n\nCode\n# look at the distribution (called \"straps\")\nhistogram( z, bins = bins, \n              title=\"Distribution of bootstrapped difference\", \n              color=:red, \n              label=\"treatment - control\",\n              size=[600,400])\nvline!(pc, lw=2, label=\"2.5 and 97.5 percentiles\")\nvline!([mean(z)], lw=2, color=:black, label=\"\")\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPermutation testing\nThere is a whole ecosystem for doing hypothesis testing in julia which also includes permutation testing (see documentation for HypothesisTests.jl) or dip into R, which will have tons of options, too.\nLots more interesting stuff out there - if you want to add things here, send me a message."
+  },
+  {
+    "objectID": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#references",
+    "href": "presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html#references",
+    "title": "Non-parametric stats, bootstrap, permutation testing [notes]",
+    "section": "References",
+    "text": "References\nThere is a pretty comprehensive article on boot strap methods by the inventors of the methods - worth a look if this is something you will use in your work Efron and Tibshirani (1986).\n\nEfron, B., and R. Tibshirani. 1986. “Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy.” Statistical Science 1 (1): 54–75. https://doi.org/10.1214/ss/1177013815.\nThe classic textbook is quite expensive and a bit harder to get but you can ask around and/or look in the library to check it out.\n\n\n\nAn Introduction to the Bootstrap\n\n\nThe first couple of chapters are available at Born lab, Harvard Medical School as part of some neurobio class. Check it out. Tibshirani and Efron (1993).\n\nTibshirani, Robert J, and Bradley Efron. 1993. “An Introduction to the Bootstrap.” Monographs on Statistics and Applied Probability 57 (1): 1–436."
+  },
+  {
+    "objectID": "presentations/2025-xx-xx-ml-beginnings.html",
+    "href": "presentations/2025-xx-xx-ml-beginnings.html",
+    "title": "ML beginnings…",
+    "section": "",
+    "text": "ML beginnings\nIntro level information for machine learning enthusiasts\nmaybe a chapter / homework and read through before meet?"
+  },
+  {
+    "objectID": "presentations/2024-11-19-non-normal-stats.html",
+    "href": "presentations/2024-11-19-non-normal-stats.html",
+    "title": "Non-Normal, No Problem",
+    "section": "",
+    "text": "Notes\n\nthe basic concept of permutation testing and bootstrapping\nsome applications for ERPs, testing differences in gray matter thickness associated with different markers (using spin permutation for freesurfer data)\ndiscussion\n\nThere are also some notes from DS with links to PDFs, webpages, and including snippets of julia code for experimenting with bootstrap / permutation testing."
+  },
+  {
+    "objectID": "presentations/2023-03-29-meeting-notes.html",
+    "href": "presentations/2023-03-29-meeting-notes.html",
+    "title": "Data visualisation",
+    "section": "",
+    "text": "In this session we launch the next block of presentations + meetings in which we want to discuss ways of visualising data, what people in different labs use, what works well, what people need help with, etc.\n\nthe presentation slides for my intro talk, made in quarto\nor if you prefer the html notes version\n\nYou can check out the github repo for the qmd source files."
+  },
+  {
+    "objectID": "presentations/2023-03-29-meeting-notes.html#notes",
+    "href": "presentations/2023-03-29-meeting-notes.html#notes",
+    "title": "Data visualisation",
+    "section": "",
+    "text": "In this session we launch the next block of presentations + meetings in which we want to discuss ways of visualising data, what people in different labs use, what works well, what people need help with, etc.\n\nthe presentation slides for my intro talk, made in quarto\nor if you prefer the html notes version\n\nYou can check out the github repo for the qmd source files."
+  },
+  {
+    "objectID": "presentations/2023-03-29-meeting-notes.html#links-and-resources",
+    "href": "presentations/2023-03-29-meeting-notes.html#links-and-resources",
+    "title": "Data visualisation",
+    "section": "Links and resources",
+    "text": "Links and resources\n\nData Voyager, data source for copy/paste\nRStudio cheatsheets, data visualisation cheatsheet\nIf JavaScript and reactive programming is your bag, have a look at this ObservableHQ page for a similar, very basic implementation of the r/ggplot visualisation I covered in my talk."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NG data club",
+    "section": "",
+    "text": "Nottingham Psychology data club resources\n\n \n\nHow DALL-E sees our data club\n\n\nSome materials for the lunchtime data club, an informal weekly/fortnightly meeting at the University of Nottingham.\n\n\n\nBring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data\n\n\norganising\nanalysing\nvisualising\n\n\n\n\nYou can find notes, presentations, and code at the ng-data-club github repository.\n\n\n\nUpcoming talks:\n\n**Denis Schluppeck: Version control - git/github zero to hero 2025-01-14 (UP-PSYC-B37)\nDamian Eke: Data governance, FAIR principles, ABDN, … 2025-01-21 (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc.\n\n\n\nYou can also check out the github discussion forum for the data club. A good place to share ideas, links, etc.\n\n\n\nWe have a code of conduct that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.\n\n\n\nWe will try to keep meetings informal with some guided discussion by presenters that will change week by week.\nStructure will be around:\n\nI want answer the following question with my data… How do I do that? and/or\nI know the following technique, which could help you with bla…\n\n\n\n\nOrganised by Denis Schluppeck and Mark v Rossum\nartwork by DALL-E (https://labs.openai.com/) using the prompt: “a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic”"
+  },
+  {
+    "objectID": "index.html#aim",
+    "href": "index.html#aim",
+    "title": "NG data club",
+    "section": "",
+    "text": "Bring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data\n\n\norganising\nanalysing\nvisualising"
+  },
+  {
+    "objectID": "index.html#github-repo",
+    "href": "index.html#github-repo",
+    "title": "NG data club",
+    "section": "",
+    "text": "You can find notes, presentations, and code at the ng-data-club github repository."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "NG data club",
+    "section": "",
+    "text": "Upcoming talks:\n\n**Denis Schluppeck: Version control - git/github zero to hero 2025-01-14 (UP-PSYC-B37)\nDamian Eke: Data governance, FAIR principles, ABDN, … 2025-01-21 (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc."
+  },
+  {
+    "objectID": "index.html#discussion-forum",
+    "href": "index.html#discussion-forum",
+    "title": "NG data club",
+    "section": "",
+    "text": "You can also check out the github discussion forum for the data club. A good place to share ideas, links, etc."
+  },
+  {
+    "objectID": "index.html#code-of-conduct",
+    "href": "index.html#code-of-conduct",
+    "title": "NG data club",
+    "section": "",
+    "text": "We have a code of conduct that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it."
+  },
+  {
+    "objectID": "index.html#ideas-for-meetings-wishlist",
+    "href": "index.html#ideas-for-meetings-wishlist",
+    "title": "NG data club",
+    "section": "",
+    "text": "We will try to keep meetings informal with some guided discussion by presenters that will change week by week.\nStructure will be around:\n\nI want answer the following question with my data… How do I do that? and/or\nI know the following technique, which could help you with bla…"
+  },
+  {
+    "objectID": "index.html#colophon",
+    "href": "index.html#colophon",
+    "title": "NG data club",
+    "section": "",
+    "text": "Organised by Denis Schluppeck and Mark v Rossum\nartwork by DALL-E (https://labs.openai.com/) using the prompt: “a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic”"
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html",
+    "href": "CODE-OF-CONDUCT.html",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n\n\n\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting\n\n\n\n\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.\n\n\n\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.\n\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at [INSERT CONTACT METHOD]. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.\n\n\n\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community.\n\n\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#our-pledge",
+    "href": "CODE-OF-CONDUCT.html#our-pledge",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#our-standards",
+    "href": "CODE-OF-CONDUCT.html#our-standards",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Examples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#enforcement-responsibilities",
+    "href": "CODE-OF-CONDUCT.html#enforcement-responsibilities",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#scope",
+    "href": "CODE-OF-CONDUCT.html#scope",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#enforcement",
+    "href": "CODE-OF-CONDUCT.html#enforcement",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at [INSERT CONTACT METHOD]. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#enforcement-guidelines",
+    "href": "CODE-OF-CONDUCT.html#enforcement-guidelines",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "CODE-OF-CONDUCT.html#attribution",
+    "href": "CODE-OF-CONDUCT.html#attribution",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the NG data club",
+    "section": "",
+    "text": "Started after a corridor conversation between Mark v Rossum and Denis Schluppeck.\nWe had our first meeting as a group on 2022-11-23 and have been making steady progress ;)\n\nnotes from the first meeting\nsome potential, additional ideas"
+  },
+  {
+    "objectID": "presentations/2025-01-14-version-control-zero-to-hero.html",
+    "href": "presentations/2025-01-14-version-control-zero-to-hero.html",
+    "title": "Version control: Zero to hero",
+    "section": "",
+    "text": "Sign up! - If you don’t have a github id, yet… sign up for a free account at https://github.com/\nto gauge everyone’s level of experience, please spend 2 minutes on this form\nbring your laptop along to the session. I’ll walk through some common tasks."
+  },
+  {
+    "objectID": "presentations/2025-01-14-version-control-zero-to-hero.html#prepare",
+    "href": "presentations/2025-01-14-version-control-zero-to-hero.html#prepare",
+    "title": "Version control: Zero to hero",
+    "section": "",
+    "text": "Sign up! - If you don’t have a github id, yet… sign up for a free account at https://github.com/\nto gauge everyone’s level of experience, please spend 2 minutes on this form\nbring your laptop along to the session. I’ll walk through some common tasks."
+  },
+  {
+    "objectID": "presentations/2025-01-14-version-control-zero-to-hero.html#plan",
+    "href": "presentations/2025-01-14-version-control-zero-to-hero.html#plan",
+    "title": "Version control: Zero to hero",
+    "section": "Plan",
+    "text": "Plan\n\na quick overview of the ideas. (Why should you care? How does it help? Do I really need it&gt;?)\nsome walk-throughs of common tasks\nsome really useful aspects of using git with github.com that might help you in your work"
+  },
+  {
+    "objectID": "presentations/2025-01-14-version-control-zero-to-hero.html#materials",
+    "href": "presentations/2025-01-14-version-control-zero-to-hero.html#materials",
+    "title": "Version control: Zero to hero",
+    "section": "Materials",
+    "text": "Materials\nTo come."
+  },
+  {
+    "objectID": "presentations/2025-01-21-data-governance-ethics.html",
+    "href": "presentations/2025-01-21-data-governance-ethics.html",
+    "title": "Data governance, ethics, FAIR principles, …",
+    "section": "",
+    "text": "Damian Eke is a colleague in the Faculty of Science (based in Comp Sci). He is a philosopher who works on Responsible Research and Innovation, Ethics and governance of AI and Neurotech, Data Ethics and governance and more.\nHe leads / co-leads on several projects including:\nRAISE (https://raise-project.uk/) funded by UKRI through the RAI-UK project (https://rai.ac.uk/)"
+  },
+  {
+    "objectID": "presentations/2025-01-21-data-governance-ethics.html#where-when",
+    "href": "presentations/2025-01-21-data-governance-ethics.html#where-when",
+    "title": "Data governance, ethics, FAIR principles, …",
+    "section": "Where, When?",
+    "text": "Where, When?\nUP-PSYC-B37\n12noon-1pm"
+  },
+  {
+    "objectID": "presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.html",
+    "href": "presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.html",
+    "title": "Data visualistion Essentials",
+    "section": "",
+    "text": "We had a 1/2 day workshop on data visualisation essentials with Andy Kirk, visualisingdata.com.\nWe have materials and notes from some activities on the day, but they are not for sharing.\nThe programme on the day covered the following:\n\n\n\nAgenda for the day"
+  },
+  {
+    "objectID": "presentations/2023-01-25-meeting-notes.html",
+    "href": "presentations/2023-01-25-meeting-notes.html",
+    "title": "Statistical significance, Interactions, Statistics / notes",
+    "section": "",
+    "text": "think about e-notebooks\n\nHazem’s references for tips for choosing an e-notebook:\n\nhttps://www.nature.com/articles/d41586-018-05895-3\nhttps://www.nature.com/articles/s41596-021-00645-8 (pros and cons)"
+  },
+  {
+    "objectID": "presentations/2023-01-25-meeting-notes.html#e-notebooks",
+    "href": "presentations/2023-01-25-meeting-notes.html#e-notebooks",
+    "title": "Statistical significance, Interactions, Statistics / notes",
+    "section": "",
+    "text": "think about e-notebooks\n\nHazem’s references for tips for choosing an e-notebook:\n\nhttps://www.nature.com/articles/d41586-018-05895-3\nhttps://www.nature.com/articles/s41596-021-00645-8 (pros and cons)"
+  },
+  {
+    "objectID": "presentations/2023-01-25-meeting-notes.html#tidy-data",
+    "href": "presentations/2023-01-25-meeting-notes.html#tidy-data",
+    "title": "Statistical significance, Interactions, Statistics / notes",
+    "section": "Tidy data",
+    "text": "Tidy data\nDS was not at session, but ideas around organising data came up\n\nkeep your tabular data “tidy”\n\n\nthe concept of tidy data\nhttps://vita.had.co.nz/papers/tidy-data.html\n\nThis idea leads to a whole bunch of nice properties and tools for manipulating tabular data (selecting columns, filtering rows, statistical plotting,…) which is often a big win."
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html",
+    "href": "presentations/2022-11-23-first-meeting.html",
+    "title": "NG data club",
+    "section": "",
+    "text": "Meeting time + place\n\nWednesday, 12:00-12:45, weekly\na seminar room like this here? (or somewhere else?)"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#where-when",
+    "href": "presentations/2022-11-23-first-meeting.html#where-when",
+    "title": "NG data club",
+    "section": "",
+    "text": "Meeting time + place\n\nWednesday, 12:00-12:45, weekly\na seminar room like this here? (or somewhere else?)"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#what",
+    "href": "presentations/2022-11-23-first-meeting.html#what",
+    "title": "NG data club",
+    "section": "What",
+    "text": "What\nCould structure things according to\n\nI want to answer the following question with my data… How do I do that?\nI know the following technique, which could help you with [bla]…\nOther format?"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#what-2",
+    "href": "presentations/2022-11-23-first-meeting.html#what-2",
+    "title": "NG data club",
+    "section": "What 2",
+    "text": "What 2\n\nWant to share knowledge of principles / intuition / maths background\n… but also practical advice:\n\ntools\ncode snippets (multi-lingual?)"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#padlet-link-team-resources",
+    "href": "presentations/2022-11-23-first-meeting.html#padlet-link-team-resources",
+    "title": "NG data club",
+    "section": "Padlet link + Team + resources",
+    "text": "Padlet link + Team + resources\n\nhttps://padlet.com/denisschluppeck/ng_data_club\nMS Team (for chat / ad-hoc questions)\ngithub repo, gists (for sharing code )"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#lots-of-potential-topics",
+    "href": "presentations/2022-11-23-first-meeting.html#lots-of-potential-topics",
+    "title": "NG data club",
+    "section": "Lots of potential topics",
+    "text": "Lots of potential topics\n\nPCA, ICA, related methods\nlinear regression, basics of linear algebra?\n“dimensionality reduction”\nt-SNE\nbasic ideas behind solving inverse problems\nhow do people organise data, meta-data\n“Tidy Data” / tidyverse and related ideas (in r), Pandas (python), Tables (matlab). Long and wide data? select, filter, mutate, summarise (dplyr/sql syntax)\nlogistic regression\nintro to bayesian stats/estimation?\nmore machine learning stuff (svm, intro to deep learning models)\nRL?"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#notes-from-first-meeting",
+    "href": "presentations/2022-11-23-first-meeting.html#notes-from-first-meeting",
+    "title": "NG data club",
+    "section": "Notes from first meeting",
+    "text": "Notes from first meeting\n\nTime slot, lunchtime, 12:00-12:45 seems good\nRoom, TBC (depending on availability)\nGeneral mix of sessions that address “questions” and “available tools/techniques” sounded good to people\nThere were lots of good suggestions for what to cover"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#suggested-topics",
+    "href": "presentations/2022-11-23-first-meeting.html#suggested-topics",
+    "title": "NG data club",
+    "section": "Suggested Topics",
+    "text": "Suggested Topics\n\nMissing data\nVisualization\ncode/data sharing\nStat tests\nLinear regression (MvR)\nBugs\nCode style guide (MvR)\nSoftware tools\nPandas\nBring You Own Problem (BYOP)\nDAGs / directed ayclic graphs\ninferring causality from non-experimental data (e.g., selection models, instrumental variables, difference-in-difference)"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#initial-schedule",
+    "href": "presentations/2022-11-23-first-meeting.html#initial-schedule",
+    "title": "NG data club",
+    "section": "Initial Schedule",
+    "text": "Initial Schedule\n\n2022-11-30: Tomas: julia and code sharing\n2022-12-07: Helen, Bring your own problem, BYOP (data visualisation)\n2022-12-14: Hazem, thinking about, choosing appropriate statistical tests"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#future",
+    "href": "presentations/2022-11-23-first-meeting.html#future",
+    "title": "NG data club",
+    "section": "Future",
+    "text": "Future\n\nRoni & MvR: Hidden Markov Models\nDenis & Jan: mixing code and writing; documents, webpages, presentations"
+  },
+  {
+    "objectID": "presentations/2022-11-23-first-meeting.html#actions",
+    "href": "presentations/2022-11-23-first-meeting.html#actions",
+    "title": "NG data club",
+    "section": "Actions",
+    "text": "Actions\n\nsend e-mail with details of upcoming meetings to lp-notug [ds]\nsort out recurring room [ds]\nconsider moving emails/discussion to Teams [ds, maybe after away day in 2023]"
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html",
+    "href": "presentations/2022-12-14-linear-regression.html",
+    "title": "Linear regression [session notes]",
+    "section": "",
+    "text": "Some details about fitting line through data points as a canonical example, but also relationship to other more complex examples that can be cast as linear regression problems. MvR referred to Numerical Recipes for really good theoretical background, but also practical advice Press et al. (1992). You can try here or google for a PDF copy of the relevant chapter 15.0 on Modelling data) :\n\nPress, William H., Saul A. Teukolsky, William T. Vetterling, and Brian P. Flannery. 1992. Numerical Recipes in c. Second. Cambridge, USA: Cambridge University Press.\n\nfitting polynomials is also linear problem\nreality check: any function that’s linear in parameters is also ok, eg. \\(y(t; a, b, c) = a\\cdot e^{-t} + b\\cdot x + c\\)"
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html#introduction",
+    "href": "presentations/2022-12-14-linear-regression.html#introduction",
+    "title": "Linear regression [session notes]",
+    "section": "",
+    "text": "Some details about fitting line through data points as a canonical example, but also relationship to other more complex examples that can be cast as linear regression problems. MvR referred to Numerical Recipes for really good theoretical background, but also practical advice Press et al. (1992). You can try here or google for a PDF copy of the relevant chapter 15.0 on Modelling data) :\n\nPress, William H., Saul A. Teukolsky, William T. Vetterling, and Brian P. Flannery. 1992. Numerical Recipes in c. Second. Cambridge, USA: Cambridge University Press.\n\nfitting polynomials is also linear problem\nreality check: any function that’s linear in parameters is also ok, eg. \\(y(t; a, b, c) = a\\cdot e^{-t} + b\\cdot x + c\\)"
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html#basic-ideas",
+    "href": "presentations/2022-12-14-linear-regression.html#basic-ideas",
+    "title": "Linear regression [session notes]",
+    "section": "Basic ideas",
+    "text": "Basic ideas\n\nDerivation from a Bayesian point of view, assuming a flat prior to yield the maximum likelihood solution.\n\nBayes formulation with data \\(\\mathcal{D}\\) and parameters \\(w\\) :\n\\[p(w | \\mathcal{D}) = \\frac{p(\\mathcal{D} | w )p(w)}{p(\\mathcal{D})} \\]\nbut in the case of a flat prior on the parameters, \\(p(w)\\), and given that \\(p(\\mathcal{D})\\) is just a normalising constant, we can find the maximum of \\(p(w | \\mathcal{D})\\), by maximising \\(p(\\mathcal{D} | w )\\), also known as the likelihood.\nFor iid Gaussian noise, the likelihood becomes\n\\[\\mathcal{L} = \\prod_i \\Big\\{ \\exp{\\Big[-\\frac{1}{2}\\Big(\\frac{y_i -y(x_i)}{\\sigma} \\Big)^2} \\Big] \\Delta y\\Big\\}\\]\nand maximising the likelihood is equivalent to minimising the negative log of the likelihood (numerically better behaved) \\[-\\log \\mathcal{L} = \\sum_i \\frac{\\Big(y_i -y(x_i)\\Big)^2}{2\\sigma^2}  -N \\log \\Delta y\\]\nPulling out all the terms that are constant (don’t change with the parameters), this is equivalent to minimising the sum of squared errors between data and the fit."
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html#relationship-to-chi2-fitting",
+    "href": "presentations/2022-12-14-linear-regression.html#relationship-to-chi2-fitting",
+    "title": "Linear regression [session notes]",
+    "section": "Relationship to \\(\\chi^2\\) fitting",
+    "text": "Relationship to \\(\\chi^2\\) fitting\nIf the errors vary with each measurement point (rather than being of a fixed, single \\(\\sigma\\)), then these errors can be included in the quantity to be minimised and leads to the \\(\\chi^2\\) statistic\n\\[\\chi^2 = \\sum_i \\Big( \\frac{y_i-y(x_i; a_1\\dots, a_M )}{\\sigma_i} \\Big)^2 \\]\nwhere \\((x_i, y_i)\\) are data points with an associated error \\((\\sigma_i)\\). For the Gaussian case, s \\(\\chi^2\\) value of a moderately good fit is on the order of the degrees of freedom \\(\\nu = N-M\\) (number of measurement points minus number of parameters)."
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html#linear-algebra-picture",
+    "href": "presentations/2022-12-14-linear-regression.html#linear-algebra-picture",
+    "title": "Linear regression [session notes]",
+    "section": "Linear algebra picture",
+    "text": "Linear algebra picture\n\n\n\ndrawing of the linear algebra picture of regression"
+  },
+  {
+    "objectID": "presentations/2022-12-14-linear-regression.html#ideas",
+    "href": "presentations/2022-12-14-linear-regression.html#ideas",
+    "title": "Linear regression [session notes]",
+    "section": "Ideas",
+    "text": "Ideas\nConsider the data \\(\\mathbf{y}\\) as a vector in some space and \\(\\mathbf{X}\\), the design matrix with an associated column space.\n\\(\\mathbf{y}\\) is usually not in the column space of \\(\\mathbf{X}\\) (eg. a set of many \\(y_i\\) values measured at \\(x_i\\) are unlikely to fall onto a line, which is parameterised by two values).\nBut we can find an \\(\\mathbf{X}\\mathbf{\\hat{\\beta}}\\), such that the distance to the data \\(\\mathbf{y}\\) is smallest. This error \\(\\mathbf{e}\\) is orthogonal to the space defined by \\(\\mathbf{X}\\), so the dot products of \\(\\mathbf{e}\\) which each columns in \\(\\mathbf{X}\\) must be \\(0\\).\nThis leads to: \\[\n\\begin{eqnarray}\n\\mathbf{e}^T\\mathbf{X} &=& 0 \\\\\n(\\mathbf{y} - \\mathbf{X}\\mathbf{\\hat{\\beta}})^T\\mathbf{X} &=& 0 \\\\\n\\mathbf{X}^T(\\mathbf{y} - \\mathbf{X}\\mathbf{\\hat{\\beta}}) &=& 0 \\\\\n\\mathbf{X}^T\\mathbf{X}\\mathbf{\\hat{\\beta}} &=& \\mathbf{X}^T\\mathbf{y} \\\\\n\\mathbf{\\hat{\\beta}} &=& (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}  \\\\\n\\end{eqnarray}\n\\]\nSee also “The Linear Algebra Behind Linear Regression” (2020) and Geer (2019)\n\n\n\n“The Linear Algebra Behind Linear Regression.” 2020. GoDataDriven. https://godatadriven.com/blog/the-linear-algebra-behind-linear-regression/.\n\nGeer, Ruben van de. 2019. “A Primer (or Refresher) on Linear Algebra for Data Science.” YouTube. https://www.youtube.com/watch?v=Qz58vTa8-SY."
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "",
+    "text": "The posterior distribution of the parameter(s) \\(\\theta\\) is the product of the likelihood of the data (given the parameters) and the prior* of the parameter divided by a normalising term.\n\\[\np(\\theta \\mid \\mathcal{D}) = \\frac{p( \\mathcal{D} \\mid \\theta) p(\\theta)}{p( \\mathcal{D})}\n\\]\nwhere\n\n\\(p(\\theta \\mid \\mathcal{D})\\) is the posterior\n\\(p( \\mathcal{D} \\mid \\theta)\\), the likelihood\n\\(p(\\theta)\\), the prior and\n\\(p(\\mathcal{D})\\), a normalising term, summing over \\(p(\\mathcal{D} \\mid \\theta ) p(\\theta )\\) for all possible values of \\(p(\\theta)\\)"
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#basics",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#basics",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "",
+    "text": "The posterior distribution of the parameter(s) \\(\\theta\\) is the product of the likelihood of the data (given the parameters) and the prior* of the parameter divided by a normalising term.\n\\[\np(\\theta \\mid \\mathcal{D}) = \\frac{p( \\mathcal{D} \\mid \\theta) p(\\theta)}{p( \\mathcal{D})}\n\\]\nwhere\n\n\\(p(\\theta \\mid \\mathcal{D})\\) is the posterior\n\\(p( \\mathcal{D} \\mid \\theta)\\), the likelihood\n\\(p(\\theta)\\), the prior and\n\\(p(\\mathcal{D})\\), a normalising term, summing over \\(p(\\mathcal{D} \\mid \\theta ) p(\\theta )\\) for all possible values of \\(p(\\theta)\\)"
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#notes-on-mvrs-presentation",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#notes-on-mvrs-presentation",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "Notes on MvR’s presentation",
+    "text": "Notes on MvR’s presentation"
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#python-pymc",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#python-pymc",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "Python, PyMC",
+    "text": "Python, PyMC\nYou can learn about PyMC and Bayesian Modelling on the project website."
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#julia-turing.jl",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#julia-turing.jl",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "Julia, Turing.jl",
+    "text": "Julia, Turing.jl\nIf you prefer julia, you can dig into the following package, which looks very mature: https://turinglang.org/ (eg Zoubin Ghahramani is on the team for this project 😎)\nFor a #julialang-tinged introduction into Bayesian Inference, watch a presentation on Turing.jl.\nI have also had a play around with a linear regression example, which is not a huge jump for Matlab users and is easy to translate from model spec equations to code!\nJulia example code.\nNice diagnostic plots out of the box\n\n… and nice display tables for values for the MCMC diagnostics and summaries:\n\n\n\nMCMC diagnostics"
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#reading",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model/notes.html#reading",
+    "title": "Bayesian stats, Hierarchical models",
+    "section": "Reading",
+    "text": "Reading\n\nthe Bishop book on Pattern Recognition and Machine learning - online PDF for Bishop (2007)\nA podcast / interview (The Life Scientific) with Adrian Smith The power of Bayesian Statistics. Interesting background.\nAn extensive article Gelman et al. (2020) on a Bayesian Workflow.\n\n\n\n\nBishop, Christopher M. 2007. Pattern Recognition and Machine Learning (Information Science and Statistics). 1st ed. Springer.\n\nGelman, Andrew, Aki Vehtari, Daniel Simpson, Charles C. Margossian, Bob Carpenter, Yuling Yao, Lauren Kennedy, Jonah Gabry, Paul-Christian Bürkner, and Martin Modrák. 2020. “Bayesian Workflow.” https://arxiv.org/abs/2011.01808."
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html",
+    "title": "Mixing writing and r",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in Figure 1 shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#background",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#background",
+    "title": "Mixing writing and r",
+    "section": "",
+    "text": "Here is an example of a document that produces a plot from some data that’s stored separately.\nThe data in Figure 1 shows the daily interactions with the moodle page for my second year lab classes. Can you spot the two dominant patterns in the data?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#an-actual-computed-figure",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#an-actual-computed-figure",
+    "title": "Mixing writing and r",
+    "section": "an actual computed figure",
+    "text": "an actual computed figure\n\n\n\n\n\n\n\n\nFigure 1: A line plot of some mystery data"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#or-a-table",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#or-a-table",
+    "title": "Mixing writing and r",
+    "section": "or a table",
+    "text": "or a table\nA badly formatted table… rstats with various packages handles tabular data much more nicely!\n\n\nCode\nhead(df)\n\n\n# A tibble: 6 × 2\n  theTime_day     n\n  &lt;date&gt;      &lt;dbl&gt;\n1 2016-06-13      2\n2 2016-07-21      1\n3 2016-09-01      2\n4 2016-09-09      2\n5 2016-09-13      1\n6 2016-09-14      4"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#or-some-further-analysis",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#or-some-further-analysis",
+    "title": "Mixing writing and r",
+    "section": "or some further analysis",
+    "text": "or some further analysis\nIf you want to compute things for including in your text, so-called inline code, then you can make your code spit out markdown that’s been patched up.\nE.g. figure out the total # of interactions:\n\n`r sum(df$n)`\n\nOr in text: the total number of interactions were 8761, but mean and median were 108.16, and 36 respecively.\nFor code cells, if you turn #| echo: true to false, then the code is hidden!\nWe can also elaborate on previous plots, by adding additional analysis. Figure 2 shows the days, where n&gt;100.\n\n\n\n\n\n\n\n\nFigure 2: Events with &gt; 100 interactions labelled"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#notes",
+    "href": "presentations/2023-01-04-documents-and-code/01-doc-with-r.html#notes",
+    "title": "Mixing writing and r",
+    "section": "Notes",
+    "text": "Notes\n\ndplyr\nCheck out how conveniently the output format can be swapped out with quarto render 01-doc-with-julia.qmd --to pdf etc"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/Readme.html",
+    "href": "presentations/2023-01-04-documents-and-code/Readme.html",
+    "title": "Mixing text and computations",
+    "section": "",
+    "text": "Mixing text + computations, Markdown, quarto, webpages, pandoc\nMarkdown is a simple, easy-to-use markup language perfect for use in a text editor. There are now tons of tools that allow you to turn text with simple typographic bits of markup (# headings, italics, bold, etc) into nice looking documents, webpages, presentations, … I will give a brief overview and talk about why I think it’s useful.\n\nthe rendered revealjs slides I used are [at this link]\nthe raw qmd file for the presentation is 00-presentation.qmd\n\nThe derived files are in docx, html and pdf document…\n00-presentation.docx 00-presentation.html 00-presentation.pdf"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/Readme.html#what",
+    "href": "presentations/2023-01-04-documents-and-code/Readme.html#what",
+    "title": "Mixing text and computations",
+    "section": "",
+    "text": "Mixing text + computations, Markdown, quarto, webpages, pandoc\nMarkdown is a simple, easy-to-use markup language perfect for use in a text editor. There are now tons of tools that allow you to turn text with simple typographic bits of markup (# headings, italics, bold, etc) into nice looking documents, webpages, presentations, … I will give a brief overview and talk about why I think it’s useful.\n\nthe rendered revealjs slides I used are [at this link]\nthe raw qmd file for the presentation is 00-presentation.qmd\n\nThe derived files are in docx, html and pdf document…\n00-presentation.docx 00-presentation.html 00-presentation.pdf"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/Readme.html#including-computations",
+    "href": "presentations/2023-01-04-documents-and-code/Readme.html#including-computations",
+    "title": "Mixing text and computations",
+    "section": "including computations",
+    "text": "including computations\nCheck out the [github repo) for code examples n julia, python and r:\n\n01-doc-with-julia.qmd\n01-doc-with-python.qmd\n01-doc-with-r.qmd"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/Readme.html#links",
+    "href": "presentations/2023-01-04-documents-and-code/Readme.html#links",
+    "title": "Mixing text and computations",
+    "section": "Links",
+    "text": "Links\n\nan online editor at stackedit, to just have a play\nhttps://quarto.org/\nhttps://rstudio.org/ - now pos.it: https://posit.co/\nthe original proposal for markdown: https://daringfireball.net/projects/markdown/"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html",
+    "title": "Mixing text + computations",
+    "section": "",
+    "text": "often useful to produce short documents that mix code snippets, plots, text, images\ncould use PPT, Keynote, Word (but don’t play nicely with version control)\nuse a simple text based version"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#motivation",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#motivation",
+    "title": "Mixing text + computations",
+    "section": "",
+    "text": "often useful to produce short documents that mix code snippets, plots, text, images\ncould use PPT, Keynote, Word (but don’t play nicely with version control)\nuse a simple text based version"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#where-would-you-use-this",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#where-would-you-use-this",
+    "title": "Mixing text + computations",
+    "section": "Where would you use this?",
+    "text": "Where would you use this?\n\n\nteaching (content changes slightly/a lot) each year\nresearch: publishing data + code is now a must for many journals\nafter this walk-through, it would be great to discuss if people find this useful?! What for?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#markdown-is-widely-used",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#markdown-is-widely-used",
+    "title": "Mixing text + computations",
+    "section": "markdown is widely used",
+    "text": "markdown is widely used\n\nif you want some light markup\ngo beyond simple text\na couple of key things like\neasy to write links"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#images",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#images",
+    "title": "Mixing text + computations",
+    "section": "… images",
+    "text": "… images\n\n\n\nsome bread in a dutch oven"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#maths-equations-are-easy",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#maths-equations-are-easy",
+    "title": "Mixing text + computations",
+    "section": "Maths, equations are easy",
+    "text": "Maths, equations are easy\n\\[\\chi^2 = \\sum_i \\Big( \\frac{y_i-y(x_i; a_1\\dots, a_M )}{\\sigma_i} \\Big)^2 \\]\n\nan online editor at stackedit, to just have a play"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#challenges",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#challenges",
+    "title": "Mixing text + computations",
+    "section": "Challenges",
+    "text": "Challenges\n\nplacing images where you want them (arbitrarily on page) requires some work\nyou need to render / transform it (only seconds, but not instantaneous)\nif you make mistakes you (it’s a very light version of coding)\nif you link to local files (images, etc), you have to remember to move them along (not a problem if everything is online)"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#advantages",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#advantages",
+    "title": "Mixing text + computations",
+    "section": "Advantages",
+    "text": "Advantages\n\nmarkdown (itself) structures your documents\ncan easily be tranformed into pdf, pptx, docx, revealjs, etc.\ngets rendered nicely on github.com, by defauilt\neasy to edit, rules are simple to learn\n\n\n\nyou can add in computations code in r, python, julia et al and make them part of your documents \\(\\rightarrow\\) quarto"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#quick-demo",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#quick-demo",
+    "title": "Mixing text + computations",
+    "section": "quick demo",
+    "text": "quick demo\n\nVSCode with markdown plugin (linting, preview)\n(! the github.com repo which gets rendered using a tool called jekyll under the hood)"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#quarto",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#quarto",
+    "title": "Mixing text + computations",
+    "section": "quarto",
+    "text": "quarto\n\na command line tool that renders a flavour of markdown called qmd (quarto-markdow)\na superset of markdown, so any previous work should be ok\nby adding some additional info at top of document, you can opt into lots of good stuff"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#info-at-top-yaml",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#info-at-top-yaml",
+    "title": "Mixing text + computations",
+    "section": "info at top: YAML",
+    "text": "info at top: YAML\nA text block delimited by ---, key/value\n---\ntitle: \"Mixing text + computations\"\nsubtitle: \"Markdown, quarto, webpages, pandoc\"\nauthor: Denis Schluppeck\ndate: 2023-01-18\nformat:\n  revealjs: \n    mainfont: Helvetica\n    sansfont: Helvetica\n---"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#quarto-1",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#quarto-1",
+    "title": "Mixing text + computations",
+    "section": "quarto",
+    "text": "quarto\n\nif you like RStudio, there is a nice interface\nVScode has a plugin that works well\nor if you prefer emacs/vim/nano/TextEdit, the command line tool is not that hard to use.\n\nquarto preview test.qmd \n# or render\nquarto render test.qmd --to pdf"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#any-questions",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#any-questions",
+    "title": "Mixing text + computations",
+    "section": "Any Questions?",
+    "text": "Any Questions?"
+  },
+  {
+    "objectID": "presentations/2023-01-04-documents-and-code/00-presentation.html#links",
+    "href": "presentations/2023-01-04-documents-and-code/00-presentation.html#links",
+    "title": "Mixing text + computations",
+    "section": "Links",
+    "text": "Links\n\nhttps://quarto.org/\nhttps://rstudio.org/ - now pos.it: https://posit.co/\nthe original proposal for markdown: https://daringfireball.net/projects/markdown/\nhttps://code.visualstudio.com/ - visual studio code (free download)\n\n\nrelated ideas\n\nliterate programming\nMatlab / publish()\nnotebooks, Pluto.jl"
+  },
+  {
+    "objectID": "presentations/2024-12-17-bayesian-hierarchical-model.html",
+    "href": "presentations/2024-12-17-bayesian-hierarchical-model.html",
+    "title": "Bayesian hierarchical models",
+    "section": "",
+    "text": "Some notes on Bayes, python and julia packages and even some example code on this page\nWikipedia article"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#introduction",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#introduction",
+    "title": "Tidy data",
+    "section": "Introduction",
+    "text": "Introduction\n\n\na lot of data we work with is tabular\ncan be represented in a table with rows and columns\nmaybe particular important for reporting data from repeated trials, experiments, conditions (neuroscience)\nlinks to statistical reports and visualisations we often want/need"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#examples",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#examples",
+    "title": "Tidy data",
+    "section": "Examples:",
+    "text": "Examples:\n\nYou probably have your own, but eg:\n\n\n\nrating in a questionnaire [per item, participant]\nreaction times [per trial, subject, condition]\n% fMRI signal change [per brain region across, subject, conditions]\nspike rate [per neuron, animal, task]"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#just-put-them-in-a-table-right",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#just-put-them-in-a-table-right",
+    "title": "Tidy data",
+    "section": "Just put them in a table, right!?",
+    "text": "Just put them in a table, right!?\n\nThe files are in the computer?"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#anna-karenina-principle",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#anna-karenina-principle",
+    "title": "Tidy data",
+    "section": "Anna Karenina principle",
+    "text": "Anna Karenina principle\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy\n\n\n\n“Tidy datasets are all alike, but every messy dataset is messy in its own way.” — Hadley Wickham"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-a",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-a",
+    "title": "Tidy data",
+    "section": "Example table A",
+    "text": "Example table A\nnumber of TB cases in country, population\n\n\nCode\ntable1 %&gt;% gt()\n\n\n\n\n\n\n\n\ncountry\nyear\ncases\npopulation\n\n\n\n\nAfghanistan\n1999\n745\n19987071\n\n\nAfghanistan\n2000\n2666\n20595360\n\n\nBrazil\n1999\n37737\n172006362\n\n\nBrazil\n2000\n80488\n174504898\n\n\nChina\n1999\n212258\n1272915272\n\n\nChina\n2000\n213766\n1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-b",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-b",
+    "title": "Tidy data",
+    "section": "Example table B",
+    "text": "Example table B\n\n\nCode\ntable2 %&gt;% gt()\n\n\n\n\n\n\n\n\ncountry\nyear\ntype\ncount\n\n\n\n\nAfghanistan\n1999\ncases\n745\n\n\nAfghanistan\n1999\npopulation\n19987071\n\n\nAfghanistan\n2000\ncases\n2666\n\n\nAfghanistan\n2000\npopulation\n20595360\n\n\nBrazil\n1999\ncases\n37737\n\n\nBrazil\n1999\npopulation\n172006362\n\n\nBrazil\n2000\ncases\n80488\n\n\nBrazil\n2000\npopulation\n174504898\n\n\nChina\n1999\ncases\n212258\n\n\nChina\n1999\npopulation\n1272915272\n\n\nChina\n2000\ncases\n213766\n\n\nChina\n2000\npopulation\n1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-c",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#example-table-c",
+    "title": "Tidy data",
+    "section": "Example table C",
+    "text": "Example table C\n\n\nCode\ntable3 %&gt;% gt()\n\n\n\n\n\n\n\n\ncountry\nyear\nrate\n\n\n\n\nAfghanistan\n1999\n745/19987071\n\n\nAfghanistan\n2000\n2666/20595360\n\n\nBrazil\n1999\n37737/172006362\n\n\nBrazil\n2000\n80488/174504898\n\n\nChina\n1999\n212258/1272915272\n\n\nChina\n2000\n213766/1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#tidy-means",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#tidy-means",
+    "title": "Tidy data",
+    "section": "“Tidy” means",
+    "text": "“Tidy” means\nWickham and Grolemund (2023)\n\nTidy data illustration from R4DS\n\neach column represents a variable\neach row an observation\neach cell entry a value (number, text, …)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#benefits",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#benefits",
+    "title": "Tidy data",
+    "section": "Benefits",
+    "text": "Benefits\n\nthis layout leads to a series of elegant ways to manipulate table\nit’s a standard (so tool builders can make code to work with it)\nit plays nicely with storage (files) and visualisation (grammar of graphics ideas)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#manipulating-tables-concepts",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#manipulating-tables-concepts",
+    "title": "Tidy data",
+    "section": "Manipulating tables: concepts",
+    "text": "Manipulating tables: concepts\nSome ideas that crop up in\n\nsql\ndplyr (a popular library in r),\npandas (in python)\nQueryVerse.jl (in julia)\ntables in matlab"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#main-ideas",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#main-ideas",
+    "title": "Tidy data",
+    "section": "Main ideas",
+    "text": "Main ideas\nA really good summary on this cheatsheet – using r syntax, but good for ideas!\n\nsubsetting (rows, columns)\nmutating (calculating new values)\naggregating (grouping, summarising)\ncombining (including relational data, join())"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#taking-rows-filter",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#taking-rows-filter",
+    "title": "Tidy data",
+    "section": "taking rows, filter()",
+    "text": "taking rows, filter()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#taking-columns-select",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#taking-columns-select",
+    "title": "Tidy data",
+    "section": "taking columns, select()",
+    "text": "taking columns, select()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#aggregate-groupby-summarize",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#aggregate-groupby-summarize",
+    "title": "Tidy data",
+    "section": "aggregate, groupby(), summarize()",
+    "text": "aggregate, groupby(), summarize()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#by-example-psychophysics-data",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#by-example-psychophysics-data",
+    "title": "Tidy data",
+    "section": "By example (Psychophysics data)",
+    "text": "By example (Psychophysics data)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#as-a-table",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#as-a-table",
+    "title": "Tidy data",
+    "section": "As a table",
+    "text": "As a table\n\nd |&gt; gt()\n\n\n\n\n\n\n\ndirection\np_cw\nse\ncoherence\nsubject\n\n\n\n\n-19.5\n0.114\n0.023\n0.04\nA\n\n\n-15.5\n0.173\n0.030\n0.04\nA\n\n\n-11.5\n0.236\n0.032\n0.04\nA\n\n\n-7.5\n0.276\n0.033\n0.04\nA\n\n\n-3.5\n0.390\n0.036\n0.04\nA\n\n\n0.5\n0.430\n0.037\n0.04\nA\n\n\n4.5\n0.516\n0.037\n0.04\nA\n\n\n8.5\n0.599\n0.035\n0.04\nA\n\n\n12.5\n0.719\n0.033\n0.04\nA\n\n\n16.5\n0.748\n0.031\n0.04\nA\n\n\n20.5\n0.780\n0.031\n0.04\nA\n\n\n-19.5\n0.048\n0.016\n0.07\nA\n\n\n-15.5\n0.089\n0.021\n0.07\nA\n\n\n-11.5\n0.106\n0.023\n0.07\nA\n\n\n-7.5\n0.152\n0.026\n0.07\nA\n\n\n-3.5\n0.304\n0.034\n0.07\nA\n\n\n0.5\n0.397\n0.036\n0.07\nA\n\n\n4.5\n0.592\n0.034\n0.07\nA\n\n\n8.5\n0.695\n0.033\n0.07\nA\n\n\n12.5\n0.823\n0.029\n0.07\nA\n\n\n16.5\n0.831\n0.029\n0.07\nA\n\n\n20.5\n0.923\n0.021\n0.07\nA\n\n\n-19.5\n0.010\n0.007\n0.13\nA\n\n\n-15.5\n0.049\n0.015\n0.13\nA\n\n\n-11.5\n0.098\n0.022\n0.13\nA\n\n\n-7.5\n0.121\n0.024\n0.13\nA\n\n\n-3.5\n0.218\n0.030\n0.13\nA\n\n\n0.5\n0.424\n0.038\n0.13\nA\n\n\n4.5\n0.611\n0.038\n0.13\nA\n\n\n8.5\n0.715\n0.035\n0.13\nA\n\n\n12.5\n0.820\n0.028\n0.13\nA\n\n\n16.5\n0.924\n0.020\n0.13\nA\n\n\n20.5\n0.950\n0.015\n0.13\nA\n\n\n-19.5\n0.005\n0.005\n0.25\nA\n\n\n-15.5\n0.022\n0.010\n0.25\nA\n\n\n-11.5\n0.047\n0.015\n0.25\nA\n\n\n-7.5\n0.073\n0.020\n0.25\nA\n\n\n-3.5\n0.140\n0.026\n0.25\nA\n\n\n0.5\n0.375\n0.034\n0.25\nA\n\n\n4.5\n0.593\n0.037\n0.25\nA\n\n\n8.5\n0.825\n0.029\n0.25\nA\n\n\n12.5\n0.904\n0.021\n0.25\nA\n\n\n16.5\n0.945\n0.017\n0.25\nA\n\n\n20.5\n0.972\n0.012\n0.25\nA\n\n\n-19.5\n0.290\n0.036\n0.04\nC\n\n\n-15.5\n0.345\n0.037\n0.04\nC\n\n\n-11.5\n0.371\n0.039\n0.04\nC\n\n\n-7.5\n0.393\n0.040\n0.04\nC\n\n\n-3.5\n0.400\n0.039\n0.04\nC\n\n\n0.5\n0.523\n0.040\n0.04\nC\n\n\n4.5\n0.594\n0.039\n0.04\nC\n\n\n8.5\n0.633\n0.041\n0.04\nC\n\n\n12.5\n0.675\n0.040\n0.04\nC\n\n\n16.5\n0.683\n0.039\n0.04\nC\n\n\n20.5\n0.744\n0.038\n0.04\nC\n\n\n-19.5\n0.172\n0.032\n0.07\nC\n\n\n-15.5\n0.203\n0.031\n0.07\nC\n\n\n-11.5\n0.236\n0.035\n0.07\nC\n\n\n-7.5\n0.373\n0.040\n0.07\nC\n\n\n-3.5\n0.417\n0.041\n0.07\nC\n\n\n0.5\n0.493\n0.041\n0.07\nC\n\n\n4.5\n0.595\n0.042\n0.07\nC\n\n\n8.5\n0.725\n0.036\n0.07\nC\n\n\n12.5\n0.740\n0.035\n0.07\nC\n\n\n16.5\n0.800\n0.035\n0.07\nC\n\n\n20.5\n0.804\n0.032\n0.07\nC\n\n\n-19.5\n0.092\n0.025\n0.13\nC\n\n\n-15.5\n0.131\n0.030\n0.13\nC\n\n\n-11.5\n0.234\n0.035\n0.13\nC\n\n\n-7.5\n0.333\n0.040\n0.13\nC\n\n\n-3.5\n0.385\n0.043\n0.13\nC\n\n\n0.5\n0.531\n0.042\n0.13\nC\n\n\n4.5\n0.672\n0.039\n0.13\nC\n\n\n8.5\n0.745\n0.036\n0.13\nC\n\n\n12.5\n0.796\n0.034\n0.13\nC\n\n\n16.5\n0.777\n0.032\n0.13\nC\n\n\n20.5\n0.908\n0.023\n0.13\nC\n\n\n-19.5\n0.051\n0.018\n0.25\nC\n\n\n-15.5\n0.082\n0.024\n0.25\nC\n\n\n-11.5\n0.150\n0.030\n0.25\nC\n\n\n-7.5\n0.261\n0.035\n0.25\nC\n\n\n-3.5\n0.364\n0.039\n0.25\nC\n\n\n0.5\n0.383\n0.041\n0.25\nC\n\n\n4.5\n0.623\n0.040\n0.25\nC\n\n\n8.5\n0.739\n0.035\n0.25\nC\n\n\n12.5\n0.762\n0.035\n0.25\nC\n\n\n16.5\n0.800\n0.033\n0.25\nC\n\n\n20.5\n0.924\n0.021\n0.25\nC\n\n\n-19.5\n0.174\n0.035\n0.04\nD\n\n\n-15.5\n0.231\n0.038\n0.04\nD\n\n\n-11.5\n0.222\n0.036\n0.04\nD\n\n\n-7.5\n0.284\n0.040\n0.04\nD\n\n\n-3.5\n0.375\n0.043\n0.04\nD\n\n\n0.5\n0.485\n0.044\n0.04\nD\n\n\n4.5\n0.605\n0.042\n0.04\nD\n\n\n8.5\n0.762\n0.040\n0.04\nD\n\n\n12.5\n0.858\n0.031\n0.04\nD\n\n\n16.5\n0.879\n0.029\n0.04\nD\n\n\n20.5\n0.897\n0.028\n0.04\nD\n\n\n-19.5\n0.064\n0.022\n0.07\nD\n\n\n-15.5\n0.070\n0.023\n0.07\nD\n\n\n-11.5\n0.138\n0.030\n0.07\nD\n\n\n-7.5\n0.278\n0.040\n0.07\nD\n\n\n-3.5\n0.360\n0.044\n0.07\nD\n\n\n0.5\n0.504\n0.045\n0.07\nD\n\n\n4.5\n0.639\n0.043\n0.07\nD\n\n\n8.5\n0.776\n0.036\n0.07\nD\n\n\n12.5\n0.832\n0.033\n0.07\nD\n\n\n16.5\n0.944\n0.021\n0.07\nD\n\n\n20.5\n0.959\n0.018\n0.07\nD\n\n\n-19.5\n0.017\n0.011\n0.13\nD\n\n\n-15.5\n0.065\n0.022\n0.13\nD\n\n\n-11.5\n0.108\n0.029\n0.13\nD\n\n\n-7.5\n0.252\n0.039\n0.13\nD\n\n\n-3.5\n0.327\n0.045\n0.13\nD\n\n\n0.5\n0.450\n0.044\n0.13\nD\n\n\n4.5\n0.696\n0.044\n0.13\nD\n\n\n8.5\n0.855\n0.031\n0.13\nD\n\n\n12.5\n0.933\n0.021\n0.13\nD\n\n\n16.5\n0.969\n0.016\n0.13\nD\n\n\n20.5\n0.992\n0.008\n0.13\nD\n\n\n-19.5\n0.015\n0.010\n0.25\nD\n\n\n-15.5\n0.030\n0.016\n0.25\nD\n\n\n-11.5\n0.067\n0.023\n0.25\nD\n\n\n-7.5\n0.105\n0.028\n0.25\nD\n\n\n-3.5\n0.271\n0.038\n0.25\nD\n\n\n0.5\n0.440\n0.046\n0.25\nD\n\n\n4.5\n0.818\n0.034\n0.25\nD\n\n\n8.5\n0.868\n0.031\n0.25\nD\n\n\n12.5\n0.940\n0.023\n0.25\nD\n\n\n16.5\n1.000\n0.000\n0.25\nD\n\n\n20.5\n1.000\n0.000\n0.25\nD\n\n\n-19.5\n0.169\n0.030\n0.04\nE\n\n\n-15.5\n0.136\n0.027\n0.04\nE\n\n\n-11.5\n0.214\n0.033\n0.04\nE\n\n\n-7.5\n0.290\n0.039\n0.04\nE\n\n\n-3.5\n0.413\n0.044\n0.04\nE\n\n\n0.5\n0.474\n0.043\n0.04\nE\n\n\n4.5\n0.586\n0.044\n0.04\nE\n\n\n8.5\n0.681\n0.039\n0.04\nE\n\n\n12.5\n0.682\n0.037\n0.04\nE\n\n\n16.5\n0.791\n0.036\n0.04\nE\n\n\n20.5\n0.831\n0.033\n0.04\nE\n\n\n-19.5\n0.101\n0.026\n0.07\nE\n\n\n-15.5\n0.103\n0.026\n0.07\nE\n\n\n-11.5\n0.129\n0.030\n0.07\nE\n\n\n-7.5\n0.222\n0.035\n0.07\nE\n\n\n-3.5\n0.307\n0.040\n0.07\nE\n\n\n0.5\n0.469\n0.042\n0.07\nE\n\n\n4.5\n0.634\n0.038\n0.07\nE\n\n\n8.5\n0.755\n0.034\n0.07\nE\n\n\n12.5\n0.748\n0.038\n0.07\nE\n\n\n16.5\n0.865\n0.028\n0.07\nE\n\n\n20.5\n0.910\n0.023\n0.07\nE\n\n\n-19.5\n0.039\n0.016\n0.13\nE\n\n\n-15.5\n0.036\n0.016\n0.13\nE\n\n\n-11.5\n0.066\n0.021\n0.13\nE\n\n\n-7.5\n0.131\n0.029\n0.13\nE\n\n\n-3.5\n0.287\n0.037\n0.13\nE\n\n\n0.5\n0.477\n0.040\n0.13\nE\n\n\n4.5\n0.642\n0.042\n0.13\nE\n\n\n8.5\n0.843\n0.032\n0.13\nE\n\n\n12.5\n0.936\n0.021\n0.13\nE\n\n\n16.5\n0.953\n0.018\n0.13\nE\n\n\n20.5\n0.978\n0.012\n0.13\nE\n\n\n-19.5\n0.000\n0.000\n0.25\nE\n\n\n-15.5\n0.020\n0.011\n0.25\nE\n\n\n-11.5\n0.035\n0.015\n0.25\nE\n\n\n-7.5\n0.066\n0.020\n0.25\nE\n\n\n-3.5\n0.217\n0.033\n0.25\nE\n\n\n0.5\n0.407\n0.042\n0.25\nE\n\n\n4.5\n0.752\n0.035\n0.25\nE\n\n\n8.5\n0.888\n0.027\n0.25\nE\n\n\n12.5\n0.946\n0.019\n0.25\nE\n\n\n16.5\n0.974\n0.013\n0.25\nE\n\n\n20.5\n1.000\n0.000\n0.25\nE\n\n\n-19.5\n0.446\n0.043\n0.04\nF\n\n\n-15.5\n0.486\n0.044\n0.04\nF\n\n\n-11.5\n0.577\n0.042\n0.04\nF\n\n\n-7.5\n0.532\n0.047\n0.04\nF\n\n\n-3.5\n0.559\n0.045\n0.04\nF\n\n\n0.5\n0.593\n0.045\n0.04\nF\n\n\n4.5\n0.595\n0.041\n0.04\nF\n\n\n8.5\n0.565\n0.045\n0.04\nF\n\n\n12.5\n0.612\n0.041\n0.04\nF\n\n\n16.5\n0.615\n0.042\n0.04\nF\n\n\n20.5\n0.684\n0.038\n0.04\nF\n\n\n-19.5\n0.378\n0.041\n0.07\nF\n\n\n-15.5\n0.518\n0.042\n0.07\nF\n\n\n-11.5\n0.397\n0.040\n0.07\nF\n\n\n-7.5\n0.470\n0.044\n0.07\nF\n\n\n-3.5\n0.500\n0.043\n0.07\nF\n\n\n0.5\n0.528\n0.045\n0.07\nF\n\n\n4.5\n0.597\n0.044\n0.07\nF\n\n\n8.5\n0.664\n0.039\n0.07\nF\n\n\n12.5\n0.707\n0.038\n0.07\nF\n\n\n16.5\n0.621\n0.041\n0.07\nF\n\n\n20.5\n0.678\n0.043\n0.07\nF\n\n\n-19.5\n0.272\n0.039\n0.13\nF\n\n\n-15.5\n0.276\n0.038\n0.13\nF\n\n\n-11.5\n0.375\n0.042\n0.13\nF\n\n\n-7.5\n0.489\n0.041\n0.13\nF\n\n\n-3.5\n0.446\n0.043\n0.13\nF\n\n\n0.5\n0.577\n0.042\n0.13\nF\n\n\n4.5\n0.602\n0.043\n0.13\nF\n\n\n8.5\n0.611\n0.042\n0.13\nF\n\n\n12.5\n0.727\n0.040\n0.13\nF\n\n\n16.5\n0.746\n0.039\n0.13\nF\n\n\n20.5\n0.805\n0.034\n0.13\nF\n\n\n-19.5\n0.178\n0.033\n0.25\nF\n\n\n-15.5\n0.203\n0.036\n0.25\nF\n\n\n-11.5\n0.276\n0.041\n0.25\nF\n\n\n-7.5\n0.281\n0.037\n0.25\nF\n\n\n-3.5\n0.457\n0.041\n0.25\nF\n\n\n0.5\n0.543\n0.039\n0.25\nF\n\n\n4.5\n0.626\n0.041\n0.25\nF\n\n\n8.5\n0.738\n0.039\n0.25\nF\n\n\n12.5\n0.779\n0.038\n0.25\nF\n\n\n16.5\n0.857\n0.030\n0.25\nF\n\n\n20.5\n0.852\n0.031\n0.25\nF"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#group_by-and-summarize",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#group_by-and-summarize",
+    "title": "Tidy data",
+    "section": "group_by and summarize",
+    "text": "group_by and summarize\n\npick one coherence level\ngroup by direction\nsummarise across all observers\n\n```{r}\nd |&gt; filter(coherence == 0.25) |&gt; \n     group_by(direction) |&gt; \n     summarise(mean_p_cw = mean(p_cw)) |&gt;\n     gt()\n```"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#result",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#result",
+    "title": "Tidy data",
+    "section": "result",
+    "text": "result\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt; \n     group_by(direction) |&gt; \n     summarise(mean_p_cw = mean(p_cw)) |&gt;\n     gt()\n\n\n\n\n\n\n\n\ndirection\nmean_p_cw\n\n\n\n\n-19.5\n0.0498\n\n\n-15.5\n0.0714\n\n\n-11.5\n0.1150\n\n\n-7.5\n0.1572\n\n\n-3.5\n0.2898\n\n\n0.5\n0.4296\n\n\n4.5\n0.6824\n\n\n8.5\n0.8116\n\n\n12.5\n0.8662\n\n\n16.5\n0.9152\n\n\n20.5\n0.9496"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#plotting-can-follow-same-ideas",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#plotting-can-follow-same-ideas",
+    "title": "Tidy data",
+    "section": "plotting can follow same ideas",
+    "text": "plotting can follow same ideas\n\ndeclarative style (ggplot) versus\nimperative style (matlab, matplotlib, …)1\n\nwhat I used to use before I hit on / read the tidyverse stuff."
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#plot-example",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#plot-example",
+    "title": "Tidy data",
+    "section": "plot example",
+    "text": "plot example\n5,6 lines of code to get this\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt;\n     ggplot(aes(x = direction, y = p_cw)) +\n      geom_jitter() +\n      geom_smooth() +\n      theme_minimal()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#one-additional-line",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#one-additional-line",
+    "title": "Tidy data",
+    "section": "one additional line…",
+    "text": "one additional line…\n```{r}\n      ...\n      facet_wrap(~subject) +\n      ...\n```\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt;\n     ggplot(aes(x = direction, y = p_cw)) +\n      geom_jitter() +\n      geom_smooth() +\n      facet_wrap(~subject) +\n      theme_minimal()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#discussion",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#discussion",
+    "title": "Tidy data",
+    "section": "Discussion",
+    "text": "Discussion\n\ndata files (csv, parquet, feather ??)\nwhat do people do (hand-wrap their own? other libraries)\nhow uses an actual database?\nshould we teach this at UG/PG level more??"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#references",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data-slides.html#references",
+    "title": "Tidy data",
+    "section": "References",
+    "text": "References\n\n\n\n\nWickham, H, and G Grolemund. 2023. “R for Data Science (2e).” 2023. https://r4ds.hadley.nz/."
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html",
+    "title": "Tidy data",
+    "section": "",
+    "text": "a lot of data we work with is tabular\ncan be represented in a table with rows and columns\nmaybe particular important for reporting data from repeated trials, experiments, conditions (neuroscience)\nlinks to statistical reports and visualisations we often want/need"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#introduction",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#introduction",
+    "title": "Tidy data",
+    "section": "",
+    "text": "a lot of data we work with is tabular\ncan be represented in a table with rows and columns\nmaybe particular important for reporting data from repeated trials, experiments, conditions (neuroscience)\nlinks to statistical reports and visualisations we often want/need"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#examples",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#examples",
+    "title": "Tidy data",
+    "section": "Examples:",
+    "text": "Examples:\n\nYou probably have your own, but eg:\n\n\n\nrating in a questionnaire [per item, participant]\nreaction times [per trial, subject, condition]\n% fMRI signal change [per brain region across, subject, conditions]\nspike rate [per neuron, animal, task]"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#just-put-them-in-a-table-right",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#just-put-them-in-a-table-right",
+    "title": "Tidy data",
+    "section": "Just put them in a table, right!?",
+    "text": "Just put them in a table, right!?\n\n\n\nThe files are in the computer?"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#anna-karenina-principle",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#anna-karenina-principle",
+    "title": "Tidy data",
+    "section": "Anna Karenina principle",
+    "text": "Anna Karenina principle\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy\n\n\n\n“Tidy datasets are all alike, but every messy dataset is messy in its own way.” — Hadley Wickham"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-a",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-a",
+    "title": "Tidy data",
+    "section": "Example table A",
+    "text": "Example table A\nnumber of TB cases in country, population\n\ntable1 %&gt;% gt()\n\n\n\n\n\n\n\ncountry\nyear\ncases\npopulation\n\n\n\n\nAfghanistan\n1999\n745\n19987071\n\n\nAfghanistan\n2000\n2666\n20595360\n\n\nBrazil\n1999\n37737\n172006362\n\n\nBrazil\n2000\n80488\n174504898\n\n\nChina\n1999\n212258\n1272915272\n\n\nChina\n2000\n213766\n1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-b",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-b",
+    "title": "Tidy data",
+    "section": "Example table B",
+    "text": "Example table B\n\ntable2 %&gt;% gt()\n\n\n\n\n\n\n\ncountry\nyear\ntype\ncount\n\n\n\n\nAfghanistan\n1999\ncases\n745\n\n\nAfghanistan\n1999\npopulation\n19987071\n\n\nAfghanistan\n2000\ncases\n2666\n\n\nAfghanistan\n2000\npopulation\n20595360\n\n\nBrazil\n1999\ncases\n37737\n\n\nBrazil\n1999\npopulation\n172006362\n\n\nBrazil\n2000\ncases\n80488\n\n\nBrazil\n2000\npopulation\n174504898\n\n\nChina\n1999\ncases\n212258\n\n\nChina\n1999\npopulation\n1272915272\n\n\nChina\n2000\ncases\n213766\n\n\nChina\n2000\npopulation\n1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-c",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#example-table-c",
+    "title": "Tidy data",
+    "section": "Example table C",
+    "text": "Example table C\n\ntable3 %&gt;% gt()\n\n\n\n\n\n\n\ncountry\nyear\nrate\n\n\n\n\nAfghanistan\n1999\n745/19987071\n\n\nAfghanistan\n2000\n2666/20595360\n\n\nBrazil\n1999\n37737/172006362\n\n\nBrazil\n2000\n80488/174504898\n\n\nChina\n1999\n212258/1272915272\n\n\nChina\n2000\n213766/1280428583"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#tidy-means",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#tidy-means",
+    "title": "Tidy data",
+    "section": "“Tidy” means",
+    "text": "“Tidy” means\nWickham and Grolemund (2023)\n\nWickham, H, and G Grolemund. 2023. “R for Data Science (2e).” 2023. https://r4ds.hadley.nz/.\n\n\n\nTidy data illustration from R4DS\n\n\n\n\neach column represents a variable\neach row an observation\neach cell entry a value (number, text, …)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#benefits",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#benefits",
+    "title": "Tidy data",
+    "section": "Benefits",
+    "text": "Benefits\n\nthis layout leads to a series of elegant ways to manipulate table\nit’s a standard (so tool builders can make code to work with it)\nit plays nicely with storage (files) and visualisation (grammar of graphics ideas)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#manipulating-tables-concepts",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#manipulating-tables-concepts",
+    "title": "Tidy data",
+    "section": "Manipulating tables: concepts",
+    "text": "Manipulating tables: concepts\nSome ideas that crop up in\n\nsql\ndplyr (a popular library in r),\npandas (in python)\nQueryVerse.jl (in julia)\ntables in matlab"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#main-ideas",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#main-ideas",
+    "title": "Tidy data",
+    "section": "Main ideas",
+    "text": "Main ideas\nA really good summary on this cheatsheet – using r syntax, but good for ideas!\n\nsubsetting (rows, columns)\nmutating (calculating new values)\naggregating (grouping, summarising)\ncombining (including relational data, join())"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#taking-rows-filter",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#taking-rows-filter",
+    "title": "Tidy data",
+    "section": "taking rows, filter()",
+    "text": "taking rows, filter()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#taking-columns-select",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#taking-columns-select",
+    "title": "Tidy data",
+    "section": "taking columns, select()",
+    "text": "taking columns, select()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#aggregate-groupby-summarize",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#aggregate-groupby-summarize",
+    "title": "Tidy data",
+    "section": "aggregate, groupby(), summarize()",
+    "text": "aggregate, groupby(), summarize()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#by-example-psychophysics-data",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#by-example-psychophysics-data",
+    "title": "Tidy data",
+    "section": "By example (Psychophysics data)",
+    "text": "By example (Psychophysics data)"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#as-a-table",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#as-a-table",
+    "title": "Tidy data",
+    "section": "As a table",
+    "text": "As a table\n\nd |&gt; gt()\n\n\n\n\n\n\n\ndirection\np_cw\nse\ncoherence\nsubject\n\n\n\n\n-19.5\n0.114\n0.023\n0.04\nA\n\n\n-15.5\n0.173\n0.030\n0.04\nA\n\n\n-11.5\n0.236\n0.032\n0.04\nA\n\n\n-7.5\n0.276\n0.033\n0.04\nA\n\n\n-3.5\n0.390\n0.036\n0.04\nA\n\n\n0.5\n0.430\n0.037\n0.04\nA\n\n\n4.5\n0.516\n0.037\n0.04\nA\n\n\n8.5\n0.599\n0.035\n0.04\nA\n\n\n12.5\n0.719\n0.033\n0.04\nA\n\n\n16.5\n0.748\n0.031\n0.04\nA\n\n\n20.5\n0.780\n0.031\n0.04\nA\n\n\n-19.5\n0.048\n0.016\n0.07\nA\n\n\n-15.5\n0.089\n0.021\n0.07\nA\n\n\n-11.5\n0.106\n0.023\n0.07\nA\n\n\n-7.5\n0.152\n0.026\n0.07\nA\n\n\n-3.5\n0.304\n0.034\n0.07\nA\n\n\n0.5\n0.397\n0.036\n0.07\nA\n\n\n4.5\n0.592\n0.034\n0.07\nA\n\n\n8.5\n0.695\n0.033\n0.07\nA\n\n\n12.5\n0.823\n0.029\n0.07\nA\n\n\n16.5\n0.831\n0.029\n0.07\nA\n\n\n20.5\n0.923\n0.021\n0.07\nA\n\n\n-19.5\n0.010\n0.007\n0.13\nA\n\n\n-15.5\n0.049\n0.015\n0.13\nA\n\n\n-11.5\n0.098\n0.022\n0.13\nA\n\n\n-7.5\n0.121\n0.024\n0.13\nA\n\n\n-3.5\n0.218\n0.030\n0.13\nA\n\n\n0.5\n0.424\n0.038\n0.13\nA\n\n\n4.5\n0.611\n0.038\n0.13\nA\n\n\n8.5\n0.715\n0.035\n0.13\nA\n\n\n12.5\n0.820\n0.028\n0.13\nA\n\n\n16.5\n0.924\n0.020\n0.13\nA\n\n\n20.5\n0.950\n0.015\n0.13\nA\n\n\n-19.5\n0.005\n0.005\n0.25\nA\n\n\n-15.5\n0.022\n0.010\n0.25\nA\n\n\n-11.5\n0.047\n0.015\n0.25\nA\n\n\n-7.5\n0.073\n0.020\n0.25\nA\n\n\n-3.5\n0.140\n0.026\n0.25\nA\n\n\n0.5\n0.375\n0.034\n0.25\nA\n\n\n4.5\n0.593\n0.037\n0.25\nA\n\n\n8.5\n0.825\n0.029\n0.25\nA\n\n\n12.5\n0.904\n0.021\n0.25\nA\n\n\n16.5\n0.945\n0.017\n0.25\nA\n\n\n20.5\n0.972\n0.012\n0.25\nA\n\n\n-19.5\n0.290\n0.036\n0.04\nC\n\n\n-15.5\n0.345\n0.037\n0.04\nC\n\n\n-11.5\n0.371\n0.039\n0.04\nC\n\n\n-7.5\n0.393\n0.040\n0.04\nC\n\n\n-3.5\n0.400\n0.039\n0.04\nC\n\n\n0.5\n0.523\n0.040\n0.04\nC\n\n\n4.5\n0.594\n0.039\n0.04\nC\n\n\n8.5\n0.633\n0.041\n0.04\nC\n\n\n12.5\n0.675\n0.040\n0.04\nC\n\n\n16.5\n0.683\n0.039\n0.04\nC\n\n\n20.5\n0.744\n0.038\n0.04\nC\n\n\n-19.5\n0.172\n0.032\n0.07\nC\n\n\n-15.5\n0.203\n0.031\n0.07\nC\n\n\n-11.5\n0.236\n0.035\n0.07\nC\n\n\n-7.5\n0.373\n0.040\n0.07\nC\n\n\n-3.5\n0.417\n0.041\n0.07\nC\n\n\n0.5\n0.493\n0.041\n0.07\nC\n\n\n4.5\n0.595\n0.042\n0.07\nC\n\n\n8.5\n0.725\n0.036\n0.07\nC\n\n\n12.5\n0.740\n0.035\n0.07\nC\n\n\n16.5\n0.800\n0.035\n0.07\nC\n\n\n20.5\n0.804\n0.032\n0.07\nC\n\n\n-19.5\n0.092\n0.025\n0.13\nC\n\n\n-15.5\n0.131\n0.030\n0.13\nC\n\n\n-11.5\n0.234\n0.035\n0.13\nC\n\n\n-7.5\n0.333\n0.040\n0.13\nC\n\n\n-3.5\n0.385\n0.043\n0.13\nC\n\n\n0.5\n0.531\n0.042\n0.13\nC\n\n\n4.5\n0.672\n0.039\n0.13\nC\n\n\n8.5\n0.745\n0.036\n0.13\nC\n\n\n12.5\n0.796\n0.034\n0.13\nC\n\n\n16.5\n0.777\n0.032\n0.13\nC\n\n\n20.5\n0.908\n0.023\n0.13\nC\n\n\n-19.5\n0.051\n0.018\n0.25\nC\n\n\n-15.5\n0.082\n0.024\n0.25\nC\n\n\n-11.5\n0.150\n0.030\n0.25\nC\n\n\n-7.5\n0.261\n0.035\n0.25\nC\n\n\n-3.5\n0.364\n0.039\n0.25\nC\n\n\n0.5\n0.383\n0.041\n0.25\nC\n\n\n4.5\n0.623\n0.040\n0.25\nC\n\n\n8.5\n0.739\n0.035\n0.25\nC\n\n\n12.5\n0.762\n0.035\n0.25\nC\n\n\n16.5\n0.800\n0.033\n0.25\nC\n\n\n20.5\n0.924\n0.021\n0.25\nC\n\n\n-19.5\n0.174\n0.035\n0.04\nD\n\n\n-15.5\n0.231\n0.038\n0.04\nD\n\n\n-11.5\n0.222\n0.036\n0.04\nD\n\n\n-7.5\n0.284\n0.040\n0.04\nD\n\n\n-3.5\n0.375\n0.043\n0.04\nD\n\n\n0.5\n0.485\n0.044\n0.04\nD\n\n\n4.5\n0.605\n0.042\n0.04\nD\n\n\n8.5\n0.762\n0.040\n0.04\nD\n\n\n12.5\n0.858\n0.031\n0.04\nD\n\n\n16.5\n0.879\n0.029\n0.04\nD\n\n\n20.5\n0.897\n0.028\n0.04\nD\n\n\n-19.5\n0.064\n0.022\n0.07\nD\n\n\n-15.5\n0.070\n0.023\n0.07\nD\n\n\n-11.5\n0.138\n0.030\n0.07\nD\n\n\n-7.5\n0.278\n0.040\n0.07\nD\n\n\n-3.5\n0.360\n0.044\n0.07\nD\n\n\n0.5\n0.504\n0.045\n0.07\nD\n\n\n4.5\n0.639\n0.043\n0.07\nD\n\n\n8.5\n0.776\n0.036\n0.07\nD\n\n\n12.5\n0.832\n0.033\n0.07\nD\n\n\n16.5\n0.944\n0.021\n0.07\nD\n\n\n20.5\n0.959\n0.018\n0.07\nD\n\n\n-19.5\n0.017\n0.011\n0.13\nD\n\n\n-15.5\n0.065\n0.022\n0.13\nD\n\n\n-11.5\n0.108\n0.029\n0.13\nD\n\n\n-7.5\n0.252\n0.039\n0.13\nD\n\n\n-3.5\n0.327\n0.045\n0.13\nD\n\n\n0.5\n0.450\n0.044\n0.13\nD\n\n\n4.5\n0.696\n0.044\n0.13\nD\n\n\n8.5\n0.855\n0.031\n0.13\nD\n\n\n12.5\n0.933\n0.021\n0.13\nD\n\n\n16.5\n0.969\n0.016\n0.13\nD\n\n\n20.5\n0.992\n0.008\n0.13\nD\n\n\n-19.5\n0.015\n0.010\n0.25\nD\n\n\n-15.5\n0.030\n0.016\n0.25\nD\n\n\n-11.5\n0.067\n0.023\n0.25\nD\n\n\n-7.5\n0.105\n0.028\n0.25\nD\n\n\n-3.5\n0.271\n0.038\n0.25\nD\n\n\n0.5\n0.440\n0.046\n0.25\nD\n\n\n4.5\n0.818\n0.034\n0.25\nD\n\n\n8.5\n0.868\n0.031\n0.25\nD\n\n\n12.5\n0.940\n0.023\n0.25\nD\n\n\n16.5\n1.000\n0.000\n0.25\nD\n\n\n20.5\n1.000\n0.000\n0.25\nD\n\n\n-19.5\n0.169\n0.030\n0.04\nE\n\n\n-15.5\n0.136\n0.027\n0.04\nE\n\n\n-11.5\n0.214\n0.033\n0.04\nE\n\n\n-7.5\n0.290\n0.039\n0.04\nE\n\n\n-3.5\n0.413\n0.044\n0.04\nE\n\n\n0.5\n0.474\n0.043\n0.04\nE\n\n\n4.5\n0.586\n0.044\n0.04\nE\n\n\n8.5\n0.681\n0.039\n0.04\nE\n\n\n12.5\n0.682\n0.037\n0.04\nE\n\n\n16.5\n0.791\n0.036\n0.04\nE\n\n\n20.5\n0.831\n0.033\n0.04\nE\n\n\n-19.5\n0.101\n0.026\n0.07\nE\n\n\n-15.5\n0.103\n0.026\n0.07\nE\n\n\n-11.5\n0.129\n0.030\n0.07\nE\n\n\n-7.5\n0.222\n0.035\n0.07\nE\n\n\n-3.5\n0.307\n0.040\n0.07\nE\n\n\n0.5\n0.469\n0.042\n0.07\nE\n\n\n4.5\n0.634\n0.038\n0.07\nE\n\n\n8.5\n0.755\n0.034\n0.07\nE\n\n\n12.5\n0.748\n0.038\n0.07\nE\n\n\n16.5\n0.865\n0.028\n0.07\nE\n\n\n20.5\n0.910\n0.023\n0.07\nE\n\n\n-19.5\n0.039\n0.016\n0.13\nE\n\n\n-15.5\n0.036\n0.016\n0.13\nE\n\n\n-11.5\n0.066\n0.021\n0.13\nE\n\n\n-7.5\n0.131\n0.029\n0.13\nE\n\n\n-3.5\n0.287\n0.037\n0.13\nE\n\n\n0.5\n0.477\n0.040\n0.13\nE\n\n\n4.5\n0.642\n0.042\n0.13\nE\n\n\n8.5\n0.843\n0.032\n0.13\nE\n\n\n12.5\n0.936\n0.021\n0.13\nE\n\n\n16.5\n0.953\n0.018\n0.13\nE\n\n\n20.5\n0.978\n0.012\n0.13\nE\n\n\n-19.5\n0.000\n0.000\n0.25\nE\n\n\n-15.5\n0.020\n0.011\n0.25\nE\n\n\n-11.5\n0.035\n0.015\n0.25\nE\n\n\n-7.5\n0.066\n0.020\n0.25\nE\n\n\n-3.5\n0.217\n0.033\n0.25\nE\n\n\n0.5\n0.407\n0.042\n0.25\nE\n\n\n4.5\n0.752\n0.035\n0.25\nE\n\n\n8.5\n0.888\n0.027\n0.25\nE\n\n\n12.5\n0.946\n0.019\n0.25\nE\n\n\n16.5\n0.974\n0.013\n0.25\nE\n\n\n20.5\n1.000\n0.000\n0.25\nE\n\n\n-19.5\n0.446\n0.043\n0.04\nF\n\n\n-15.5\n0.486\n0.044\n0.04\nF\n\n\n-11.5\n0.577\n0.042\n0.04\nF\n\n\n-7.5\n0.532\n0.047\n0.04\nF\n\n\n-3.5\n0.559\n0.045\n0.04\nF\n\n\n0.5\n0.593\n0.045\n0.04\nF\n\n\n4.5\n0.595\n0.041\n0.04\nF\n\n\n8.5\n0.565\n0.045\n0.04\nF\n\n\n12.5\n0.612\n0.041\n0.04\nF\n\n\n16.5\n0.615\n0.042\n0.04\nF\n\n\n20.5\n0.684\n0.038\n0.04\nF\n\n\n-19.5\n0.378\n0.041\n0.07\nF\n\n\n-15.5\n0.518\n0.042\n0.07\nF\n\n\n-11.5\n0.397\n0.040\n0.07\nF\n\n\n-7.5\n0.470\n0.044\n0.07\nF\n\n\n-3.5\n0.500\n0.043\n0.07\nF\n\n\n0.5\n0.528\n0.045\n0.07\nF\n\n\n4.5\n0.597\n0.044\n0.07\nF\n\n\n8.5\n0.664\n0.039\n0.07\nF\n\n\n12.5\n0.707\n0.038\n0.07\nF\n\n\n16.5\n0.621\n0.041\n0.07\nF\n\n\n20.5\n0.678\n0.043\n0.07\nF\n\n\n-19.5\n0.272\n0.039\n0.13\nF\n\n\n-15.5\n0.276\n0.038\n0.13\nF\n\n\n-11.5\n0.375\n0.042\n0.13\nF\n\n\n-7.5\n0.489\n0.041\n0.13\nF\n\n\n-3.5\n0.446\n0.043\n0.13\nF\n\n\n0.5\n0.577\n0.042\n0.13\nF\n\n\n4.5\n0.602\n0.043\n0.13\nF\n\n\n8.5\n0.611\n0.042\n0.13\nF\n\n\n12.5\n0.727\n0.040\n0.13\nF\n\n\n16.5\n0.746\n0.039\n0.13\nF\n\n\n20.5\n0.805\n0.034\n0.13\nF\n\n\n-19.5\n0.178\n0.033\n0.25\nF\n\n\n-15.5\n0.203\n0.036\n0.25\nF\n\n\n-11.5\n0.276\n0.041\n0.25\nF\n\n\n-7.5\n0.281\n0.037\n0.25\nF\n\n\n-3.5\n0.457\n0.041\n0.25\nF\n\n\n0.5\n0.543\n0.039\n0.25\nF\n\n\n4.5\n0.626\n0.041\n0.25\nF\n\n\n8.5\n0.738\n0.039\n0.25\nF\n\n\n12.5\n0.779\n0.038\n0.25\nF\n\n\n16.5\n0.857\n0.030\n0.25\nF\n\n\n20.5\n0.852\n0.031\n0.25\nF"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#group_by-and-summarize",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#group_by-and-summarize",
+    "title": "Tidy data",
+    "section": "group_by and summarize",
+    "text": "group_by and summarize\n\npick one coherence level\ngroup by direction\nsummarise across all observers\n\n```{r}\nd |&gt; filter(coherence == 0.25) |&gt; \n     group_by(direction) |&gt; \n     summarise(mean_p_cw = mean(p_cw)) |&gt;\n     gt()\n```"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#result",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#result",
+    "title": "Tidy data",
+    "section": "result",
+    "text": "result\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt; \n     group_by(direction) |&gt; \n     summarise(mean_p_cw = mean(p_cw)) |&gt;\n     gt()\n\n\n\n\n\n\n\n\ndirection\nmean_p_cw\n\n\n\n\n-19.5\n0.0498\n\n\n-15.5\n0.0714\n\n\n-11.5\n0.1150\n\n\n-7.5\n0.1572\n\n\n-3.5\n0.2898\n\n\n0.5\n0.4296\n\n\n4.5\n0.6824\n\n\n8.5\n0.8116\n\n\n12.5\n0.8662\n\n\n16.5\n0.9152\n\n\n20.5\n0.9496"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#plotting-can-follow-same-ideas",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#plotting-can-follow-same-ideas",
+    "title": "Tidy data",
+    "section": "plotting can follow same ideas",
+    "text": "plotting can follow same ideas\n\ndeclarative style (ggplot) versus\nimperative style (matlab, matplotlib, …)1\n\n1 what I used to use before I hit on / read the tidyverse stuff."
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#plot-example",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#plot-example",
+    "title": "Tidy data",
+    "section": "plot example",
+    "text": "plot example\n5,6 lines of code to get this\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt;\n     ggplot(aes(x = direction, y = p_cw)) +\n      geom_jitter() +\n      geom_smooth() +\n      theme_minimal()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#one-additional-line",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#one-additional-line",
+    "title": "Tidy data",
+    "section": "one additional line…",
+    "text": "one additional line…\n```{r}\n      ...\n      facet_wrap(~subject) +\n      ...\n```\n\n\nCode\nd |&gt; filter(coherence == 0.25) |&gt;\n     ggplot(aes(x = direction, y = p_cw)) +\n      geom_jitter() +\n      geom_smooth() +\n      facet_wrap(~subject) +\n      theme_minimal()"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#discussion",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#discussion",
+    "title": "Tidy data",
+    "section": "Discussion",
+    "text": "Discussion\n\ndata files (csv, parquet, feather ??)\nwhat do people do (hand-wrap their own? other libraries)\nhow uses an actual database?\nshould we teach this at UG/PG level more??"
+  },
+  {
+    "objectID": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#references",
+    "href": "presentations/2023-02-22-tidy-data/2023-02-22-tidy-data.html#references",
+    "title": "Tidy data",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "wishlist.html",
+    "href": "wishlist.html",
+    "title": "NG data club",
+    "section": "",
+    "text": "In no particular order (for now)\n\nPCA, ICA, related methods\nlinear regression, basics of linear algebra?\n“dimensionality reduction”\nt-SNE\nbasic ideas behind solving inverse problems\nhow do people organise data, meta-data\n“Tidy Data” / tidyverse and related ideas (in r), Pandas (python), Tables (matlab). Long and wide data? select, filter, mutate, summarise (dplyr/sql syntax)\nlogistic regression\nintro to bayesian stats/estimation?\nmore machine learning stuff (svm, intro to deep learning models)\nRL?"
+  },
+  {
+    "objectID": "wishlist.html#wishlist",
+    "href": "wishlist.html#wishlist",
+    "title": "NG data club",
+    "section": "",
+    "text": "In no particular order (for now)\n\nPCA, ICA, related methods\nlinear regression, basics of linear algebra?\n“dimensionality reduction”\nt-SNE\nbasic ideas behind solving inverse problems\nhow do people organise data, meta-data\n“Tidy Data” / tidyverse and related ideas (in r), Pandas (python), Tables (matlab). Long and wide data? select, filter, mutate, summarise (dplyr/sql syntax)\nlogistic regression\nintro to bayesian stats/estimation?\nmore machine learning stuff (svm, intro to deep learning models)\nRL?"
+  },
+  {
+    "objectID": "wishlist.html#notes-slides",
+    "href": "wishlist.html#notes-slides",
+    "title": "NG data club",
+    "section": "Notes / slides",
+    "text": "Notes / slides\n\ncould have 1 markdown/readme file per session with code snippets, links (3brown1blue, MIT OCW, Khan Academy, …), papers,"
+  }
+]

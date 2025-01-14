@@ -35,12 +35,18 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 >
 >2025-01-14 (UP-PSYC-B37)
 
+>**Walter van Heuven:** 
 >
-**Damian Eke:** 
+>*Large Language Models (LLMs), from your TextEditor, via APIs, ...* 
+>
+>2025-01-21 (UP-PSYC-B37)
+
+
+>**Damian Eke:** 
 >
 >*Data governance, FAIR principles, ABDN, ...* 
 >
->2025-01-21 (UP-PSYC-B37)
+>TBC (UP-PSYC-B37)
 
 
 Have a look at the [list of presentations](./presentations/index.qmd) for past presentations, code, etc.

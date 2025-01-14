@@ -7,6 +7,5 @@ listing:
     - "title desc"
 contents:
   - "*.qmd"
-  - "*.md"
   - "*/*.qmd"
 ---

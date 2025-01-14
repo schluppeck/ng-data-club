@@ -1,6 +1,15 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!presentations/*.md"
+    - "!presentations/*/*.md"
+  resources:
+    - "presentations/data/*" 
+    - "data/*"
+    - "*.md"
+    - "*.html"
 
 execute:
   freeze: auto  # re-render only when source changes
@@ -17,8 +26,7 @@ website:
         text: Presentations
       - href: about.qmd
         text: About
-    post-render:
-      - "cp -r data/. docs/data/"
+    
 format:
   html:
     theme: default

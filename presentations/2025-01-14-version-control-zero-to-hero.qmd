@@ -23,7 +23,7 @@ bibliography: ng-data-club.bib
 
 ## Plan
 
-- a quick overview of the ideas. (Why should you care? How does it help? Do I really need it>?)
+- a quick overview of the ideas. (Why should you care? How does it help? Do I really need it?)
 
 - some walk-throughs of common tasks
 
@@ -31,4 +31,7 @@ bibliography: ng-data-club.bib
   
 ## Materials
 
-To come.
+- [pdf talk slides](./data/2025-01-14-git-slides.pdf)
+- [talk slides - markdown format](./2025-01-14-version-control-zero-to-hero/2025-01-14-version-control-zero-to-hero.md)
+- [r in browser](./2025-01-14-version-control-zero-to-hero/r-in-browser.html)
+- link to github-repo I was using: <https://github.com/schluppeck/git-zero-to-heroish> 

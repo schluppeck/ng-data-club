@@ -1,0 +1,33 @@
+---
+title: "Data governance, ethics, FAIR principles, ..."
+author: Damian Eke
+date: TBC
+published-title: "Session date:"
+image: https://bridge.incf.org/sites/default/files/bridge_logo_280.jpg
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+[Damian Eke](https://www.nottingham.ac.uk/computerscience/people/damian.eke) is a colleague in the Faculty of Science (based in Comp Sci). He is a philosopher who works on Responsible Research and Innovation, Ethics and governance of AI and Neurotech, Data Ethics and governance and more.
+
+He leads / co-leads on several projects including:
+
+- the BRIDGE project (https://bridge.incf.org/) funded by Wellcome Trust 
+
+- the African Brain Data Science Academy (https://africanbraindatanetwork.com/abds-academy/) funded by Kavli Foundation 
+
+- STRATEGIC (https://www.strategic-project.org/) funded by European Commission under the EDCTP scheme 
+
+RAISE (https://raise-project.uk/) funded by UKRI through the RAI-UK project (https://rai.ac.uk/)
+
+## Where, When?
+
+UP-PSYC-B37
+
+12noon-1pm

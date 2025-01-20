@@ -10,6 +10,8 @@ project:
     - "data/*"
     - "*.md"
     - "*.html"
+    - "*.png"
+    - "*.svg"
 
 execute:
   freeze: auto  # re-render only when source changes

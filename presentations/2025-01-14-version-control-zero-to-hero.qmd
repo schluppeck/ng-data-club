@@ -32,6 +32,17 @@ bibliography: ng-data-club.bib
 ## Materials
 
 - [pdf talk slides](./data/2025-01-14-git-slides.pdf)
-- [talk slides - markdown format](./2025-01-14-version-control-zero-to-hero/2025-01-14-version-control-zero-to-hero.md)
+- [talk slides - markdown format](./2025-01-14-version-control-zero-to-hero/2025-01-14-version-control-zero-to-hero.html)
 - [r in browser](./2025-01-14-version-control-zero-to-hero/r-in-browser.html)
 - link to github-repo I was using: <https://github.com/schluppeck/git-zero-to-heroish> 
+
+
+## XKCD
+
+... always on point :) 
+
+![](https://imgs.xkcd.com/comics/git_commit.png)
+
+and
+
+![](https://imgs.xkcd.com/comics/git.png)

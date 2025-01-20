@@ -1,6 +1,9 @@
 ---
 title: R in the browser
-image: ../listing.png
+image: https://docs.r-wasm.org/webr/v0.1.0/images/webR.png
+author: Denis Schluppeck
+date: 2025-01-14
+date-format: iso
 format: live-html
 engine: knitr
 webr:
@@ -10,6 +13,7 @@ webr:
 ---
 {{< include ../../_extensions/r-wasm/live/_knitr.qmd >}}
 
+Some example code snarfed from <https://r-wasm.github.io/quarto-live/>
 
 ## Interactive code blocks
 

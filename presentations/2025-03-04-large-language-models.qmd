@@ -1,5 +1,5 @@
 ---
-title: "LLMs - large language models."
+title: "LLMs - large language models"
 subtitle: "Background, how to use in your code editors, through APIs, etc"
 author: Walter van Heuven
 date: 2025-03-04
@@ -15,12 +15,18 @@ citation-location: margin
 bibliography: ng-data-club.bib
 ---
 
+![](https://images.pexels.com/photos/18069695/pexels-photo-18069695/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-illustration-depicts-language-models-which-generate-text-it-was-created-by-wes-cockx-as-part-of-the-visualising-ai-project-l.png){width=60%}
+
 ## What?
+
+An overview of large language model, how to use them in practice (in code editors and through API calls).
 
 
 ## Where?
 
-Room TBC
+>UP-PSYC B37 - Psychology lecture theatre
+>
+>12noon - 1pm
 
 ## Photo Credit
 

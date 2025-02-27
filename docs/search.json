@@ -368,7 +368,7 @@
     "href": "index.html",
     "title": "NG data club",
     "section": "",
-    "text": "Nottingham Psychology data club resources\n\n \n\nHow DALL-E sees our data club\n\n\nSome materials for the lunchtime data club, an informal weekly/fortnightly meeting at the University of Nottingham.\n\n\n\nBring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data\n\n\norganising\nanalysing\nvisualising\n\n\n\n\nYou can find notes, presentations, and code at the ng-data-club github repository.\n\n\n\nUpcoming talks:\n\nWalter van Heuven:\nLarge Language Models (LLMs), from your TextEditor, via APIs, …\n2025-03-04, 12noon (UP-PSYC-B37)\n\n\nDamian Eke:\nData governance, FAIR principles, ABDN, …\nTBC (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc.\n\n\n\nYou can also check out the github discussion forum for the data club. A good place to share ideas, links, etc.\n\n\n\nWe have a code of conduct that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.\n\n\n\nWe will try to keep meetings informal with some guided discussion by presenters that will change week by week.\nStructure will be around:\n\nI want answer the following question with my data… How do I do that? and/or\nI know the following technique, which could help you with bla…\n\n\n\n\nOrganised by Denis Schluppeck and Mark v Rossum\nartwork by DALL-E (https://labs.openai.com/) using the prompt: “a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic”"
+    "text": "Nottingham Psychology data club resources\n\n \n\nHow DALL-E sees our data club\n\n\nSome materials for the lunchtime data club, an informal weekly/fortnightly meeting at the University of Nottingham.\n\n\n\nBring people with varied backgrounds together to talk about, unpack, learn about quantitative methods for data\n\n\norganising\nanalysing\nvisualising\n\n\n\n\nYou can find notes, presentations, and code at the ng-data-club github repository.\n\n\n\nUpcoming talks:\n\nWalter van Heuven:\nLarge Language Models (LLMs), from your TextEditor, via APIs, …\n2025-03-04, 12noon (UP-PSYC-B37)\n\n\nDenis Schluppeck:\nDe-noising of fMRI data, improving GLM estimates, …\nPaper: Improving the accuracy of single trial fMRI responses\nPrince et al (2022), https://elifesciences.org/articles/77599\n2025-03-18, 12noon (UP-PSYC-B37)\n\n\nMark Andrews (NTU):\nBayesian Statistics: Background and applications\nSpecial workshop, Details & eventbrite to follow\n2025-04-01, 10:00 - 13:00 (UP-ESLC B05)\n\n\nDamian Eke:\nData governance, FAIR principles, ABDN, …\nTBC (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc.\n\n\n\nYou can also check out the github discussion forum for the data club. A good place to share ideas, links, etc.\n\n\n\nWe have a code of conduct that applies to our meetings, emails, MS Teams, github discussion forum and other interactions. Please have a look at it.\n\n\n\nWe will try to keep meetings informal with some guided discussion by presenters that will change week by week.\nStructure will be around:\n\nI want answer the following question with my data… How do I do that? and/or\nI know the following technique, which could help you with bla…\n\n\n\n\nOrganised by Denis Schluppeck and Mark v Rossum\nartwork by DALL-E (https://labs.openai.com/) using the prompt: “a robot performing data analysis reading computer code with mathematic symbols standing in front of a whiteboard photorealistic”"
   },
   {
     "objectID": "index.html#aim",
@@ -389,7 +389,7 @@
     "href": "index.html#schedule",
     "title": "NG data club",
     "section": "",
-    "text": "Upcoming talks:\n\nWalter van Heuven:\nLarge Language Models (LLMs), from your TextEditor, via APIs, …\n2025-03-04, 12noon (UP-PSYC-B37)\n\n\nDamian Eke:\nData governance, FAIR principles, ABDN, …\nTBC (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc."
+    "text": "Upcoming talks:\n\nWalter van Heuven:\nLarge Language Models (LLMs), from your TextEditor, via APIs, …\n2025-03-04, 12noon (UP-PSYC-B37)\n\n\nDenis Schluppeck:\nDe-noising of fMRI data, improving GLM estimates, …\nPaper: Improving the accuracy of single trial fMRI responses\nPrince et al (2022), https://elifesciences.org/articles/77599\n2025-03-18, 12noon (UP-PSYC-B37)\n\n\nMark Andrews (NTU):\nBayesian Statistics: Background and applications\nSpecial workshop, Details & eventbrite to follow\n2025-04-01, 10:00 - 13:00 (UP-ESLC B05)\n\n\nDamian Eke:\nData governance, FAIR principles, ABDN, …\nTBC (UP-PSYC-B37)\n\nHave a look at the list of presentations for past presentations, code, etc."
   },
   {
     "objectID": "index.html#discussion-forum",
@@ -1272,5 +1272,40 @@
     "title": "ML beginnings…",
     "section": "",
     "text": "ML beginnings\nIntro level information for machine learning enthusiasts\nmaybe a chapter / homework and read through before meet?"
+  },
+  {
+    "objectID": "presentations/2025-03-18-ridge-regression+GLMsingle/ridge-regression+GLMsingle.html",
+    "href": "presentations/2025-03-18-ridge-regression+GLMsingle/ridge-regression+GLMsingle.html",
+    "title": "Ridge regression, improving the GLM",
+    "section": "",
+    "text": "Background for and discussion around the paper Improving the accuracy of single-trial fMRI response estimates using GLMsingle. eLife (2022) by Prince et al.\n\nlink to the paper on eLife\nthe github repo of the code\na really good book by Gilbert Strang: Strang (2019)\n\n\n\n\nStrang, Gilbert. 2019. Linear Algebra and Learning from Data. Philadelphia, PA: Wellesley-Cambridge Press. https://doi.org/10.1137/1.9780692196380."
+  },
+  {
+    "objectID": "presentations/2025-03-18-ridge-regression+GLMsingle/ridge-regression-GLMsingle.html",
+    "href": "presentations/2025-03-18-ridge-regression+GLMsingle/ridge-regression-GLMsingle.html",
+    "title": "Ridge regression, improving the GLM",
+    "section": "",
+    "text": "Background for and discussion around the paper Improving the accuracy of single-trial fMRI response estimates using GLMsingle. eLife (2022) by Prince et al.\n\nlink to the paper on eLife\nthe github repo of the code\na really good book by Gilbert Strang: Strang (2019)\n\n\n\n\nStrang, Gilbert. 2019. Linear Algebra and Learning from Data. Philadelphia, PA: Wellesley-Cambridge Press. https://doi.org/10.1137/1.9780692196380."
+  },
+  {
+    "objectID": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html",
+    "href": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html",
+    "title": "Ridge regression, improving the GLM",
+    "section": "",
+    "text": "Background for and discussion around the paper Improving the accuracy of single-trial fMRI response estimates using GLMsingle. eLife (2022) by Prince et al."
+  },
+  {
+    "objectID": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html#resources",
+    "href": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html#resources",
+    "title": "Ridge regression, improving the GLM",
+    "section": "Resources",
+    "text": "Resources\n\nlink to the paper on eLife\nthe github repo of the code\na really good book looking at the linear algebra behind these techniques by Strang (2019)\nthe 18.065 MIT lectures to go along with this are:\n\nLecture 9: Four Ways to Solve Least Squares Problems\nLecture 10: Survey of Difficulties with Ax = b and\nLecture 11: Minimizing ‖x‖ Subject to Ax = b\n\n\n\n\n\nStrang, Gilbert. 2019. Linear Algebra and Learning from Data. Philadelphia, PA: Wellesley-Cambridge Press. https://doi.org/10.1137/1.9780692196380."
+  },
+  {
+    "objectID": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html#the-paper",
+    "href": "presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html#the-paper",
+    "title": "Ridge regression, improving the GLM",
+    "section": "The paper",
+    "text": "The paper\n\n\n\nGLMsingle diagram"
   }
 ]

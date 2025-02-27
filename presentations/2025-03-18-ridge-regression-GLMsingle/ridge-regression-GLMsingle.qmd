@@ -1,0 +1,35 @@
+---
+title: "Ridge regression, improving the GLM"
+subtitle: "Journal club around Prince et al (2022) paper"
+author: Denis Schluppeck
+date: 2025-03-18
+published-title: "Session date:"
+image: https://user-images.githubusercontent.com/35503086/151108958-24479034-c7f7-4734-b903-9046ba6a78ac.png
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ../ng-data-club.bib
+---
+
+Background for and discussion around the paper *Improving the accuracy of single-trial fMRI response estimates using GLMsingle. eLife (2022)* by Prince et al.
+
+
+## The paper
+
+![GLMsingle diagram]( https://user-images.githubusercontent.com/35503086/151108958-24479034-c7f7-4734-b903-9046ba6a78ac.png){width=80%}
+
+
+## Resources
+
+- [link to the paper on eLife](https://elifesciences.org/articles/77599)
+- the [github repo of the code](https://github.com/cvnlab/GLMsingle)
+- a really good book looking at the linear algebra behind these techniques by @strang:2019:learningFromData
+- the 18.065 MIT lectures to go along with this are:
+  - [Lecture 9: Four Ways to Solve Least Squares Problems](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-9-four-ways-to-solve-least-squares-problems/)
+  - [Lecture 10: Survey of Difficulties with Ax = b](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-10-survey-of-difficulties-with-ax-b/) and
+  - [Lecture 11: Minimizing ‖x‖ Subject to Ax = b](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/resources/lecture-11-minimizing-2016x2016-subject-to-ax-b/) 
+  

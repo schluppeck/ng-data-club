@@ -36,6 +36,25 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 >2025-03-04, 12noon (UP-PSYC-B37)
 
 
+>**Denis Schluppeck:** 
+>
+>De-noising of fMRI data, improving GLM estimates, ...
+>
+>*Paper: Improving the accuracy of single trial fMRI responses* 
+>
+> Prince et al (2022), https://elifesciences.org/articles/77599
+>
+>2025-03-18, 12noon (UP-PSYC-B37)
+
+
+>**Mark Andrews (NTU):** 
+>
+>*Bayesian Statistics: Background and applications*
+>
+> Special workshop, Details & eventbrite to follow
+>
+>2025-04-01, 10:00 - 13:00 (UP-ESLC B05)
+
 
 >**Damian Eke:** 
 >

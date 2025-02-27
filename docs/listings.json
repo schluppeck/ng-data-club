@@ -2,6 +2,7 @@
   {
     "listing": "/presentations/index.html",
     "items": [
+      "/presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html",
       "/presentations/2025-03-04-large-language-models.html",
       "/presentations/2025-01-14-version-control-zero-to-hero.html",
       "/presentations/2025-01-14-version-control-zero-to-hero/r-in-browser.html",
@@ -10,6 +11,7 @@
       "/presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html",
       "/presentations/2024-11-19-non-normal-stats.html",
       "/presentations/2024-11-05-ordinal+count-data.html",
+      "/presentations/2025-xx-xx-ml-beginnings.html",
       "/presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.html",
       "/presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html",
       "/presentations/2023-03-29-meeting-notes.html",
@@ -23,7 +25,6 @@
       "/presentations/2023-01-04-documents-and-code/01-doc-with-julia.html",
       "/presentations/2023-01-04-documents-and-code/Readme.html",
       "/presentations/2023-01-04-documents-and-code/00-presentation.html",
-      "/presentations/2025-xx-xx-ml-beginnings.html",
       "/presentations/2022-12-14-linear-regression.html",
       "/presentations/2022-11-23-first-meeting.html",
       "/presentations/2025-xx-xx-data-governance-ethics.html"

@@ -21,7 +21,7 @@ bibliography: ng-data-club.bib
 
 An overview of large language model, how to use them in practice (in code editors and through API calls).
 
-- [pdf of slides](./2025-03-04-large-language-models/LLMs-Data-Club.pdf) from WvH's presentation, with lots of useful links and tips.
+- [pdf of slides](./data/LLMs-Data-Club.pdf) from WvH's presentation, with lots of useful links and tips.
 
 ## Where?
 

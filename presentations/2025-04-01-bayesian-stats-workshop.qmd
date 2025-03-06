@@ -1,0 +1,33 @@
+---
+title: "Bayesian Statistics"
+author: Prof. Mark Andrews, NTU 
+date: 2025-04-01
+published-title: "Session date:"
+image: ../images/Thomas_Bayes.png
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+## What 
+
+A dive into the world of Bayesian Statistics! Join us for an interactive session where you'll learn the fundamentals of Bayesian Statistics and get hands-on practice with various concepts. Whether you're a beginner or looking to brush up your skills, this event is perfect for anyone interested in exploring this powerful statistical approach. Don't miss out on this opportunity to expand your knowledge and meet like-minded individuals. See you there!
+
+The session will be led by Prof. Mark Andrews (NTU), who teaches statistics in Psychology at undergraduate and post-graduate level.
+
+## Where, When?
+
+For details and to book a spot for the workshop, please [go to the Eventbrite link for the event](https://www.eventbrite.co.uk/e/introduction-to-bayesian-statistics-from-concepts-to-practice-tickets-1258485527089?aff=oddtdtcreator)
+
+
+>University Park 
+>
+>UP-ESLC B05 
+>
+> 1 April 2025, 10am-1pm
+

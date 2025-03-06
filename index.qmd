@@ -29,12 +29,6 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 
 **Upcoming talks:**
 
->**Walter van Heuven:** 
->
->*Large Language Models (LLMs), from your TextEditor, via APIs, ...* 
->
->2025-03-04, 12noon (UP-PSYC-B37)
-
 
 >**Denis Schluppeck:** 
 >
@@ -51,9 +45,20 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 >
 >*Bayesian Statistics: Background and applications*
 >
-> Special workshop, Details & eventbrite to follow
+> Special workshop, [Book via EventBrite](https://www.eventbrite.co.uk/e/introduction-to-bayesian-statistics-from-concepts-to-practice-tickets-1258485527089?aff=oddtdtcreator)
 >
 >2025-04-01, 10:00 - 13:00 (UP-ESLC B05)
+
+
+>**Evgeniya Lukinova:** 
+>
+>Assistant Professor in Behavioural Analytics (N/LAB)
+>
+>Business School
+>
+>*Intertemporal choice across short and long time horizons: an fMRI study* 
+>
+>TBC 
 
 
 >**Damian Eke:** 
@@ -61,7 +66,6 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 >*Data governance, FAIR principles, ABDN, ...* 
 >
 >TBC (UP-PSYC-B37)
-
 
 
 

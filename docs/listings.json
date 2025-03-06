@@ -2,16 +2,17 @@
   {
     "listing": "/presentations/index.html",
     "items": [
+      "/presentations/2025-04-01-bayesian-stats-workshop.html",
       "/presentations/2025-03-18-ridge-regression-GLMsingle/ridge-regression-GLMsingle.html",
       "/presentations/2025-03-04-large-language-models.html",
       "/presentations/2025-01-14-version-control-zero-to-hero.html",
       "/presentations/2025-01-14-version-control-zero-to-hero/r-in-browser.html",
+      "/presentations/2025-xx-xx-ml-beginnings.html",
       "/presentations/2024-12-17-bayesian-hierarchical-model/notes.html",
       "/presentations/2024-12-17-bayesian-hierarchical-model.html",
       "/presentations/2024-11-19-non-normal-stats/2024-11-19-non-normal-stats.html",
       "/presentations/2024-11-19-non-normal-stats.html",
       "/presentations/2024-11-05-ordinal+count-data.html",
-      "/presentations/2025-xx-xx-ml-beginnings.html",
       "/presentations/2023-05-25-visualising-data-workshop/2023-05-25-workshop-notes.html",
       "/presentations/2023-03-29-data-visualisation/2023-03-29-datavis-presentation.html",
       "/presentations/2023-03-29-meeting-notes.html",

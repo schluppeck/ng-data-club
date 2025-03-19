@@ -20,10 +20,12 @@ Background for and discussion around the paper *Improving the accuracy of single
 
 ## The paper
 
-![GLMsingle diagram]( https://user-images.githubusercontent.com/35503086/151108958-24479034-c7f7-4734-b903-9046ba6a78ac.png){width=80%}
+![GLMsingle diagram](https://user-images.githubusercontent.com/35503086/151108958-24479034-c7f7-4734-b903-9046ba6a78ac.png){width=80%}
 
 
 ## Resources
+
+- [DS's presentation slides](../data/2025-03-18-journal-club-GLMsingle.pdf)
 
 - [link to the paper on eLife](https://elifesciences.org/articles/77599)
 - the [github repo of the code](https://github.com/cvnlab/GLMsingle)

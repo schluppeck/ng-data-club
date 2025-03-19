@@ -29,16 +29,16 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 
 **Upcoming talks:**
 
+>**Evgeniya Lukinova:** 
+>
+>Assistant Professor in Behavioural Analytics (N/LAB)
+>
+>Business School
+>
+>*Intertemporal choice across short and long time horizons: an fMRI study* 
+>
+>2025-03-25, 12:00 - 13:00 (UP-PSYC B73) 
 
->**Denis Schluppeck:** 
->
->De-noising of fMRI data, improving GLM estimates, ...
->
->*Paper: Improving the accuracy of single trial fMRI responses* 
->
-> Prince et al (2022), https://elifesciences.org/articles/77599
->
->2025-03-18, 12noon (UP-PSYC-B37)
 
 
 >**Mark Andrews (NTU):** 
@@ -49,16 +49,6 @@ You can find notes, presentations, and code at the [ng-data-club github reposito
 >
 >2025-04-01, 10:00 - 13:00 (UP-ESLC B05)
 
-
->**Evgeniya Lukinova:** 
->
->Assistant Professor in Behavioural Analytics (N/LAB)
->
->Business School
->
->*Intertemporal choice across short and long time horizons: an fMRI study* 
->
->TBC 
 
 
 >**Damian Eke:** 

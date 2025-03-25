@@ -1,0 +1,37 @@
+---
+title: "Intertemporal choice across short and long time horizons: an fMRI study"
+author: Dr Evgeniya Lukinova, 
+date: 2025-03-25
+published-title: "Session date:"
+image: https://iiif.elifesciences.org/lax/39656%2Felife-39656-fig4-v1.tif/full/1500,/0/default.jpg
+format:
+  html: default
+mainfont: Helvetica
+sansfont: Menlo 
+self-contained: true
+reference-location: margin
+citation-location: margin
+bibliography: ng-data-club.bib
+---
+
+## What 
+
+Presentation about some recent fMRI results by Evgeniya and collaborators from a neuroeconomics experiment.
+
+## Where, When?
+
+>[**Evgeniya Lukinova:**](https://www.nottingham.ac.uk/business/people/lizel.phtml) 
+>
+>Assistant Professor in Behavioural Analytics (N/LAB)
+>
+>Business School
+>
+>*Intertemporal choice across short and long time horizons: an fMRI study* 
+>
+>2025-03-25, 12:00 - 13:00 (UP-PSYC B37) 
+
+## Links
+
+- Business school profile page, [Evgeniya Lukinova](https://www.nottingham.ac.uk/business/people/lizel.phtml) 
+- Quantifying the contribution of individual variation in timing to delay-discounting [@Lukinova:2021aa]
+- Time preferences are reliable across time-horizons and verbal versus experiential tasks [@Lukinova:2019aa]

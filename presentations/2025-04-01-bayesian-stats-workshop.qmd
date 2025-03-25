@@ -31,3 +31,8 @@ For details and to book a spot for the workshop, please [go to the Eventbrite li
 >
 > 1 April 2025, 10am-1pm
 
+## Links
+
+- [github repo](https://github.com/mark-andrews/bayes-workshop-UoN-2025) for the workshop, incl. installation instructions
+
+

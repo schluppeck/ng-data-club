@@ -1,6 +1,6 @@
 ---
 title: "Intertemporal choice across short and long time horizons: an fMRI study"
-author: Dr Evgeniya Lukinova, 
+author: Dr Evgeniya Lukinova 
 date: 2025-03-25
 published-title: "Session date:"
 image: https://iiif.elifesciences.org/lax/39656%2Felife-39656-fig4-v1.tif/full/1500,/0/default.jpg

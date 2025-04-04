@@ -31,8 +31,11 @@ For details and to book a spot for the workshop, please [go to the Eventbrite li
 >
 > 1 April 2025, 10am-1pm
 
-## Links
+## Links and notes
 
 - [github repo](https://github.com/mark-andrews/bayes-workshop-UoN-2025) for the workshop, incl. installation instructions
+
+- [Michael Betancourt's webpage](https://betanalpha.github.io/) - mentioned by MA during the talk, including... Monte Carlo sampling in high-dimensional spaces (including weirdnesses and pathologies there): [workshop talk](https://www.youtube.com/watch?v=pHsuIaPbNbY)
+
 
 
